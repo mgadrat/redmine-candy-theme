@@ -1,14 +1,20 @@
 #top-menu {
-    border-top: 4px solid $color-primary-mid;
+    border-top: 4px solid $color-primary-lightest;
 }
 
 #header {
   background-color: $color-secondary-2-dark;
+  padding: $base-v-spacer*6 $base-h-spacer 0;
 
   a {
     color: $color-neutral-lightest;
     &:hover {
       color: $color-secondary-1-light;
     }
+  }
+
+  h1 {
+    color: $color-neutral-lightest;
+    margin-bottom: 0;
   }
 }

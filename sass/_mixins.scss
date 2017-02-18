@@ -18,3 +18,75 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin btn() {
+
+  background: $color-secondary-2-light;
+  background-image: -webkit-linear-gradient(top, $color-secondary-2-light, $color-secondary-2-lightest);
+  background-image: -moz-linear-gradient(top, $color-secondary-2-light, $color-secondary-2-lightest);
+  background-image: -ms-linear-gradient(top, $color-secondary-2-light, $color-secondary-2-lightest);
+  background-image: -o-linear-gradient(top, $color-secondary-2-light, $color-secondary-2-lightest);
+  background-image: linear-gradient(to bottom, $color-secondary-2-light, $color-secondary-2-lightest);
+  color: $color-neutral-lightest;
+  padding: 0 $base-spacer;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-secondary-2-lightest;
+    background-image: -webkit-linear-gradient(top, $color-secondary-2-lightest, $color-secondary-2-light);
+    background-image: -moz-linear-gradient(top, $color-secondary-2-lightest, $color-secondary-2-light);
+    background-image: -ms-linear-gradient(top, $color-secondary-2-lightest, $color-secondary-2-light);
+    background-image: -o-linear-gradient(top, $color-secondary-2-lightest, $color-secondary-2-light);
+    background-image: linear-gradient(to bottom, $color-secondary-2-lightest, $color-secondary-2-light);
+    text-decoration: none;
+  }
+
+}
+
+@mixin btn-validate() {
+
+  background: $color-complement-light;
+  background-image: -webkit-linear-gradient(top, $color-complement-light, $color-complement-lightest);
+  background-image: -moz-linear-gradient(top, $color-complement-light, $color-complement-lightest);
+  background-image: -ms-linear-gradient(top, $color-complement-light, $color-complement-lightest);
+  background-image: -o-linear-gradient(top, $color-complement-light, $color-complement-lightest);
+  background-image: linear-gradient(to bottom, $color-complement-light, $color-complement-lightest);
+  color: $color-neutral-lightest;
+  padding: 0 $base-spacer;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-complement-lightest;
+    background-image: -webkit-linear-gradient(top, $color-complement-lightest, $color-complement-light);
+    background-image: -moz-linear-gradient(top, $color-complement-lightest, $color-complement-light);
+    background-image: -ms-linear-gradient(top, $color-complement-lightest, $color-complement-light);
+    background-image: -o-linear-gradient(top, $color-complement-lightest, $color-complement-light);
+    background-image: linear-gradient(to bottom, $color-complement-lightest, $color-complement-light);
+    text-decoration: none;
+  }
+
+}
+
+@mixin btn-cancel() {
+
+  background: $color-primary-light;
+  background-image: -webkit-linear-gradient(top, $color-primary-light, $color-primary-lightest);
+  background-image: -moz-linear-gradient(top, $color-primary-light, $color-primary-lightest);
+  background-image: -ms-linear-gradient(top, $color-primary-light, $color-primary-lightest);
+  background-image: -o-linear-gradient(top, $color-primary-light, $color-primary-lightest);
+  background-image: linear-gradient(to bottom, $color-primary-light, $color-primary-lightest);
+  color: $color-neutral-lightest;
+  padding: 0 $base-spacer;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-primary-lightest;
+    background-image: -webkit-linear-gradient(top, $color-primary-lightest, $color-primary-light);
+    background-image: -moz-linear-gradient(top, $color-primary-lightest, $color-primary-light);
+    background-image: -ms-linear-gradient(top, $color-primary-lightest, $color-primary-light);
+    background-image: -o-linear-gradient(top, $color-primary-lightest, $color-primary-light);
+    background-image: linear-gradient(to bottom, $color-primary-lightest, $color-primary-light);
+    text-decoration: none;
+  }
+
+}

@@ -7,17 +7,70 @@ a {
 }
 
 body, html {
-  font-size: 16px;
+  font-size: $font-size-base;
   font-family: $font-primary;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.17rem; }
-h4 { font-size: 1.12rem; }
-h5 { font-size: .83rem; }
-h6 { font-size: .75rem; }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 { 
+  font-size: 2rem;
+  margin-bottom: $base-v-spacer*2;
+  }
+h2 { 
+  font-size: 1.5rem;
+  margin-bottom: $base-v-spacer*1.5;
+  }
+h3 { 
+  font-size: 1.17rem;
+  margin-bottom: $base-v-spacer;
+  }
+h4 { 
+  font-size: 1.12rem;
+  margin-bottom: $base-v-spacer;
+  }
+h5 { 
+  font-size: .83rem;
+  margin-bottom: $base-v-spacer;
+  }
+h6 { 
+  font-size: .75rem;
+  margin-bottom: $base-v-spacer;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-secondary;
+}
+
+#main {
+  background-color: $color-neutral-light;
+}
+
+#content {
+  padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+}
+
+#sidebar {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+  min-height: 80vh;
+}
+
+.contextual {
+  float: right;
+  color: $color-neutral-light;
+  margin: $base-v-spacer 0 $base-v-spacer $base-h-spacer;
+  a {
+    @include btn();
+    font-size: $font-size-small;
+
+    &.icon-add {
+      @include btn-validate();
+    }
+  }
 }

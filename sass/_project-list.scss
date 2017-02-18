@@ -1,0 +1,21 @@
+#projects-index {
+  li{
+    margin: $base-v-spacer $base-h-spacer;
+
+    a {
+      font-size: $font-size-big;
+    }
+
+    &.root {
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #fff;
+      padding: $base-v-spacer $base-h-spacer;
+      border-left: 2px solid $color-primary-light;
+    }
+
+    ul {
+      margin: $base-v-spacer $base-h-spacer*2;
+    }
+  }
+}

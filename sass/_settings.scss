@@ -1,42 +1,51 @@
 // Palette URL: http://paletton.com/#uid=7040Y0kllllkVEvkHu6lZc-o57w */
 
 // RED
-$color-primary-lightest: #AA4339;
+$color-primary-lightest: #F06355;
 $color-primary-light: #FF6858;
-$color-primary-mid: #F06355;
+$color-primary-mid: #AA4339;
 $color-primary-dark: #64261F;
 $color-primary-darkest: #3C130F;
 
 // GOLD
-$color-secondary-1-lightest: #AA8739;
+$color-secondary-1-lightest: #F0C155;
 $color-secondary-1-light: #FFCC58;
-$color-secondary-1-mid: #F0C155;
+$color-secondary-1-mid: #AA8739;
 $color-secondary-1-dark: #644F1F;
 $color-secondary-1-darkest: #3C2E0F;
 
 // BLUE
-$color-secondary-2-lightest: #303E73;
+$color-secondary-2-lightest: #465AA3;
 $color-secondary-2-light: #546CC5;
-$color-secondary-2-mid: #465AA3;
+$color-secondary-2-mid: #303E73;
 $color-secondary-2-dark: #1B2444;
 $color-secondary-2-darkest: #0E1329;
 
 // GREEN
-$color-complement-lightest: #2B803E;
+$color-complement-lightest: #40B55A;
 $color-complement-light: #49D368;
-$color-complement-mid: #40B55A;
+$color-complement-mid: #2B803E;
 $color-complement-dark: #184C23;
 $color-complement-darkest: #0B2D13;
 
 // Neutral
 $color-neutral-lightest: #FFFFFF;
 $color-neutral-light: #eeeeee;
-$color-neutral-mid: #aaaaaa;
+$color-neutral-mid: #cccccc;
 $color-neutral-dark: #333333;
 $color-neutral-darkest: #111111;
 
+// margin // padding // spacers
+$base-spacer: 8px;
+$base-h-spacer: $base-spacer;
+$base-v-spacer: $base-spacer;
 
 // FONTS
 @import url('https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700');
 $font-primary: 'Mukta Vaani', helvetica, arial, sans-serif;
 $font-secondary: 'Domine', georgia, serif;
+
+$font-size-base: 16px; // only for the body/html elements
+$font-size-normal: 1rem;
+$font-size-small: .8rem;
+$font-size-big: 1.2rem;
