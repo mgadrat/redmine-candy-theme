@@ -4,7 +4,7 @@ A redmine theme for me, by me, that I like :)
 
 ## Installation
 
-The redmine theme is in the theme/gadmine folder.
+The redmine theme is in the themes/gadmine folder.
 
 See [redmine theme installation on redmine](http://www.redmine.org/projects/redmine/wiki/Themes)
 
