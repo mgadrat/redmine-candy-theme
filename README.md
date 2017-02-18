@@ -8,6 +8,10 @@ The redmine theme is in the themes/gadmine folder.
 
 See [redmine theme installation on redmine](http://www.redmine.org/projects/redmine/wiki/Themes)
 
+## Development
+
+TODO: Steps to start dev
+
 ## Reference
 
 [HowTo create a custom Redmine theme](http://www.redmine.org/projects/redmine/wiki/HowTo_create_a_custom_Redmine_theme)

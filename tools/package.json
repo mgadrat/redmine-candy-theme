@@ -2,14 +2,15 @@
   "name": "gadmine_tools",
   "version": "1.0.0",
   "description": "Dev tools for gadmine",
-  "main": "gulpfile.js",
+  "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"What's up!\" && exit 1"
   },
   "author": "Matthieu Gadrat",
-  "license": "GNU GENERAL PUBLIC LICENSE Version 3",
+  "license": " GPL-3.0",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
     "gulp-sass": "^3.1.0"
   }
 }
