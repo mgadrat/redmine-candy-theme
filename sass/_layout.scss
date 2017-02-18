@@ -1,17 +1,41 @@
+#top-menu {
+  
+  #account {
+    float: right;
+  }
 
-#top-menu {}
-#header {}
-#main-menu {}
+  #loggedas {
+    float: right;
+  }
 
-#admin-menu {}
+  ul {
+    float: left;
+  }
 
+  @include clearfix();   
+}
 
-#main {}
+#header {
 
-#sidebar {}
+  #quick-search {
+    float: right;
+  }
 
-#content {}
+  @include clearfix();
+}
+
+#main {
+  @include clearfix();
+}
+
+#sidebar {
+  float: right;
+  width: 20%;
+}
+
+#content {
+  float: left;
+  width: 80%;
+}
 
 #main.nosidebar #sidebar { display: none; }
-
-#footer  {}

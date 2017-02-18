@@ -28,4 +28,15 @@ $color-complement-mid: #40B55A;
 $color-complement-dark: #184C23;
 $color-complement-darkest: #0B2D13;
 
+// Neutral
+$color-neutral-lightest: #FFFFFF;
+$color-neutral-light: #eeeeee;
+$color-neutral-mid: #aaaaaa;
+$color-neutral-dark: #333333;
+$color-neutral-darkest: #111111;
 
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700');
+$font-primary: 'Mukta Vaani', helvetica, arial, sans-serif;
+$font-secondary: 'Domine', georgia, serif;

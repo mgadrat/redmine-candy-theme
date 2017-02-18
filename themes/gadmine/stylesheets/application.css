@@ -1,5 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background-color: pink; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#top-menu {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+  #top-menu #account {
+    float: right; }
+  #top-menu #loggedas {
+    float: right; }
+  #top-menu ul {
+    float: left; }
+  #top-menu::before, #top-menu::after {
+    content: "";
+    display: table; }
+  #top-menu::after {
+    clear: both; }
+
+#header {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+  #header #quick-search {
+    float: right; }
+  #header::before, #header::after {
+    content: "";
+    display: table; }
+  #header::after {
+    clear: both; }
+
+#main {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+  #main::before, #main::after {
+    content: "";
+    display: table; }
+  #main::after {
+    clear: both; }
+
+#sidebar {
+  float: right;
+  width: 20%; }
+
+#content {
+  float: left;
+  width: 80%; }
 
 #main.nosidebar #sidebar {
   display: none; }
+
+a {
+  color: #465AA3;
+  text-decoration: none; }
+  a:hover {
+    color: #FFCC58; }
+
+body, html {
+  font-size: 16px;
+  font-family: "Mukta Vaani", helvetica, arial, sans-serif; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.17rem; }
+
+h4 {
+  font-size: 1.12rem; }
+
+h5 {
+  font-size: .83rem; }
+
+h6 {
+  font-size: .75rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Domine", georgia, serif; }
+
+#main-menu li, #main-menu a, #top-menu li, #top-menu a {
+  display: inline-block; }
+
+#top-menu a {
+  padding: 5px 10px; }
+
+#top-menu #loggedas a {
+  padding-left: 0; }
+
+#top-menu {
+  border-top: 4px solid #F06355; }
+
+#header {
+  background-color: #1B2444; }
+  #header a {
+    color: #FFFFFF; }
+    #header a:hover {
+      color: #FFCC58; }

@@ -1,0 +1,14 @@
+#top-menu {
+    border-top: 4px solid $color-primary-mid;
+}
+
+#header {
+  background-color: $color-secondary-2-dark;
+
+  a {
+    color: $color-neutral-lightest;
+    &:hover {
+      color: $color-secondary-1-light;
+    }
+  }
+}
