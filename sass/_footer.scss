@@ -1,0 +1,17 @@
+#footer {
+  background-color: $color-neutral-dark;
+  padding: $base-v-spacer*2 $base-h-spacer;
+  color: $color-neutral-lightest;
+
+  a {
+    color: $color-secondary-2-lightest;
+    &:hover {
+      color: $color-secondary-1-lightest;
+    }
+  }
+
+  h1 {
+    color: $color-neutral-lightest;
+    margin-bottom: 0;
+  }
+}
