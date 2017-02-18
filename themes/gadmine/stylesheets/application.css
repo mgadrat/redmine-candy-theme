@@ -1,2 +1,5 @@
 body {
-  font-size: 1em; }
+  background-color: pink; }
+
+#main.nosidebar #sidebar {
+  display: none; }

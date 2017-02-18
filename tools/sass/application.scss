@@ -1,3 +1,30 @@
-body {
-    font-size: 1em;
-}
+body {background-color: pink}
+
+#top-menu {}
+#header {}
+#main-menu {}
+
+#admin-menu {}
+#admin-menu a.projects {}
+#admin-menu a.users {}
+#admin-menu a.groups {}
+#admin-menu a.roles {}
+#admin-menu a.trackers {}
+#admin-menu a.issue_statuses {}
+#admin-menu a.workflows {}
+#admin-menu a.custom_fields {}
+#admin-menu a.enumerations {}
+#admin-menu a.settings {}
+#admin-menu a.plugins {}
+#admin-menu a.info {}
+#admin-menu a.server_authentication {}
+
+#main {}
+
+#sidebar {}
+
+#content {}
+
+#main.nosidebar #sidebar { display: none; }
+
+#footer  {}
