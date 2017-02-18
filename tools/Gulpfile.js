@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var notify = require("gulp-notify");
 
 gulp.task('styles', function() {
-    gulp.src('sass/**/*.scss')
+    gulp.src('../sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('../themes/gadmine/stylesheets/'))
         .pipe(notify("Your stuff is ready!"));
@@ -11,5 +11,5 @@ gulp.task('styles', function() {
 
 //Watch task
 gulp.task('default',function() {
-    gulp.watch('sass/**/*.scss',['styles']);
+    gulp.watch('../sass/**/*.scss',['styles']);
 });
