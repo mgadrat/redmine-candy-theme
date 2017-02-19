@@ -19,6 +19,18 @@
           border-radius: $radius;
 }
 
+@mixin fa-icon($char) {
+  &::before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: $char;
+  }
+}
+
 @mixin btn() {
 
   background: $color-secondary-2-light;

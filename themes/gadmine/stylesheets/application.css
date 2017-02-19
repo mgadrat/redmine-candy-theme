@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700");
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -132,6 +139,11 @@ h6 {
   font-size: .75rem;
   margin-bottom: 8px; }
 
+p {
+  margin-bottom: 8px; }
+  p:last-child {
+    margin-bottom: 0; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Domine", georgia, serif; }
 
@@ -151,23 +163,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #eeeeee;
   margin: 8px 0 8px 8px; }
   .contextual a {
-    background: #546CC5;
-    background-image: -webkit-linear-gradient(top, #546CC5, #465AA3);
-    background-image: -moz-linear-gradient(top, #546CC5, #465AA3);
-    background-image: -ms-linear-gradient(top, #546CC5, #465AA3);
-    background-image: -o-linear-gradient(top, #546CC5, #465AA3);
-    background-image: linear-gradient(to bottom, #546CC5, #465AA3);
+    background: #465AA3;
+    background-image: -webkit-linear-gradient(top, #465AA3, #546CC5);
+    background-image: -moz-linear-gradient(top, #465AA3, #546CC5);
+    background-image: -ms-linear-gradient(top, #465AA3, #546CC5);
+    background-image: -o-linear-gradient(top, #465AA3, #546CC5);
+    background-image: linear-gradient(to bottom, #465AA3, #546CC5);
     color: #FFFFFF;
     padding: 0 8px;
     text-decoration: none;
     font-size: 0.8rem; }
     .contextual a:hover {
-      background: #465AA3;
-      background-image: -webkit-linear-gradient(top, #465AA3, #546CC5);
-      background-image: -moz-linear-gradient(top, #465AA3, #546CC5);
-      background-image: -ms-linear-gradient(top, #465AA3, #546CC5);
-      background-image: -o-linear-gradient(top, #465AA3, #546CC5);
-      background-image: linear-gradient(to bottom, #465AA3, #546CC5);
+      background: #546CC5;
+      background-image: -webkit-linear-gradient(top, #546CC5, #465AA3);
+      background-image: -moz-linear-gradient(top, #546CC5, #465AA3);
+      background-image: -ms-linear-gradient(top, #546CC5, #465AA3);
+      background-image: -o-linear-gradient(top, #546CC5, #465AA3);
+      background-image: linear-gradient(to bottom, #546CC5, #465AA3);
       text-decoration: none; }
     .contextual a.icon-add {
       background: #49D368;
@@ -197,6 +209,34 @@ h1, h2, h3, h4, h5, h6 {
 #top-menu #loggedas a {
   padding-left: 0; }
 
+#main-menu {
+  position: relative;
+  padding-top: 16px; }
+  #main-menu .menu-children {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #465AA3;
+    display: none; }
+    #main-menu .menu-children.visible {
+      display: block; }
+    #main-menu .menu-children li, #main-menu .menu-children a {
+      display: block; }
+    #main-menu .menu-children a {
+      padding: 8px 8px; }
+      #main-menu .menu-children a:hover {
+        background-color: #546CC5; }
+  #main-menu > ul > li > a {
+    padding: 8px 16px;
+    background-color: #465AA3;
+    color: #FFFFFF;
+    margin-right: 4px; }
+    #main-menu > ul > li > a:hover {
+      background-color: #546CC5; }
+    #main-menu > ul > li > a.selected {
+      background-color: #eeeeee;
+      color: #303E73; }
+
 #top-menu {
   border-top: 4px solid #F06355; }
 
@@ -208,6 +248,18 @@ h1, h2, h3, h4, h5, h6 {
     #header a:hover {
       color: #FFCC58; }
   #header h1 {
+    color: #FFFFFF;
+    margin-bottom: 0; }
+
+#footer {
+  background-color: #333333;
+  padding: 16px 8px;
+  color: #FFFFFF; }
+  #footer a {
+    color: #546CC5; }
+    #footer a:hover {
+      color: #F0C155; }
+  #footer h1 {
     color: #FFFFFF;
     margin-bottom: 0; }
 

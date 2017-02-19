@@ -6,13 +6,56 @@
 
 #top-menu {
   a  {
-    padding: $base-spacer $base-spacer*2;
+    padding: $base-v-spacer $base-h-spacer*2;
   }
 
   #loggedas a {
     padding-left: 0;
   }
 }
+
+#main-menu {
+  position: relative;
+  padding-top: $base-v-spacer*2;
+  .menu-children {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $color-secondary-2-light;
+    display: none;
+    &.visible {
+      display: block;
+    }
+
+    li, a {
+      display: block;
+    }
+
+    a {
+      padding: $base-v-spacer $base-h-spacer;
+      &:hover {
+        background-color: $color-secondary-2-lightest;
+      }
+    }
+  }
+
+  & > ul > li > a {
+    padding: $base-v-spacer $base-h-spacer*2;
+    background-color: $color-secondary-2-light;
+    color: $color-neutral-lightest;
+    margin-right: $base-h-spacer/2;
+
+    &:hover {
+      background-color: $color-secondary-2-lightest;
+    }
+
+    &.selected {
+      background-color: $color-neutral-light;
+      color: $color-secondary-2-mid;
+    }
+  }
+}
+
 
 #admin-menu a.projects {}
 #admin-menu a.users {}

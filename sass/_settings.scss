@@ -15,8 +15,8 @@ $color-secondary-1-dark: #644F1F;
 $color-secondary-1-darkest: #3C2E0F;
 
 // BLUE
-$color-secondary-2-lightest: #465AA3;
-$color-secondary-2-light: #546CC5;
+$color-secondary-2-lightest: #546CC5;
+$color-secondary-2-light: #465AA3;
 $color-secondary-2-mid: #303E73;
 $color-secondary-2-dark: #1B2444;
 $color-secondary-2-darkest: #0E1329;
@@ -42,6 +42,7 @@ $base-v-spacer: $base-spacer;
 
 // FONTS
 @import url('https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700');
+
 $font-primary: 'Mukta Vaani', helvetica, arial, sans-serif;
 $font-secondary: 'Domine', georgia, serif;
 
@@ -49,3 +50,11 @@ $font-size-base: 16px; // only for the body/html elements
 $font-size-normal: 1rem;
 $font-size-small: .8rem;
 $font-size-big: 1.2rem;
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
