@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700");
 @font-face {
   font-family: 'FontAwesome';
@@ -100,14 +101,15 @@ table {
   display: none; }
 
 a {
-  color: #303E73;
+  color: #465AA3;
   text-decoration: none; }
   a:hover {
     color: #FFCC58; }
 
 body, html {
   font-size: 16px;
-  font-family: "Mukta Vaani", helvetica, arial, sans-serif; }
+  font-family: "Mukta Vaani", helvetica, arial, sans-serif;
+  font-color: #111111; }
 
 html {
   box-sizing: border-box; }
@@ -144,8 +146,59 @@ p {
   p:last-child {
     margin-bottom: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1, h2 {
   font-family: "Domine", georgia, serif; }
+
+strong {
+  font-weight: bold; }
+
+table {
+  width: 100%;
+  margin-bottom: 16px; }
+  table tr.even {
+    background-color: #eeeeee; }
+  table tr.odd {
+    background-color: #FFFFFF; }
+  table tr th {
+    background-color: #AA4339;
+    color: #FFFFFF;
+    padding: 8px 8px;
+    text-align: left;
+    border-right: 1px solid #eeeeee;
+    font-size: 0.8rem; }
+    table tr th a {
+      color: #FFFFFF; }
+      table tr th a.sort.desc::before {
+        display: inline-block;
+        margin-right: 8px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: -2.4px; }
+      table tr th a.sort.asc::before {
+        display: inline-block;
+        margin-right: 8px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: 3.2px; }
+  table tr td {
+    padding: 4px 4px; }
+
+form {
+  background-color: #FFFFFF;
+  padding: 8px 8px; }
 
 #main {
   background-color: #eeeeee; }
@@ -164,40 +217,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 8px 0 8px 8px; }
   .contextual a {
     background: #465AA3;
-    background-image: -webkit-linear-gradient(top, #465AA3, #546CC5);
-    background-image: -moz-linear-gradient(top, #465AA3, #546CC5);
-    background-image: -ms-linear-gradient(top, #465AA3, #546CC5);
-    background-image: -o-linear-gradient(top, #465AA3, #546CC5);
-    background-image: linear-gradient(to bottom, #465AA3, #546CC5);
     color: #FFFFFF;
     padding: 0 8px;
     text-decoration: none;
     font-size: 0.8rem; }
     .contextual a:hover {
       background: #546CC5;
-      background-image: -webkit-linear-gradient(top, #546CC5, #465AA3);
-      background-image: -moz-linear-gradient(top, #546CC5, #465AA3);
-      background-image: -ms-linear-gradient(top, #546CC5, #465AA3);
-      background-image: -o-linear-gradient(top, #546CC5, #465AA3);
-      background-image: linear-gradient(to bottom, #546CC5, #465AA3);
       text-decoration: none; }
     .contextual a.icon-add {
       background: #49D368;
-      background-image: -webkit-linear-gradient(top, #49D368, #40B55A);
-      background-image: -moz-linear-gradient(top, #49D368, #40B55A);
-      background-image: -ms-linear-gradient(top, #49D368, #40B55A);
-      background-image: -o-linear-gradient(top, #49D368, #40B55A);
-      background-image: linear-gradient(to bottom, #49D368, #40B55A);
       color: #FFFFFF;
       padding: 0 8px;
       text-decoration: none; }
       .contextual a.icon-add:hover {
         background: #40B55A;
-        background-image: -webkit-linear-gradient(top, #40B55A, #49D368);
-        background-image: -moz-linear-gradient(top, #40B55A, #49D368);
-        background-image: -ms-linear-gradient(top, #40B55A, #49D368);
-        background-image: -o-linear-gradient(top, #40B55A, #49D368);
-        background-image: linear-gradient(to bottom, #40B55A, #49D368);
         text-decoration: none; }
 
 #main-menu li, #main-menu a, #top-menu li, #top-menu a {
@@ -230,19 +263,37 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 16px;
     background-color: #465AA3;
     color: #FFFFFF;
-    margin-right: 4px; }
+    margin-right: 4px;
+    -webkit-box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.2); }
     #main-menu > ul > li > a:hover {
-      background-color: #546CC5; }
+      background-color: #546CC5;
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1); }
     #main-menu > ul > li > a.selected {
       background-color: #eeeeee;
-      color: #303E73; }
+      color: #303E73;
+      -webkit-box-shadow: inset 0px 0px 0px 0px transparent;
+      -moz-box-shadow: inset 0px 0px 0px 0px transparent;
+      box-shadow: inset 0px 0px 0px 0px transparent; }
 
 #top-menu {
   border-top: 4px solid #F06355; }
 
 #header {
   background-color: #1B2444;
-  padding: 48px 8px 0; }
+  padding: 16px 8px 0;
+  -webkit-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2); }
+  #header form {
+    background-color: transparent;
+    float: left; }
+  #header #project_quick_jump_box {
+    display: inline-block;
+    margin: 8px 0; }
   #header a {
     color: #FFFFFF; }
     #header a:hover {
@@ -275,3 +326,30 @@ h1, h2, h3, h4, h5, h6 {
     border-left: 2px solid #FF6858; }
   #projects-index li ul {
     margin: 8px 16px; }
+
+.splitcontentleft,
+.splitcontentright {
+  width: 50%; }
+  .splitcontentleft > div,
+  .splitcontentright > div {
+    padding: 8px 8px;
+    background-color: #FFFFFF; }
+
+.splitcontentleft {
+  float: left;
+  padding-right: 4px; }
+  .splitcontentleft .wiki {
+    background-color: transparent;
+    padding-left: 0; }
+
+.splitcontentright {
+  float: right;
+  padding-left: 4px; }
+
+.news .summary {
+  display: block;
+  margin: 8px 0; }
+
+.news .comments {
+  font-size: 0.8rem;
+  color: #333333; }

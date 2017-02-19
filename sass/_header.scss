@@ -4,7 +4,18 @@
 
 #header {
   background-color: $color-secondary-2-dark;
-  padding: $base-v-spacer*6 $base-h-spacer 0;
+  padding: $base-v-spacer*2 $base-h-spacer 0;
+  @include box-shadow(inset 0px 10px 5px 0px rgba(0,0,0,0.2))
+
+  form {
+    background-color: transparent;
+    float: left;
+  }
+
+  #project_quick_jump_box {
+    display: inline-block;
+    margin: $base-v-spacer 0;
+  }
 
   a {
     color: $color-neutral-lightest;

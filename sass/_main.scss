@@ -1,5 +1,5 @@
 a {
-  color: $color-secondary-2-mid;
+  color: $color-secondary-2-light;
   text-decoration: none;
   &:hover {
     color: $color-secondary-1-light;
@@ -9,6 +9,7 @@ a {
 body, html {
   font-size: $font-size-base;
   font-family: $font-primary;
+  font-color: $color-neutral-darkest;
 }
 
 html {
@@ -51,8 +52,81 @@ p {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 { 
+  font-weight: bold;
+}
+
+h1, h2 {
   font-family: $font-secondary;
+}
+
+em {
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+q {
+
+}
+
+blockquote {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+li {
+
+}
+
+table {
+  width: 100%;
+  margin-bottom: $base-v-spacer*2;
+  tr {
+    &.even {
+      background-color: $color-neutral-light;
+    }
+    &.odd {
+      background-color: $color-neutral-lightest;
+    }
+    th {
+      background-color: $color-primary-mid;
+      color: $color-neutral-lightest;
+      padding: $base-v-spacer $base-h-spacer;
+      text-align: left;
+      border-right: 1px solid $color-neutral-light;
+      font-size: $font-size-small;
+          
+      a {
+        color: $color-neutral-lightest;
+
+        &.sort.desc {
+          @include fa-icon($fa-var-sort-desc, $base-v-spacer*-0.3);
+
+        };
+        &.sort.asc {
+          @include fa-icon($fa-var-sort-asc, $base-v-spacer*0.4);
+        };
+      }
+    }
+    td {
+      padding: $base-v-spacer/2 $base-h-spacer/2;
+    }
+  }
+}
+
+form {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer $base-h-spacer;
 }
 
 #main {

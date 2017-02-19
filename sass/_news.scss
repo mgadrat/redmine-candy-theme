@@ -1,0 +1,10 @@
+.news {
+  .summary {
+    display: block;
+    margin: $base-v-spacer 0;
+  }
+  .comments {
+    font-size: $font-size-small;
+    color: $color-neutral-dark;
+  }
+}
