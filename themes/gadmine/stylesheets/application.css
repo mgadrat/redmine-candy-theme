@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/**
+ * ================
+ * ==== COLORS ====
+ * ================
+ */
+/**
+ * =================
+ * ==== SPACING ====
+ * =================
+ */
+/**
+ * ==============
+ * ==== FONT ====
+ * ==============
+ */
 @import url("https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700");
 @font-face {
   font-family: 'FontAwesome';
@@ -101,10 +116,10 @@ table {
   display: none; }
 
 a {
-  color: #465AA3;
+  color: #3E5D9F;
   text-decoration: none; }
   a:hover {
-    color: #FFCC58; }
+    color: #EEB74C; }
 
 body, html {
   font-size: 16px;
@@ -163,7 +178,7 @@ table {
   table tr.odd {
     background-color: #FFFFFF; }
   table tr th {
-    background-color: #303E73;
+    background-color: #2E4372;
     color: #FFFFFF;
     padding: 8px 8px;
     text-align: left;
@@ -216,13 +231,13 @@ form {
   color: #eeeeee;
   margin: 8px 0 8px 8px; }
   .contextual a {
-    background: #465AA3;
+    background: #3E5D9F;
     color: #FFFFFF;
     padding: 0 8px;
     text-decoration: none;
     font-size: 0.8rem; }
     .contextual a:hover {
-      background: #546CC5;
+      background: #476EC1;
       text-decoration: none; }
     .contextual a.icon-add {
       background: #49D368;
@@ -249,7 +264,7 @@ form {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #465AA3;
+    background-color: #3E5D9F;
     display: none; }
     #main-menu .menu-children.visible {
       display: block; }
@@ -258,32 +273,32 @@ form {
     #main-menu .menu-children a {
       padding: 8px 8px; }
       #main-menu .menu-children a:hover {
-        background-color: #546CC5; }
+        background-color: #476EC1; }
   #main-menu > ul > li > a {
     padding: 8px 16px;
-    background-color: #465AA3;
+    background-color: #3E5D9F;
     color: #FFFFFF;
     margin-right: 4px;
     -webkit-box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.2); }
     #main-menu > ul > li > a:hover {
-      background-color: #546CC5;
+      background-color: #476EC1;
       -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
       box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1); }
     #main-menu > ul > li > a.selected {
       background-color: #eeeeee;
-      color: #303E73;
+      color: #2E4372;
       -webkit-box-shadow: inset 0px 0px 0px 0px transparent;
       -moz-box-shadow: inset 0px 0px 0px 0px transparent;
       box-shadow: inset 0px 0px 0px 0px transparent; }
 
 #top-menu {
-  border-top: 4px solid #F06355; }
+  border-top: 4px solid #EF4670; }
 
 #header {
-  background-color: #1B2444;
+  background-color: #1C2944;
   padding: 16px 8px 0;
   -webkit-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
@@ -297,7 +312,7 @@ form {
   #header a {
     color: #FFFFFF; }
     #header a:hover {
-      color: #FFCC58; }
+      color: #EEB74C; }
   #header h1 {
     color: #FFFFFF;
     margin-bottom: 0; }
@@ -307,9 +322,9 @@ form {
   padding: 16px 8px;
   color: #FFFFFF; }
   #footer a {
-    color: #546CC5; }
+    color: #476EC1; }
     #footer a:hover {
-      color: #F0C155; }
+      color: #FFC24B; }
   #footer h1 {
     color: #FFFFFF;
     margin-bottom: 0; }
@@ -323,7 +338,7 @@ form {
     margin-right: 0;
     background-color: #fff;
     padding: 8px 8px;
-    border-left: 2px solid #FF6858; }
+    border-left: 2px solid #D9456B; }
   #projects-index li ul {
     margin: 8px 16px; }
 
