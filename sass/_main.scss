@@ -93,7 +93,7 @@ table {
   margin-bottom: $base-v-spacer*2;
   tr {
     &.even {
-      background-color: $color-neutral-light;
+      background-color: $color-neutral-mid;
     }
     &.odd {
       background-color: $color-neutral-lightest;
@@ -120,6 +120,25 @@ table {
     }
     td {
       padding: $base-v-spacer/2 $base-h-spacer/2;
+
+      &.checkbox {
+        input {
+          display: none;
+        }
+      }
+    }
+    &.context-menu-selection {
+      background-color: $color-secondary-1-mid !important; // Cuz redmine core
+      &:hover {
+        background-color: $color-secondary-1-mid !important; // cuz redmine core
+      }
+      .checkbox {
+        text-align: center;
+        @include fa-icon($fa-var-check);
+        &::before {
+          font-size: $font-size-small;
+        }
+      }
     }
   }
 }
@@ -153,6 +172,7 @@ form {
 
     &.icon-add {
       @include btn-validate();
+      @include fa-icon($fa-var-plus);
     }
   }
 }

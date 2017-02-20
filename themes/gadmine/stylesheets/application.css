@@ -174,7 +174,7 @@ table {
   width: 100%;
   margin-bottom: 16px; }
   table tr.even {
-    background-color: #eeeeee; }
+    background-color: #cccccc; }
   table tr.odd {
     background-color: #FFFFFF; }
   table tr th {
@@ -210,6 +210,27 @@ table {
         top: 3.2px; }
   table tr td {
     padding: 4px 4px; }
+    table tr td.checkbox input {
+      display: none; }
+  table tr.context-menu-selection {
+    background-color: #AA8439 !important; }
+    table tr.context-menu-selection:hover {
+      background-color: #AA8439 !important; }
+    table tr.context-menu-selection .checkbox {
+      text-align: center; }
+      table tr.context-menu-selection .checkbox::before {
+        display: inline-block;
+        margin-right: 8px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: 0; }
+      table tr.context-menu-selection .checkbox::before {
+        font-size: 0.8rem; }
 
 form {
   background-color: #FFFFFF;
@@ -247,6 +268,17 @@ form {
       .contextual a.icon-add:hover {
         background: #40B55A;
         text-decoration: none; }
+      .contextual a.icon-add::before {
+        display: inline-block;
+        margin-right: 8px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: 0; }
 
 #main-menu li, #main-menu a, #top-menu li, #top-menu a {
   display: inline-block; }
