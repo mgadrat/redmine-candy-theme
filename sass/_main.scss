@@ -1,5 +1,5 @@
 a {
-  color: $color-secondary-2-light;
+  color: $color-primary-light;
   text-decoration: none;
   &:hover {
     color: $color-secondary-1-light;
@@ -19,27 +19,27 @@ html {
   box-sizing: inherit;
 }
 
-h1 { 
+h1 {
   font-size: 2rem;
   margin-bottom: $base-v-spacer*2;
   }
-h2 { 
+h2 {
   font-size: 1.5rem;
   margin-bottom: $base-v-spacer*1.5;
   }
-h3 { 
+h3 {
   font-size: 1.17rem;
   margin-bottom: $base-v-spacer;
   }
-h4 { 
+h4 {
   font-size: 1.12rem;
   margin-bottom: $base-v-spacer;
   }
-h5 { 
+h5 {
   font-size: .83rem;
   margin-bottom: $base-v-spacer;
   }
-h6 { 
+h6 {
   font-size: .75rem;
   margin-bottom: $base-v-spacer;
   }
@@ -52,7 +52,7 @@ p {
   }
 }
 
-h3, h4, h5, h6 { 
+h3, h4, h5, h6 {
   font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ table {
       text-align: left;
       border-right: 1px solid $color-neutral-light;
       font-size: $font-size-small;
-          
+
       a {
         color: $color-neutral-lightest;
 

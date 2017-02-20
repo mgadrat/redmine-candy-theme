@@ -50,34 +50,6 @@
 
 @mixin btn() {
 
-  background: $color-secondary-2-light;
-  color: $color-neutral-lightest;
-  padding: 0 $base-spacer;
-  text-decoration: none;
-
-  &:hover {
-    background: $color-secondary-2-lightest;
-    text-decoration: none;
-  }
-
-}
-
-@mixin btn-validate() {
-
-  background: $color-complement-light;
-  color: $color-neutral-lightest;
-  padding: 0 $base-spacer;
-  text-decoration: none;
-
-  &:hover {
-    background: $color-complement-lightest;
-    text-decoration: none;
-  }
-
-}
-
-@mixin btn-cancel() {
-
   background: $color-primary-light;
   color: $color-neutral-lightest;
   padding: 0 $base-spacer;
@@ -85,6 +57,34 @@
 
   &:hover {
     background: $color-primary-lightest;
+    text-decoration: none;
+  }
+
+}
+
+@mixin btn-validate() {
+
+  background: $color-validate-light;
+  color: $color-neutral-lightest;
+  padding: 0 $base-spacer;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-validate-lightest;
+    text-decoration: none;
+  }
+
+}
+
+@mixin btn-cancel() {
+
+  background: $color-cancel-light;
+  color: $color-neutral-lightest;
+  padding: 0 $base-spacer;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-cancel-lightest;
     text-decoration: none;
   }
 

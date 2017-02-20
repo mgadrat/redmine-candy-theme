@@ -21,7 +21,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: $color-secondary-2-light;
+    background-color: $color-primary-light;
     display: none;
     &.visible {
       display: block;
@@ -34,27 +34,27 @@
     a {
       padding: $base-v-spacer $base-h-spacer;
       &:hover {
-        background-color: $color-secondary-2-lightest;
+        background-color: $color-primary-lightest;
       }
     }
   }
 
   & > ul > li > a {
     padding: $base-v-spacer $base-h-spacer*2;
-    background-color: $color-secondary-2-light;
+    background-color: $color-primary-light;
     color: $color-neutral-lightest;
     margin-right: $base-h-spacer/2;
     @include box-shadow(inset 0px -10px 5px 0px rgba(0,0,0,0.2))
 
 
     &:hover {
-      background-color: $color-secondary-2-lightest;
+      background-color: $color-primary-lightest;
       @include box-shadow(inset 0px 0px 0px 0px rgba(0,0,0,0.1))
     }
 
     &.selected {
       background-color: $color-neutral-light;
-      color: $color-secondary-2-mid;
+      color: $color-primary-mid;
       @include box-shadow(inset 0px 0px 0px 0px rgba(0,0,0,0))
     }
   }

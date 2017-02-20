@@ -1,9 +1,9 @@
 #top-menu {
-    border-top: 4px solid $color-primary-lightest;
+    border-top: 4px solid $color-complement-lightest;
 }
 
 #header {
-  background-color: $color-secondary-2-dark;
+  background-color: $color-primary-dark;
   padding: $base-v-spacer*2 $base-h-spacer 0;
   @include box-shadow(inset 0px 10px 5px 0px rgba(0,0,0,0.2))
 
