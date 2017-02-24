@@ -34,7 +34,7 @@
 @mixin fa-icon($char, $vadjust: 0) {
   &::before {
     display: inline-block;
-    margin-right: $base-h-spacer;
+    margin-right: $base-h-spacer/2;
     font: normal normal normal $font-size-normal FontAwesome;
     font-size: inherit;
     text-rendering: auto;

@@ -1,0 +1,51 @@
+.controller-activities {
+
+  h3 {
+    margin: $base-v-spacer*3 0 $base-v-spacer*2;
+  }
+
+  .user {
+    font-size: $font-size-small;
+    color: $color-complement-mid;
+    display: block;
+  }  
+  dt span {
+    color: $color-neutral-dark;
+    display: block;
+    font-size: $font-size-small;
+  }
+  dt {
+
+    position: relative;
+
+    &.time-entry{
+      @include fa-icon($icon-time);
+      &::before {
+        position: absolute;
+        top: 0;
+        left: $base-h-spacer*-2;       
+      }
+    }
+
+    &.issue{
+      @include fa-icon($icon-issue);
+        &::before {
+        position: absolute;
+        left: $base-h-spacer*-2;
+        top: 2px;
+      }
+    }
+
+    &.news{
+      @include fa-icon($icon-news);
+      &::before {
+        position: absolute;
+        top: 1px;
+        left: $base-h-spacer*-2.2;
+      }
+    }
+
+
+  }
+}
+

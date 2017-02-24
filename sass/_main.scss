@@ -9,7 +9,8 @@ a {
 body, html {
   font-size: $font-size-base;
   font-family: $font-primary;
-  font-color: $color-neutral-darkest;
+  color: $color-neutral-darkest;
+  line-height: 1.2rem;
 }
 
 html {
@@ -76,21 +77,32 @@ blockquote {
 
 }
 
-ul {
+#content {
+  
+  ul, ol, dl {
+    margin: $base-v-spacer $base-h-spacer*2;
+  }
 
-}
+  ol, li {
 
-ol {
+  }
 
-}
+  dt {
+    font-weight: bold;
+  }
 
-li {
+  dd {
+    margin: 0 0 $base-v-spacer 0;
+  }
 
 }
 
 table {
-  width: 100%;
   margin-bottom: $base-v-spacer*2;
+  
+  &.list {
+    width: 100%;
+  }
   tr {
     &.even {
       background-color: $color-neutral-mid;
@@ -148,6 +160,26 @@ form {
   padding: $base-v-spacer $base-h-spacer;
 }
 
+fieldset {
+  padding: $base-v-spacer 0;
+  &.collapsible {
+    legend {
+      @include fa-icon($fa-var-minus-square-o, 1px);
+      &::before {
+        color: $color-primary-mid;
+      }
+      cursor: pointer;
+      font-weight: bold;
+    }
+    &.collapsed {
+      legend {
+        @include fa-icon($fa-var-plus-square-o, 1px);
+      }
+    }
+  }
+
+}
+
 #main {
   background-color: $color-neutral-light;
 }
@@ -175,4 +207,10 @@ form {
       @include fa-icon($fa-var-plus);
     }
   }
+}
+
+.icon-time-add { @include fa-icon($icon-time) }
+.buttons {
+  .icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
+  .icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }
 }

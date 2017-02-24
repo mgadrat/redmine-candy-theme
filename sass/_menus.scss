@@ -40,16 +40,16 @@
   }
 
   & > ul > li > a {
-    padding: $base-v-spacer $base-h-spacer*2;
+    padding: $base-v-spacer/2 $base-h-spacer;
     background-color: $color-primary-light;
     color: $color-neutral-lightest;
     margin-right: $base-h-spacer/2;
-    @include box-shadow(inset 0px -10px 5px 0px rgba(0,0,0,0.2))
+    @include box-shadow(inset 0px -10px 5px 0px rgba(0,0,0,0.1))
 
 
     &:hover {
       background-color: $color-primary-lightest;
-      @include box-shadow(inset 0px 0px 0px 0px rgba(0,0,0,0.1))
+      @include box-shadow(inset 0px 0px 0px 0px rgba(0,0,0,0.05))
     }
 
     &.selected {

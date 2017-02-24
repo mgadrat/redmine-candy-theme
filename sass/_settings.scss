@@ -53,7 +53,7 @@ $color-cancel-darkest: #3C130F;
  */
 
 // margin // padding // spacers
-$base-spacer: 8px;
+$base-spacer: 10px;
 $base-h-spacer: $base-spacer;
 $base-v-spacer: $base-spacer;
 
@@ -80,3 +80,14 @@ $font-size-big: 1.2rem;
   font-weight: normal;
   font-style: normal;
 }
+
+$icon-news: $fa-var-newspaper-o;
+$icon-cal: $fa-var-calendar;
+$icon-issue: $fa-var-check-square-o;
+$icon-time: $fa-var-clock-o;
+$icon-version: $fa-var-code-fork;
+$icon-document: $fa-var-file-o;
+$icon-wiki: $fa-var-book;
+$icon-apply: $fa-var-check-circle-o;
+$icon-reload: $fa-var-refresh;
+
