@@ -171,6 +171,12 @@ h1, h2 {
 strong {
   font-weight: bold; }
 
+hr {
+  margin: 10px 0;
+  background-color: #D9456B;
+  height: 1px;
+  border: 0; }
+
 #content ul, #content ol, #content dl {
   margin: 10px 20px; }
 
@@ -295,12 +301,13 @@ table.progress {
   .splitcontent::after {
     clear: both; }
 
+.splitcontentleft,
+.splitcontentright {
+  width: 50%; }
+
 .splitcontentleft {
   float: left;
   padding-right: 5px; }
-  .splitcontentleft .wiki {
-    background-color: transparent;
-    padding-left: 0; }
 
 .splitcontentright {
   float: right;
@@ -532,16 +539,36 @@ table.progress {
   #projects-index li ul {
     margin: 10px 20px; }
 
-.splitcontentleft,
-.splitcontentright {
-  width: 50%; }
-  .splitcontentleft > div,
-  .splitcontentright > div {
-    padding: 10px 10px;
-    background-color: #FFFFFF; }
+.controller-projects .splitcontentleft > div,
+.controller-projects .splitcontentright > div {
+  padding: 10px 10px;
+  background-color: #FFFFFF; }
 
 #query_form {
   margin-bottom: 10px; }
+
+.issue .splitcontent {
+  background-color: #FFFFFF;
+  font-size: 0.8rem; }
+  .issue .splitcontent > div {
+    padding: 10px 10px; }
+
+.issue .label {
+  font-weight: bold;
+  margin-right: 10px; }
+
+.issue .label, .issue .value {
+  display: inline-block;
+  margin-bottom: 5px; }
+
+.issue .progress .value {
+  display: block; }
+
+.issue .progress .label {
+  margin-bottom: 0; }
+
+.issue .attributes {
+  margin-bottom: -10px; }
 
 .controller-activities h3 {
   margin: 10px 0 20px; }

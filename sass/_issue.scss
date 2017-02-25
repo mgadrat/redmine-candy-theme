@@ -1,0 +1,35 @@
+
+.issue {
+  .splitcontent {
+    background-color: $color-neutral-lightest;
+    font-size: $font-size-small;
+
+    & > div {
+      padding: $base-v-spacer $base-h-spacer;
+    }
+  }
+
+  .label {
+    font-weight: bold;
+    margin-right: $base-h-spacer;
+  }
+
+  .label, .value {
+    display: inline-block;
+    margin-bottom: $base-v-spacer/2;
+  }
+
+  .progress {
+    .value {
+      display: block;
+    } 
+    .label {
+      margin-bottom: 0;
+    }
+  }
+
+  .attributes {
+    margin-bottom: -$base-v-spacer;
+  }
+
+}

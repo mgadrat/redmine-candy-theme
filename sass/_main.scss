@@ -77,6 +77,13 @@ blockquote {
 
 }
 
+hr {
+  margin: $base-v-spacer 0;
+  background-color: $color-complement-light; 
+  height: 1px;
+  border: 0;
+}
+
 #content {
   
   ul, ol, dl {
@@ -196,20 +203,21 @@ table.progress {
   @include clearfix();
 }
 
+.splitcontentleft,
+.splitcontentright {
+  width: 50%;
+}
+
 .splitcontentleft {
   float: left;
   padding-right: $base-h-spacer/2; 
-
-  .wiki {
-    background-color: transparent;
-    padding-left: 0;
-  }
 }
-
 .splitcontentright {
   float: right;
   padding-left: $base-h-spacer/2; 
 }
+
+
 
 #main {
   background-color: $color-neutral-light;
