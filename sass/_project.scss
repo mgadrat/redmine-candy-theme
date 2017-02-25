@@ -7,18 +7,3 @@
     background-color: $color-neutral-lightest;
   }  
 }
-
-.splitcontentleft {
-  float: left;
-  padding-right: $base-h-spacer/2; 
-
-  .wiki {
-    background-color: transparent;
-    padding-left: 0;
-  }
-}
-
-.splitcontentright {
-  float: right;
-  padding-left: $base-h-spacer/2; 
-}

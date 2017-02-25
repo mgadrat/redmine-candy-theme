@@ -277,6 +277,35 @@ fieldset {
     position: relative;
     top: 1px; }
 
+table.progress {
+  margin: 0;
+  background-color: #eeeeee;
+  width: 100%; }
+  table.progress .done, table.progress .closed {
+    background-color: #49D368; }
+  table.progress .todo {
+    background-color: #333333; }
+
+.splitcontent {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+  .splitcontent::before, .splitcontent::after {
+    content: "";
+    display: table; }
+  .splitcontent::after {
+    clear: both; }
+
+.splitcontentleft {
+  float: left;
+  padding-right: 5px; }
+  .splitcontentleft .wiki {
+    background-color: transparent;
+    padding-left: 0; }
+
+.splitcontentright {
+  float: right;
+  padding-left: 5px; }
+
 #main {
   background-color: #eeeeee; }
 
@@ -288,38 +317,25 @@ fieldset {
   padding: 30px 10px 10px;
   min-height: 80vh; }
 
-.contextual {
-  float: right;
-  color: #eeeeee;
-  margin: 10px 0 10px 10px; }
-  .contextual a {
-    background: #3E5D9F;
-    color: #FFFFFF;
-    padding: 0 10px;
-    text-decoration: none;
-    font-size: 0.8rem; }
-    .contextual a:hover {
-      background: #476EC1;
-      text-decoration: none; }
-    .contextual a.icon-add {
-      background: #49D368;
-      color: #FFFFFF;
-      padding: 0 10px;
-      text-decoration: none; }
-      .contextual a.icon-add:hover {
-        background: #40B55A;
-        text-decoration: none; }
-      .contextual a.icon-add::before {
-        display: inline-block;
-        margin-right: 5px;
-        font: normal normal normal 1rem FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        content: "";
-        position: relative;
-        top: 0; }
+.icon-add {
+  background: #49D368 !important;
+  color: #FFFFFF !important;
+  padding: 0 10px;
+  text-decoration: none; }
+  .icon-add:hover {
+    background: #40B55A !important;
+    text-decoration: none; }
+  .icon-add::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
 
 .icon-time-add::before {
   display: inline-block;
@@ -333,13 +349,45 @@ fieldset {
   position: relative;
   top: 0; }
 
+.icon-save {
+  background: #49D368 !important;
+  color: #FFFFFF !important;
+  padding: 0 10px;
+  text-decoration: none; }
+  .icon-save:hover {
+    background: #40B55A !important;
+    text-decoration: none; }
+  .icon-save::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
+.icon-edit::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
 .buttons .icon-checked {
-  background: #49D368;
-  color: #FFFFFF;
+  background: #49D368 !important;
+  color: #FFFFFF !important;
   padding: 0 10px;
   text-decoration: none; }
   .buttons .icon-checked:hover {
-    background: #40B55A;
+    background: #40B55A !important;
     text-decoration: none; }
   .buttons .icon-checked::before {
     display: inline-block;
@@ -354,12 +402,12 @@ fieldset {
     top: 1px; }
 
 .buttons .icon-reload {
-  background: #FF6858;
-  color: #FFFFFF;
+  background: #FF6858 !important;
+  color: #FFFFFF !important;
   padding: 0 10px;
   text-decoration: none; }
   .buttons .icon-reload:hover {
-    background: #F06355;
+    background: #F06355 !important;
     text-decoration: none; }
   .buttons .icon-reload::before {
     display: inline-block;
@@ -419,6 +467,20 @@ fieldset {
       -moz-box-shadow: inset 0px 0px 0px 0px transparent;
       box-shadow: inset 0px 0px 0px 0px transparent; }
 
+.contextual {
+  float: right;
+  color: #eeeeee;
+  margin: 0 0 0 10px; }
+  .contextual a {
+    background: #3E5D9F;
+    color: #FFFFFF;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 0.8rem; }
+    .contextual a:hover {
+      background: #476EC1;
+      text-decoration: none; }
+
 #top-menu {
   border-top: 4px solid #EF4670; }
 
@@ -454,6 +516,9 @@ fieldset {
     color: #FFFFFF;
     margin-bottom: 0; }
 
+#projects-index ul {
+  margin: 0; }
+
 #projects-index li {
   margin: 10px 10px; }
   #projects-index li a {
@@ -475,22 +540,16 @@ fieldset {
     padding: 10px 10px;
     background-color: #FFFFFF; }
 
-.splitcontentleft {
-  float: left;
-  padding-right: 5px; }
-  .splitcontentleft .wiki {
-    background-color: transparent;
-    padding-left: 0; }
-
-.splitcontentright {
-  float: right;
-  padding-left: 5px; }
-
 #query_form {
   margin-bottom: 10px; }
 
 .controller-activities h3 {
-  margin: 30px 0 20px; }
+  margin: 10px 0 20px; }
+
+.controller-activities #activity {
+  background-color: #FFFFFF;
+  padding: 10px 10px;
+  margin-bottom: 10px; }
 
 .controller-activities .user {
   font-size: 0.8rem;
@@ -549,6 +608,36 @@ fieldset {
     position: absolute;
     top: 1px;
     left: -22px; }
+  .controller-activities dt.issue-note::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .controller-activities dt.issue-note::before {
+    position: absolute;
+    top: 0;
+    left: -20px; }
+  .controller-activities dt.wiki-page::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .controller-activities dt.wiki-page::before {
+    position: absolute;
+    top: 0;
+    left: -22px; }
 
 .news .summary {
   display: block;
@@ -557,3 +646,8 @@ fieldset {
 .news .comments {
   font-size: 0.8rem;
   color: #333333; }
+
+#roadmap article {
+  background-color: #FFFFFF;
+  margin: 10px 0;
+  padding: 10px 10px; }

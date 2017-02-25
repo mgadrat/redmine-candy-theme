@@ -180,6 +180,37 @@ fieldset {
 
 }
 
+table.progress {
+  margin: 0;
+  background-color: $color-neutral-light;
+  width: 100%;
+  .done, .closed {
+    background-color: $color-validate-light;
+  }
+  .todo {
+    background-color: $color-neutral-dark;
+  }
+}
+
+.splitcontent {
+  @include clearfix();
+}
+
+.splitcontentleft {
+  float: left;
+  padding-right: $base-h-spacer/2; 
+
+  .wiki {
+    background-color: transparent;
+    padding-left: 0;
+  }
+}
+
+.splitcontentright {
+  float: right;
+  padding-left: $base-h-spacer/2; 
+}
+
 #main {
   background-color: $color-neutral-light;
 }
@@ -194,22 +225,10 @@ fieldset {
   min-height: 80vh;
 }
 
-.contextual {
-  float: right;
-  color: $color-neutral-light;
-  margin: $base-v-spacer 0 $base-v-spacer $base-h-spacer;
-  a {
-    @include btn();
-    font-size: $font-size-small;
-
-    &.icon-add {
-      @include btn-validate();
-      @include fa-icon($fa-var-plus);
-    }
-  }
-}
-
+.icon-add { @include btn-validate(); @include fa-icon($fa-var-plus); }
 .icon-time-add { @include fa-icon($icon-time) }
+.icon-save { @include btn-validate(); @include fa-icon($icon-save); }
+.icon-edit { @include fa-icon($icon-edit); }
 .buttons {
   .icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
   .icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }

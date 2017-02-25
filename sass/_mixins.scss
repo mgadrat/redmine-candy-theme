@@ -62,15 +62,17 @@
 
 }
 
+// Buttons override (!important to make sure it overrides the default button)
+
 @mixin btn-validate() {
 
-  background: $color-validate-light;
-  color: $color-neutral-lightest;
+  background: $color-validate-light !important;
+  color: $color-neutral-lightest !important;
   padding: 0 $base-spacer;
   text-decoration: none;
 
   &:hover {
-    background: $color-validate-lightest;
+    background: $color-validate-lightest !important;
     text-decoration: none;
   }
 
@@ -78,13 +80,13 @@
 
 @mixin btn-cancel() {
 
-  background: $color-cancel-light;
-  color: $color-neutral-lightest;
+  background: $color-cancel-light !important;
+  color: $color-neutral-lightest !important;
   padding: 0 $base-spacer;
   text-decoration: none;
 
   &:hover {
-    background: $color-cancel-lightest;
+    background: $color-cancel-lightest !important;
     text-decoration: none;
   }
 

@@ -1,7 +1,13 @@
 .controller-activities {
 
   h3 {
-    margin: $base-v-spacer*3 0 $base-v-spacer*2;
+    margin: $base-v-spacer 0 $base-v-spacer*2;
+  }
+
+  #activity {
+    background-color: $color-neutral-lightest;
+    padding: $base-v-spacer $base-h-spacer;
+    margin-bottom: $base-v-spacer;
   }
 
   .user {
@@ -45,6 +51,23 @@
       }
     }
 
+    &.issue-note{
+      @include fa-icon($icon-comment);
+      &::before {
+        position: absolute;
+        top: 0;
+        left: $base-h-spacer*-2;
+      }
+    }
+
+    &.wiki-page{
+      @include fa-icon($icon-wiki);
+      &::before {
+        position: absolute;
+        top: 0;
+        left: $base-h-spacer*-2.2;
+      }
+    }
 
   }
 }

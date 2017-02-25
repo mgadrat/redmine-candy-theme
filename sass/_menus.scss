@@ -61,6 +61,17 @@
 }
 
 
+.contextual {
+  float: right;
+  color: $color-neutral-light;
+  margin: 0 0 0 $base-h-spacer;
+  a {
+    @include btn();
+    font-size: $font-size-small;
+  }
+}
+
+
 #admin-menu a.projects {}
 #admin-menu a.users {}
 #admin-menu a.groups {}
