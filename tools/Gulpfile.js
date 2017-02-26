@@ -6,7 +6,7 @@ gulp.task('styles', function() {
     gulp.src('../sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('../themes/gadmine/stylesheets/'))
-        .pipe(notify("Your stuff is ready!"));
+        .pipe(notify("Your css is ready!"));
 });
 
 //Watch task

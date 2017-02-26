@@ -24,6 +24,12 @@ TODO: Steps to start dev
 
 [How to install guest addition on said machine](https://docs.bitnami.com/virtual-machine/faq/#how-to-install-virtualbox-guest-additions-on-bitnami-virtual-machines)
 
+### Librairies
+
+[Font Awesome v.4.7.0](http://fontawesome.io/)
+
+[Select 2 v.4.0.3](https://github.com/select2/select2/releases/tag/4.0.3)
+
 ### Inspirations
 
 [FabriceSalvaire/redmine-improved-theme](https://github.com/FabriceSalvaire/redmine-improved-theme)
