@@ -1,11 +1,23 @@
 
 .issue {
   .splitcontent {
-    background-color: $color-neutral-lightest;
+    padding-top: $base-v-spacer*2;
     font-size: $font-size-small;
-
     & > div {
-      padding: $base-v-spacer $base-h-spacer;
+      margin-bottom: $base-v-spacer;
+    }
+  }
+
+  hr {
+    display: none;
+  }
+
+  .description {
+    background-color: $color-neutral-lightest;
+    padding: $base-v-spacer $base-h-spacer;
+    margin: $base-v-spacer*3 0;
+    hr {
+      display: block;
     }
   }
 
@@ -16,7 +28,7 @@
 
   .label, .value {
     display: inline-block;
-    margin-bottom: $base-v-spacer/2;
+    margin-bottom: $base-v-spacer/4;
   }
 
   .progress {
@@ -32,4 +44,84 @@
     margin-bottom: -$base-v-spacer;
   }
 
+  .subject {
+    h3 {
+      @include fa-icon($icon-issue, 2px);
+    }
+  }
+  .author {
+    font-size: $font-size-small;
+    margin-bottom: 0; 
+  }
+
+}
+
+.controller-issues .icon-edit {
+  @include btn-validate(); 
+}
+
+#issue_tree, #relations, .attachments {
+  border: 1px dotted $color-neutral-light;
+  padding: $base-v-spacer $base-h-spacer $base-v-spacer 0;
+  @include transition(border-color 0.2s ease);
+
+  &:hover {
+    border-color: $color-neutral-dark;
+  }
+
+  form, p {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
+  table {
+    margin: 0;
+    font-size: $font-size-small;
+  }
+}
+
+.description, .journal, #issue_tree, #relations, .attachments  {
+  .contextual {
+    @include transition(opacity 0.2s ease);
+    opacity: 0;
+  }
+  &:hover .contextual {
+    opacity: 1;
+  }
+}
+
+
+#history {
+
+  padding-top: $base-v-spacer*5;
+
+  .journal {
+    background-color: $color-neutral-lightest;
+    border-left: 3px solid $color-complement-light;
+    margin: $base-v-spacer 0;
+    padding: $base-v-spacer $base-h-spacer;
+
+    .details {
+      font-size: $font-size-small;
+
+      i{
+        text-decoration: underline;
+        color: $color-cancel-mid;
+
+        &:last-child {
+          color: $color-validate-mid;
+        }
+      }
+    }
+
+    & > div > h4  {
+      font-size: $font-size-small;
+      margin-left: -$base-h-spacer;
+      margin-right: -$base-h-spacer;
+      margin-top: -$base-v-spacer;
+      margin-bottom: $base-v-spacer;
+      padding: $base-v-spacer/2 $base-h-spacer;
+      background-color: $color-neutral-mid;
+    }
+  }
 }

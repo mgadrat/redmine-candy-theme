@@ -22,15 +22,15 @@ html {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: $base-v-spacer*2;
+  margin-bottom: $base-v-spacer*3;
   }
 h2 {
   font-size: 1.5rem;
-  margin-bottom: $base-v-spacer*1.5;
+  margin-bottom: $base-v-spacer*3;
   }
 h3 {
   font-size: 1.17rem;
-  margin-bottom: $base-v-spacer;
+  margin-bottom: $base-v-spacer*1.5;
   }
 h4 {
   font-size: 1.12rem;
@@ -60,6 +60,19 @@ h3, h4, h5, h6 {
 h1, h2 {
   font-family: $font-secondary;
 }
+
+.wiki-anchor {
+  display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  &:hover {
+    .wiki-anchor {
+      display: inline-block;
+      padding: 0 $base-h-spacer;
+    }
+  }
+}
+
 
 em {
 
@@ -127,13 +140,25 @@ table {
 
       a {
         color: $color-neutral-lightest;
-
+        display: block;
+        padding-right: 15px;
+        position: relative;
         &.sort.desc {
-          @include fa-icon($fa-var-sort-desc, $base-v-spacer*-0.3);
+          @include fa-icon($fa-var-sort-desc);
+          &:before {
+            position: absolute;
+            right: $base-h-spacer*-.5;
+            top: 0;
+          }
 
         };
         &.sort.asc {
-          @include fa-icon($fa-var-sort-asc, $base-v-spacer*0.4);
+          @include fa-icon($fa-var-sort-asc);
+          &:before {
+            position: absolute;
+            right: $base-h-spacer*-.5;
+            top: 5px;
+          }
         };
       }
     }
@@ -141,6 +166,7 @@ table {
       padding: $base-v-spacer/2 $base-h-spacer/2;
 
       &.checkbox {
+        width: 30px;
         input {
           display: none;
         }
@@ -237,7 +263,10 @@ table.progress {
 .icon-time-add { @include fa-icon($icon-time) }
 .icon-save { @include btn-validate(); @include fa-icon($icon-save); }
 .icon-edit { @include fa-icon($icon-edit); }
-.buttons {
-  .icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
-  .icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }
-}
+.icon-fav-off { @include fa-icon($icon-watch); }
+.icon-fav { @include fa-icon($icon-unwatch); }
+.icon-comment { @include fa-icon($icon-comment); }
+.icon-copy { @include fa-icon($icon-copy); }
+.icon-del { @include btn-cancel();@include fa-icon($icon-delete); }
+.icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
+.icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }

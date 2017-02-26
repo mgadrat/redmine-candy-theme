@@ -135,15 +135,15 @@ html {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
 
 h3 {
   font-size: 1.17rem;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 h4 {
   font-size: 1.12rem;
@@ -168,6 +168,13 @@ h3, h4, h5, h6 {
 h1, h2 {
   font-family: "Domine", georgia, serif; }
 
+.wiki-anchor {
+  display: none; }
+
+h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .wiki-anchor, h5:hover .wiki-anchor, h6:hover .wiki-anchor {
+  display: inline-block;
+  padding: 0 10px; }
+
 strong {
   font-weight: bold; }
 
@@ -191,7 +198,7 @@ table {
   table.list {
     width: 100%; }
   table tr.even {
-    background-color: #cccccc; }
+    background-color: #dddddd; }
   table tr.odd {
     background-color: #FFFFFF; }
   table tr th {
@@ -202,7 +209,10 @@ table {
     border-right: 1px solid #eeeeee;
     font-size: 0.8rem; }
     table tr th a {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      display: block;
+      padding-right: 15px;
+      position: relative; }
       table tr th a.sort.desc::before {
         display: inline-block;
         margin-right: 5px;
@@ -213,7 +223,11 @@ table {
         -moz-osx-font-smoothing: grayscale;
         content: "";
         position: relative;
-        top: -3px; }
+        top: 0; }
+      table tr th a.sort.desc:before {
+        position: absolute;
+        right: -5px;
+        top: 0; }
       table tr th a.sort.asc::before {
         display: inline-block;
         margin-right: 5px;
@@ -224,11 +238,17 @@ table {
         -moz-osx-font-smoothing: grayscale;
         content: "";
         position: relative;
-        top: 4px; }
+        top: 0; }
+      table tr th a.sort.asc:before {
+        position: absolute;
+        right: -5px;
+        top: 5px; }
   table tr td {
     padding: 5px 5px; }
-    table tr td.checkbox input {
-      display: none; }
+    table tr td.checkbox {
+      width: 30px; }
+      table tr td.checkbox input {
+        display: none; }
   table tr.context-menu-selection {
     background-color: #AA8439 !important; }
     table tr.context-menu-selection:hover {
@@ -388,15 +408,83 @@ table.progress {
   position: relative;
   top: 0; }
 
-.buttons .icon-checked {
+.icon-fav-off::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.icon-fav::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.icon-comment::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.icon-copy::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.icon-del {
+  background: #FF6858 !important;
+  color: #FFFFFF !important;
+  padding: 0 10px;
+  text-decoration: none; }
+  .icon-del:hover {
+    background: #F06355 !important;
+    text-decoration: none; }
+  .icon-del::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
+.icon-checked {
   background: #49D368 !important;
   color: #FFFFFF !important;
   padding: 0 10px;
   text-decoration: none; }
-  .buttons .icon-checked:hover {
+  .icon-checked:hover {
     background: #40B55A !important;
     text-decoration: none; }
-  .buttons .icon-checked::before {
+  .icon-checked::before {
     display: inline-block;
     margin-right: 5px;
     font: normal normal normal 1rem FontAwesome;
@@ -408,15 +496,15 @@ table.progress {
     position: relative;
     top: 1px; }
 
-.buttons .icon-reload {
+.icon-reload {
   background: #FF6858 !important;
   color: #FFFFFF !important;
   padding: 0 10px;
   text-decoration: none; }
-  .buttons .icon-reload:hover {
+  .icon-reload:hover {
     background: #F06355 !important;
     text-decoration: none; }
-  .buttons .icon-reload::before {
+  .icon-reload::before {
     display: inline-block;
     margin-right: 5px;
     font: normal normal normal 1rem FontAwesome;
@@ -487,6 +575,8 @@ table.progress {
     .contextual a:hover {
       background: #476EC1;
       text-decoration: none; }
+  .contextual .position {
+    color: #10182A; }
 
 #top-menu {
   border-top: 4px solid #EF4670; }
@@ -548,10 +638,20 @@ table.progress {
   margin-bottom: 10px; }
 
 .issue .splitcontent {
-  background-color: #FFFFFF;
+  padding-top: 20px;
   font-size: 0.8rem; }
   .issue .splitcontent > div {
-    padding: 10px 10px; }
+    margin-bottom: 10px; }
+
+.issue hr {
+  display: none; }
+
+.issue .description {
+  background-color: #FFFFFF;
+  padding: 10px 10px;
+  margin: 30px 0; }
+  .issue .description hr {
+    display: block; }
 
 .issue .label {
   font-weight: bold;
@@ -559,7 +659,7 @@ table.progress {
 
 .issue .label, .issue .value {
   display: inline-block;
-  margin-bottom: 5px; }
+  margin-bottom: 2.5px; }
 
 .issue .progress .value {
   display: block; }
@@ -569,6 +669,81 @@ table.progress {
 
 .issue .attributes {
   margin-bottom: -10px; }
+
+.issue .subject h3::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 2px; }
+
+.issue .author {
+  font-size: 0.8rem;
+  margin-bottom: 0; }
+
+.controller-issues .icon-edit {
+  background: #49D368 !important;
+  color: #FFFFFF !important;
+  padding: 0 10px;
+  text-decoration: none; }
+  .controller-issues .icon-edit:hover {
+    background: #40B55A !important;
+    text-decoration: none; }
+
+#issue_tree, #relations, .attachments {
+  border: 1px dotted #eeeeee;
+  padding: 10px 10px 10px 0;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease; }
+  #issue_tree:hover, #relations:hover, .attachments:hover {
+    border-color: #333333; }
+  #issue_tree form, #issue_tree p, #relations form, #relations p, .attachments form, .attachments p {
+    padding: 0;
+    margin: 0;
+    background-color: transparent; }
+  #issue_tree table, #relations table, .attachments table {
+    margin: 0;
+    font-size: 0.8rem; }
+
+.description .contextual, .journal .contextual, #issue_tree .contextual, #relations .contextual, .attachments .contextual {
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  opacity: 0; }
+
+.description:hover .contextual, .journal:hover .contextual, #issue_tree:hover .contextual, #relations:hover .contextual, .attachments:hover .contextual {
+  opacity: 1; }
+
+#history {
+  padding-top: 50px; }
+  #history .journal {
+    background-color: #FFFFFF;
+    border-left: 3px solid #D9456B;
+    margin: 10px 0;
+    padding: 10px 10px; }
+    #history .journal .details {
+      font-size: 0.8rem; }
+      #history .journal .details i {
+        text-decoration: underline;
+        color: #AA4339; }
+        #history .journal .details i:last-child {
+          color: #2B803E; }
+    #history .journal > div > h4 {
+      font-size: 0.8rem;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      background-color: #dddddd; }
 
 .controller-activities h3 {
   margin: 10px 0 20px; }
