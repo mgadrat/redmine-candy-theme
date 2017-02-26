@@ -30,7 +30,7 @@
     li, a {
       display: block;
     }
-
+   
     a {
       padding: $base-v-spacer $base-h-spacer;
       &:hover {
@@ -60,7 +60,6 @@
   }
 }
 
-
 .contextual {
   float: right;
   color: $color-neutral-light;
@@ -73,7 +72,6 @@
     color: $color-primary-darkest;
   }
 }
-
 
 #admin-menu a.projects {}
 #admin-menu a.users {}
