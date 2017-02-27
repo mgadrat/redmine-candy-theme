@@ -59,41 +59,35 @@
 
   background: $color-primary-light;
   color: $color-neutral-lightest;
-  padding: 0 $base-spacer;
+  padding: $base-v-spacer/2 $base-h-spacer;
   text-decoration: none;
 
   &:hover {
     background: $color-primary-lightest;
     text-decoration: none;
   }
-
 }
 
 // Buttons override (!important to make sure it overrides the default button)
 
 @mixin btn-validate() {
 
+  @include btn();
+
   background: $color-validate-light !important;
   color: $color-neutral-lightest !important;
-  padding: 0 $base-spacer;
-  text-decoration: none;
-
   &:hover {
     background: $color-validate-lightest !important;
-    text-decoration: none;
   }
 }
 
 @mixin btn-cancel() {
 
+  @include btn();
+
   background: $color-cancel-light !important;
   color: $color-neutral-lightest !important;
-  padding: 0 $base-spacer;
-  text-decoration: none;
-
   &:hover {
     background: $color-cancel-lightest !important;
-    text-decoration: none;
   }
-
 }

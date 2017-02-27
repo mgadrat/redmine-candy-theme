@@ -1,0 +1,79 @@
+
+form {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer $base-h-spacer;
+}
+
+fieldset {
+  padding: $base-v-spacer 0;
+  &.collapsible {
+    legend {
+      @include fa-icon($fa-var-minus-square-o, 1px);
+      &::before {
+        color: $color-primary-mid;
+      }
+      cursor: pointer;
+      font-weight: bold;
+    }
+    &.collapsed {
+      legend {
+        @include fa-icon($fa-var-plus-square-o, 1px);
+      }
+    }
+  }
+
+}
+
+.select2 {
+  margin-left: $base-h-spacer;
+  min-width: 200px;
+}
+
+input {
+  display: inline-block;
+  margin-left: $base-h-spacer;
+
+  &.select2-search__field,
+  &[name=commit] {
+    margin-left: 0;
+  }
+}
+
+#issue-form {
+  a:last-child {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  label {
+    display: inline-block;
+    width: 120px;
+  }
+}
+
+#issue_is_private_wrap {
+  float: right;
+}
+
+div.jstElements {
+  background-color: $color-neutral-mid;
+  padding: $base-v-spacer/2 $base-h-spacer;
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.jstEditor textarea {
+  width: 100%;
+  padding: $base-v-spacer $base-h-spacer;
+  font-size: $font-size-normal;
+}
+
+.required {
+  color: $color-cancel-mid;
+}
