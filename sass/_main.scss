@@ -209,6 +209,28 @@ table.progress {
   }
 }
 
+
+blockquote {
+  padding-left: $base-h-spacer*6;
+  position: relative;
+  margin: $base-v-spacer*2 0;
+  display: block;
+  color: $color-neutral-dark;
+
+  @include fa-icon($icon-quote);
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    color: $color-neutral-mid;
+    display: block;
+    height: 100%;
+    border-right: 2px dotted $color-neutral-mid;
+    padding-right: $base-h-spacer;
+  }
+}
+
 .splitcontent {
   @include clearfix();
 }

@@ -285,6 +285,34 @@ table.progress {
   table.progress .todo {
     background-color: #333333; }
 
+blockquote {
+  padding-left: 60px;
+  position: relative;
+  margin: 20px 0;
+  display: block;
+  color: #333333; }
+  blockquote::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  blockquote:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    color: #dddddd;
+    display: block;
+    height: 100%;
+    border-right: 2px dotted #dddddd;
+    padding-right: 10px; }
+
 .splitcontent {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
