@@ -18,6 +18,8 @@
   label {
     display: inline-block;
     width: 120px;
+    border-bottom: 1px dotted $color-neutral-mid;
+    line-height: $font-size-normal*2;
   }
 
   .add-filter {
@@ -72,9 +74,10 @@ input {
   padding: 0 $base-h-spacer;
   border: 1px solid $color-neutral-mid;
   cursor: pointer;
+  @include transition(border-color 0.5s ease);
 
   &:focus {
-    border: 1px solid $color-complement-light;
+    border: 1px solid $color-secondary-1-dark;
   }
 
   &.select2-search__field,
@@ -91,19 +94,20 @@ input {
 }
 
 input[type=checkbox] {
-  margin: 0;
+  display: inline-block;
+  margin: 0 $base-h-spacer/2 0 0;
   padding: 0;
 }
 
 .select2-container--default,
 .select2-container--default .select2-selection--single .select2-selection__rendered,
 input {
-  line-height: 2rem;
+  line-height: $font-size-normal*2;
 }
 
 .select2-container,
 .select2-container .select2-selection--single {
-  height: 2rem;
+  height: $font-size-normal*2;
 }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,

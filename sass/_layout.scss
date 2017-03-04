@@ -34,7 +34,9 @@ body {
 }
 
 #sidebar {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 20%;
   @include transition(width 1s ease);
 
@@ -44,6 +46,13 @@ body {
   }
 }
 
+#sidebar-handle {
+  position: absolute;
+  top: 0;
+  right: $base-h-spacer;
+}
+
+
 #content {
   float: left;
   width: 80%;
@@ -52,11 +61,8 @@ body {
 
 .sidebar_closed {
   #sidebar {
-    width: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
 
+  width: 0;
     .innerwrap {
       opacity: 0.01;
     }

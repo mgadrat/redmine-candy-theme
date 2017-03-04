@@ -111,7 +111,9 @@ body {
     clear: both; }
 
 #sidebar {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 20%;
   -webkit-transition: width 1s ease;
   -moz-transition: width 1s ease;
@@ -124,6 +126,11 @@ body {
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
 
+#sidebar-handle {
+  position: absolute;
+  top: 0;
+  right: 10px; }
+
 #content {
   float: left;
   width: 80%;
@@ -133,10 +140,7 @@ body {
   transition: width 1s ease; }
 
 .sidebar_closed #sidebar {
-  width: 0;
-  position: absolute;
-  top: 0;
-  right: 0; }
+  width: 0; }
   .sidebar_closed #sidebar .innerwrap {
     opacity: 0.01; }
 
@@ -167,30 +171,30 @@ html {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 30px; }
+  margin-bottom: 42px; }
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 30px; }
+  margin-bottom: 42px; }
 
 h3 {
   font-size: 1.17rem;
-  margin-bottom: 15px; }
+  margin-bottom: 21px; }
 
 h4 {
   font-size: 1.12rem;
-  margin-bottom: 10px; }
+  margin-bottom: 14px; }
 
 h5 {
   font-size: .83rem;
-  margin-bottom: 10px; }
+  margin-bottom: 14px; }
 
 h6 {
   font-size: .75rem;
-  margin-bottom: 10px; }
+  margin-bottom: 14px; }
 
 p {
-  margin-bottom: 10px; }
+  margin-bottom: 14px; }
 
 h3, h4, h5, h6 {
   font-weight: bold; }
@@ -209,27 +213,27 @@ strong {
   font-weight: bold; }
 
 hr {
-  margin: 10px 0;
+  margin: 14px 0;
   background-color: #DB1D70;
   height: 1px;
   border: 0; }
 
 #content ul, #content ol, #content dl {
-  margin: 10px 20px; }
+  margin: 14px 20px; }
 
 #content dt {
   font-weight: bold; }
 
 #content dd {
-  margin: 0 0 10px 0; }
+  margin: 0 0 14px 0; }
 
 table {
-  margin-bottom: 20px; }
+  margin-bottom: 28px; }
   table caption {
     text-align: left;
     background-color: #eeeeee;
     color: #333333;
-    padding: 5px 10px;
+    padding: 7px 10px;
     font-size: 0.8rem; }
   table.list {
     width: 100%; }
@@ -240,7 +244,7 @@ table {
   table tr th {
     background-color: #232E82;
     color: #FFFFFF;
-    padding: 10px 10px;
+    padding: 14px 10px;
     text-align: left;
     border-right: 1px solid #eeeeee;
     font-size: 0.8rem; }
@@ -280,7 +284,7 @@ table {
         right: -5px;
         top: 5px; }
   table tr td {
-    padding: 5px 5px; }
+    padding: 7px 5px; }
     table tr td.checkbox {
       width: 30px; }
       table tr td.checkbox input {
@@ -317,7 +321,7 @@ table.progress {
 blockquote {
   padding-left: 60px;
   position: relative;
-  margin: 20px 0;
+  margin: 28px 0;
   display: block;
   color: #333333; }
   blockquote::before {
@@ -367,18 +371,17 @@ blockquote {
   background-color: #FFFFFF; }
 
 #content {
-  padding: 30px 10px 10px;
+  padding: 42px 10px 14px;
   background-color: #eeeeee;
   min-height: 70vh; }
 
 #sidebar {
-  padding: 30px 10px 10px;
-  position: relative; }
+  padding: 42px 10px 14px; }
 
 #sidebar-handle {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -394,10 +397,7 @@ blockquote {
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
   background: #F06355 !important;
-  color: #FFFFFF !important;
-  position: absolute;
-  top: 0;
-  right: 10px; }
+  color: #FFFFFF !important; }
   #sidebar-handle:hover {
     background: #3346D4;
     text-decoration: none;
@@ -422,7 +422,7 @@ blockquote {
 .sidebar_closed #sidebar-handle {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -463,7 +463,7 @@ blockquote {
 .icon-add {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -516,7 +516,7 @@ blockquote {
 .icon-save {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -617,7 +617,7 @@ blockquote {
 .icon-del {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -658,7 +658,7 @@ blockquote {
 .icon-checked {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -699,7 +699,7 @@ blockquote {
 .icon-reload {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -747,7 +747,7 @@ blockquote {
 #new_document,
 .controller-files.action-new #content form {
   background-color: #FFFFFF;
-  padding: 10px 10px; }
+  padding: 14px 10px; }
   #query_form legend,
   #issue-form legend,
   #new_version legend,
@@ -768,7 +768,9 @@ blockquote {
   #new_document label,
   .controller-files.action-new #content form label {
     display: inline-block;
-    width: 120px; }
+    width: 120px;
+    border-bottom: 1px dotted #dddddd;
+    line-height: 2rem; }
   #query_form .add-filter label,
   #issue-form .add-filter label,
   #new_version .add-filter label,
@@ -803,7 +805,7 @@ blockquote {
     font-size: 0.8rem; }
 
 fieldset {
-  padding: 10px 0; }
+  padding: 14px 0; }
   fieldset.collapsible legend {
     cursor: pointer;
     font-weight: bold; }
@@ -847,9 +849,13 @@ input {
   margin-right: 10px;
   padding: 0 10px;
   border: 1px solid #dddddd;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: border-color 0.5s ease;
+  -moz-transition: border-color 0.5s ease;
+  -o-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease; }
   input:focus {
-    border: 1px solid #DB1D70; }
+    border: 1px solid #3A6413; }
   input.select2-search__field, input[type=submit] {
     margin-left: 0;
     line-height: inherit;
@@ -859,7 +865,7 @@ input {
   input[type=submit] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 7px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -887,7 +893,8 @@ input {
       background: #49D368 !important; }
 
 input[type=checkbox] {
-  margin: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
   padding: 0; }
 
 .select2-container--default,
@@ -913,20 +920,20 @@ input {
 
 div.jstElements {
   background-color: #dddddd;
-  padding: 5px 10px; }
+  padding: 7px 10px; }
   div.jstElements button {
     cursor: pointer; }
 
 .jstEditor textarea {
   width: 100%;
-  padding: 10px 10px;
+  padding: 14px 10px;
   font-size: 1rem; }
 
 #attachments_fields {
   display: block; }
   #attachments_fields span {
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 14px; }
 
 .required {
   color: #AA4339; }
@@ -935,14 +942,14 @@ div.jstElements {
   display: inline-block; }
 
 #top-menu a {
-  padding: 10px 20px; }
+  padding: 14px 20px; }
 
 #top-menu #loggedas a {
   padding-left: 0; }
 
 #main-menu {
   position: relative;
-  padding-top: 20px; }
+  padding-top: 28px; }
   #main-menu .menu-children {
     position: absolute;
     top: 100%;
@@ -954,7 +961,7 @@ div.jstElements {
     #main-menu .menu-children li, #main-menu .menu-children a {
       display: block; }
     #main-menu .menu-children a {
-      padding: 10px 10px;
+      padding: 14px 10px;
       -webkit-transition: background-color 0.2s ease;
       -moz-transition: background-color 0.2s ease;
       -o-transition: background-color 0.2s ease;
@@ -962,7 +969,7 @@ div.jstElements {
       #main-menu .menu-children a:hover {
         background-color: #3346D4; }
   #main-menu > ul > li > a {
-    padding: 5px 10px;
+    padding: 7px 10px;
     background-color: #2D3DB6;
     color: #FFFFFF;
     margin-right: 5px;
@@ -992,7 +999,7 @@ div.jstElements {
   .contextual a {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 7px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1031,7 +1038,7 @@ div.jstElements {
     #context-menu ul li .icon, #context-menu ul li .icon-time-add, #context-menu ul li .icon-copy, #context-menu ul li .icon-del, #context-menu ul li .icon-checked {
       background: #2D3DB6;
       color: #FFFFFF;
-      padding: 5px 10px;
+      padding: 7px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -1067,7 +1074,7 @@ div.jstElements {
 
 #header {
   background-color: #161D4D;
-  padding: 20px 10px 0;
+  padding: 28px 10px 0;
   -webkit-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2); }
@@ -1076,7 +1083,7 @@ div.jstElements {
     float: left; }
   #header #project_quick_jump_box {
     display: inline-block;
-    margin: 10px 0; }
+    margin: 14px 0; }
   #header a {
     color: #FFFFFF; }
   #header h1 {
@@ -1085,7 +1092,7 @@ div.jstElements {
 
 #footer {
   background-color: #333333;
-  padding: 20px 10px;
+  padding: 28px 10px;
   color: #FFFFFF; }
   #footer a {
     color: #3346D4; }
@@ -1099,42 +1106,42 @@ div.jstElements {
   margin: 0; }
 
 #projects-index li {
-  margin: 10px 10px; }
+  margin: 14px 10px; }
   #projects-index li a {
     font-size: 1.2rem; }
   #projects-index li.root {
     margin-left: 0;
     margin-right: 0;
     background-color: #fff;
-    padding: 10px 10px;
+    padding: 14px 10px;
     border-left: 2px solid #DB1D70; }
   #projects-index li ul {
-    margin: 10px 20px; }
+    margin: 14px 20px; }
 
 .controller-projects .splitcontentleft > div,
 .controller-projects .splitcontentright > div {
-  padding: 10px 10px;
+  padding: 14px 10px;
   background-color: #FFFFFF; }
 
 .controller-issues.action-index #content form {
   padding: 0; }
   .controller-issues.action-index #content form#query_form {
-    margin-bottom: 10px;
-    padding: 10px 10px; }
+    margin-bottom: 14px;
+    padding: 14px 10px; }
 
 .issue .splitcontent {
-  padding-top: 20px;
+  padding-top: 28px;
   font-size: 0.8rem; }
   .issue .splitcontent > div {
-    margin-bottom: 10px; }
+    margin-bottom: 14px; }
 
 .issue hr {
   display: none; }
 
 .issue .description {
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin: 30px 0; }
+  padding: 14px 10px;
+  margin: 42px 0; }
   .issue .description hr {
     display: block; }
 
@@ -1144,7 +1151,7 @@ div.jstElements {
 
 .issue .label, .issue .value {
   display: inline-block;
-  margin-bottom: 2.5px; }
+  margin-bottom: 3.5px; }
 
 .issue .progress .value {
   display: block; }
@@ -1153,7 +1160,7 @@ div.jstElements {
   margin-bottom: 0; }
 
 .issue .attributes {
-  margin-bottom: -10px; }
+  margin-bottom: -14px; }
 
 .issue .subject h3::before {
   display: inline-block;
@@ -1174,7 +1181,7 @@ div.jstElements {
 .controller-issues .icon-edit {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -1203,7 +1210,7 @@ div.jstElements {
 
 #issue_tree, #relations, .attachments {
   border: 1px dotted #eeeeee;
-  padding: 10px 10px 10px 0;
+  padding: 14px 10px 14px 0;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
@@ -1226,7 +1233,7 @@ div.jstElements {
     font-size: 0.8rem; }
 
 .attachments p {
-  padding-top: 5px; }
+  padding-top: 7px; }
 
 .description .contextual, .journal .contextual, #issue_tree .contextual, #relations .contextual, .attachments .contextual {
   -webkit-transition: opacity 0.2s ease;
@@ -1239,12 +1246,12 @@ div.jstElements {
   opacity: 1; }
 
 #history {
-  padding-top: 50px; }
+  padding-top: 70px; }
   #history .journal {
     background-color: #FFFFFF;
     border-left: 3px solid #DB1D70;
-    margin: 10px 0;
-    padding: 10px 10px; }
+    margin: 14px 0;
+    padding: 14px 10px; }
     #history .journal .details {
       font-size: 0.8rem; }
       #history .journal .details i {
@@ -1256,18 +1263,18 @@ div.jstElements {
       font-size: 0.8rem;
       margin-left: -10px;
       margin-right: -10px;
-      margin-top: -10px;
-      margin-bottom: 10px;
-      padding: 5px 10px;
+      margin-top: -14px;
+      margin-bottom: 14px;
+      padding: 7px 10px;
       background-color: #dddddd; }
 
 .controller-activities h3 {
-  margin: 10px 0 20px; }
+  margin: 14px 0 28px; }
 
 .controller-activities #activity {
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 14px 10px;
+  margin-bottom: 14px; }
 
 .controller-activities .user {
   font-size: 0.8rem;
@@ -1359,7 +1366,7 @@ div.jstElements {
 
 .news .summary {
   display: block;
-  margin: 10px 0; }
+  margin: 14px 0; }
 
 .news .comments {
   font-size: 0.8rem;
@@ -1367,8 +1374,8 @@ div.jstElements {
 
 #roadmap article {
   background-color: #FFFFFF;
-  margin: 10px 0;
-  padding: 10px 10px; }
+  margin: 14px 0;
+  padding: 14px 10px; }
   #roadmap article form {
     padding: 0; }
   #roadmap article tr {
