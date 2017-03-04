@@ -2,7 +2,7 @@ a {
   color: $color-primary-light;
   text-decoration: none;
   &:hover {
-    color: $color-secondary-1-light;
+    color: $color-complement-light;
   }
 }
 
@@ -11,6 +11,7 @@ body, html {
   font-family: $font-primary;
   color: $color-neutral-darkest;
   line-height: 1.2rem;
+  background-color: $color-neutral-dark;
 }
 
 html {
@@ -49,7 +50,7 @@ p {
   margin-bottom: $base-v-spacer;
 
   &:last-child {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 }
 
@@ -119,6 +120,14 @@ hr {
 
 table {
   margin-bottom: $base-v-spacer*2;
+
+  caption {
+    text-align: left;
+    background-color: $color-neutral-light;
+    color: $color-neutral-dark;
+    padding: $base-v-spacer/2 $base-h-spacer;
+    font-size: $font-size-small;
+  }
 
   &.list {
     width: 100%;
@@ -219,17 +228,17 @@ table.progress {
 }
 
 #main {
-  background-color: $color-neutral-light;
+  background-color: $color-neutral-lightest;
 }
 
 #content {
   padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+  background-color: $color-neutral-light;
+  min-height: 70vh;  
 }
 
 #sidebar {
-  background-color: $color-neutral-lightest;
   padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
-  min-height: 80vh;
 }
 
 .icon-add { @include btn-validate(); @include fa-icon($fa-var-plus); }

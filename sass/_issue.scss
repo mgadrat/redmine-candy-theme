@@ -64,6 +64,7 @@
   border: 1px dotted $color-neutral-light;
   padding: $base-v-spacer $base-h-spacer $base-v-spacer 0;
   @include transition(border-color 0.2s ease);
+  @include clearfix();
 
   &:hover {
     border-color: $color-neutral-dark;
@@ -80,6 +81,9 @@
   }
 }
 
+.attachments p {
+  padding-top: $base-v-spacer/2;
+}
 .description, .journal, #issue_tree, #relations, .attachments  {
   .contextual {
     @include transition(opacity 0.2s ease);

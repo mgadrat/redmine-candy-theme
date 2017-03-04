@@ -61,10 +61,16 @@
   color: $color-neutral-lightest;
   padding: $base-v-spacer/2 $base-h-spacer;
   text-decoration: none;
+  display: inline-block;
+  @include transition(background-color 0.2s linear);
+  @include transition(box-shadow 0.2s linear);
+  @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0))
 
   &:hover {
     background: $color-primary-lightest;
     text-decoration: none;
+    border-width: 0;
+    @include box-shadow(0px 0px 2px 0px rgba(0, 0, 0, 0.6));
   }
 }
 
@@ -74,10 +80,11 @@
 
   @include btn();
 
-  background: $color-validate-light !important;
+  background: $color-validate-lightest !important;
   color: $color-neutral-lightest !important;
+
   &:hover {
-    background: $color-validate-lightest !important;
+    background: $color-validate-light !important;
   }
 }
 
@@ -85,9 +92,9 @@
 
   @include btn();
 
-  background: $color-cancel-light !important;
+  background: $color-cancel-lightest !important;
   color: $color-neutral-lightest !important;
   &:hover {
-    background: $color-cancel-lightest !important;
+    background: $color-cancel-light !important;
   }
 }

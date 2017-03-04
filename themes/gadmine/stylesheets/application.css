@@ -118,16 +118,17 @@ table {
   display: none; }
 
 a {
-  color: #3E5D9F;
+  color: #2D3DB6;
   text-decoration: none; }
   a:hover {
-    color: #EEB74C; }
+    color: #DB1D70; }
 
 body, html {
   font-size: 16px;
   font-family: "Mukta Vaani", helvetica, arial, sans-serif;
   color: #111111;
-  line-height: 1.2rem; }
+  line-height: 1.2rem;
+  background-color: #333333; }
 
 html {
   box-sizing: border-box; }
@@ -161,8 +162,6 @@ h6 {
 
 p {
   margin-bottom: 10px; }
-  p:last-child {
-    margin-bottom: 0; }
 
 h3, h4, h5, h6 {
   font-weight: bold; }
@@ -182,7 +181,7 @@ strong {
 
 hr {
   margin: 10px 0;
-  background-color: #D9456B;
+  background-color: #DB1D70;
   height: 1px;
   border: 0; }
 
@@ -197,6 +196,12 @@ hr {
 
 table {
   margin-bottom: 20px; }
+  table caption {
+    text-align: left;
+    background-color: #eeeeee;
+    color: #333333;
+    padding: 5px 10px;
+    font-size: 0.8rem; }
   table.list {
     width: 100%; }
   table tr.even {
@@ -204,7 +209,7 @@ table {
   table tr.odd {
     background-color: #FFFFFF; }
   table tr th {
-    background-color: #2E4372;
+    background-color: #232E82;
     color: #FFFFFF;
     padding: 10px 10px;
     text-align: left;
@@ -252,9 +257,9 @@ table {
       table tr td.checkbox input {
         display: none; }
   table tr.context-menu-selection {
-    background-color: #AA8439 !important; }
+    background-color: #60A91B !important; }
     table tr.context-menu-selection:hover {
-      background-color: #AA8439 !important; }
+      background-color: #60A91B !important; }
     table tr.context-menu-selection .checkbox {
       text-align: center; }
       table tr.context-menu-selection .checkbox::before {
@@ -302,28 +307,44 @@ table.progress {
   padding-left: 5px; }
 
 #main {
-  background-color: #eeeeee; }
+  background-color: #FFFFFF; }
 
 #content {
-  padding: 30px 10px 10px; }
+  padding: 30px 10px 10px;
+  background-color: #eeeeee;
+  min-height: 70vh; }
 
 #sidebar {
-  background-color: #FFFFFF;
-  padding: 30px 10px 10px;
-  min-height: 80vh; }
+  padding: 30px 10px 10px; }
 
 .icon-add {
-  background: #3E5D9F;
+  background: #2D3DB6;
   color: #FFFFFF;
   padding: 5px 10px;
   text-decoration: none;
-  background: #49D368 !important;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-add:hover {
-    background: #476EC1;
-    text-decoration: none; }
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .icon-add:hover {
-    background: #40B55A !important; }
+    background: #49D368 !important; }
   .icon-add::before {
     display: inline-block;
     margin-right: 5px;
@@ -349,17 +370,33 @@ table.progress {
   top: 0; }
 
 .icon-save {
-  background: #3E5D9F;
+  background: #2D3DB6;
   color: #FFFFFF;
   padding: 5px 10px;
   text-decoration: none;
-  background: #49D368 !important;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-save:hover {
-    background: #476EC1;
-    text-decoration: none; }
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .icon-save:hover {
-    background: #40B55A !important; }
+    background: #49D368 !important; }
   .icon-save::before {
     display: inline-block;
     margin-right: 5px;
@@ -433,17 +470,33 @@ table.progress {
   top: 0; }
 
 .icon-del {
-  background: #3E5D9F;
+  background: #2D3DB6;
   color: #FFFFFF;
   padding: 5px 10px;
   text-decoration: none;
-  background: #FF6858 !important;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #F06355 !important;
   color: #FFFFFF !important; }
   .icon-del:hover {
-    background: #476EC1;
-    text-decoration: none; }
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .icon-del:hover {
-    background: #F06355 !important; }
+    background: #FF6858 !important; }
   .icon-del::before {
     display: inline-block;
     margin-right: 5px;
@@ -457,17 +510,33 @@ table.progress {
     top: 0; }
 
 .icon-checked {
-  background: #3E5D9F;
+  background: #2D3DB6;
   color: #FFFFFF;
   padding: 5px 10px;
   text-decoration: none;
-  background: #49D368 !important;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-checked:hover {
-    background: #476EC1;
-    text-decoration: none; }
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .icon-checked:hover {
-    background: #40B55A !important; }
+    background: #49D368 !important; }
   .icon-checked::before {
     display: inline-block;
     margin-right: 5px;
@@ -481,17 +550,33 @@ table.progress {
     top: 1px; }
 
 .icon-reload {
-  background: #3E5D9F;
+  background: #2D3DB6;
   color: #FFFFFF;
   padding: 5px 10px;
   text-decoration: none;
-  background: #FF6858 !important;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #F06355 !important;
   color: #FFFFFF !important; }
   .icon-reload:hover {
-    background: #476EC1;
-    text-decoration: none; }
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .icon-reload:hover {
-    background: #F06355 !important; }
+    background: #FF6858 !important; }
   .icon-reload::before {
     display: inline-block;
     margin-right: 5px;
@@ -504,9 +589,70 @@ table.progress {
     position: relative;
     top: 0; }
 
-form {
+#query_form,
+#issue-form,
+#new_version,
+#new_project,
+#new_issue_category,
+#news-form,
+#new_page,
+#new_document,
+.controller-files.action-new #content form {
   background-color: #FFFFFF;
   padding: 10px 10px; }
+  #query_form legend,
+  #issue-form legend,
+  #new_version legend,
+  #new_project legend,
+  #new_issue_category legend,
+  #news-form legend,
+  #new_page legend,
+  #new_document legend,
+  .controller-files.action-new #content form legend {
+    font-weight: bold; }
+  #query_form label,
+  #issue-form label,
+  #new_version label,
+  #new_project label,
+  #new_issue_category label,
+  #news-form label,
+  #new_page label,
+  #new_document label,
+  .controller-files.action-new #content form label {
+    display: inline-block;
+    width: 120px; }
+  #query_form .add-filter label,
+  #issue-form .add-filter label,
+  #new_version .add-filter label,
+  #new_project .add-filter label,
+  #new_issue_category .add-filter label,
+  #news-form .add-filter label,
+  #new_page .add-filter label,
+  #new_document .add-filter label,
+  .controller-files.action-new #content form .add-filter label {
+    width: auto;
+    font-weight: bold; }
+  #query_form .icon-edit,
+  #issue-form .icon-edit,
+  #new_version .icon-edit,
+  #new_project .icon-edit,
+  #new_issue_category .icon-edit,
+  #news-form .icon-edit,
+  #new_page .icon-edit,
+  #new_document .icon-edit,
+  .controller-files.action-new #content form .icon-edit {
+    margin-left: 5px; }
+  #query_form .info,
+  #issue-form .info,
+  #new_version .info,
+  #new_project .info,
+  #new_issue_category .info,
+  #news-form .info,
+  #new_page .info,
+  #new_document .info,
+  .controller-files.action-new #content form .info {
+    display: block;
+    font-size: 0.8rem; }
 
 fieldset {
   padding: 10px 0; }
@@ -525,7 +671,7 @@ fieldset {
       position: relative;
       top: 1px; }
     fieldset.collapsible legend::before {
-      color: #2E4372; }
+      color: #232E82; }
   fieldset.collapsible.collapsed legend::before {
     display: inline-block;
     margin-right: 5px;
@@ -540,24 +686,78 @@ fieldset {
 
 .select2 {
   margin-left: 10px;
-  min-width: 200px; }
+  min-width: 200px;
+  margin-right: 10px; }
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
 input {
   display: inline-block;
-  margin-left: 10px; }
-  input.select2-search__field, input[name=commit] {
-    margin-left: 0; }
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 1px solid #dddddd;
+  cursor: pointer; }
+  input:focus {
+    border: 1px solid #DB1D70; }
+  input.select2-search__field, input[type=submit] {
+    margin-left: 0;
+    line-height: inherit;
+    border: 0;
+    font-size: 1rem;
+    font-family: "Mukta Vaani", helvetica, arial, sans-serif; }
+  input[type=submit] {
+    background: #2D3DB6;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    -webkit-transition: box-shadow 0.2s linear;
+    -moz-transition: box-shadow 0.2s linear;
+    -o-transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    -webkit-box-shadow: 0px 0px 5px 0px transparent;
+    -moz-box-shadow: 0px 0px 5px 0px transparent;
+    box-shadow: 0px 0px 5px 0px transparent;
+    background: #40B55A !important;
+    color: #FFFFFF !important; }
+    input[type=submit]:hover {
+      background: #3346D4;
+      text-decoration: none;
+      border-width: 0;
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    input[type=submit]:hover {
+      background: #49D368 !important; }
 
-#issue-form a:last-child {
-  display: inline-block;
-  margin-left: 10px; }
+input[type=checkbox] {
+  margin: 0;
+  padding: 0; }
 
-#issue-form legend {
-  font-weight: bold; }
+.select2-container--default,
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+input {
+  line-height: 2rem; }
 
-#issue-form label {
-  display: inline-block;
-  width: 120px; }
+.select2-container,
+.select2-container .select2-selection--single {
+  height: 2rem; }
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+.select2-dropdown {
+  border-radius: 0; }
+
+.select2-results__option,
+.select2-search--dropdown .select2-search__field {
+  padding: 0 10px; }
 
 #issue_is_private_wrap {
   float: right; }
@@ -572,6 +772,12 @@ div.jstElements {
   width: 100%;
   padding: 10px 10px;
   font-size: 1rem; }
+
+#attachments_fields {
+  display: block; }
+  #attachments_fields span {
+    display: block;
+    margin-bottom: 10px; }
 
 .required {
   color: #AA4339; }
@@ -592,32 +798,40 @@ div.jstElements {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #3E5D9F;
+    background-color: #2D3DB6;
     display: none; }
     #main-menu .menu-children.visible {
       display: block; }
     #main-menu .menu-children li, #main-menu .menu-children a {
       display: block; }
     #main-menu .menu-children a {
-      padding: 10px 10px; }
+      padding: 10px 10px;
+      -webkit-transition: background-color 0.2s ease;
+      -moz-transition: background-color 0.2s ease;
+      -o-transition: background-color 0.2s ease;
+      transition: background-color 0.2s ease; }
       #main-menu .menu-children a:hover {
-        background-color: #476EC1; }
+        background-color: #3346D4; }
   #main-menu > ul > li > a {
     padding: 5px 10px;
-    background-color: #3E5D9F;
+    background-color: #2D3DB6;
     color: #FFFFFF;
     margin-right: 5px;
     -webkit-box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0px -10px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease; }
     #main-menu > ul > li > a:hover {
-      background-color: #476EC1;
+      background-color: #3346D4;
       -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
       -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
       box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05); }
     #main-menu > ul > li > a.selected {
       background-color: #eeeeee;
-      color: #2E4372;
+      color: #232E82;
       -webkit-box-shadow: inset 0px 0px 0px 0px transparent;
       -moz-box-shadow: inset 0px 0px 0px 0px transparent;
       box-shadow: inset 0px 0px 0px 0px transparent; }
@@ -627,22 +841,81 @@ div.jstElements {
   color: #eeeeee;
   margin: 0 0 0 10px; }
   .contextual a {
-    background: #3E5D9F;
+    background: #2D3DB6;
     color: #FFFFFF;
     padding: 5px 10px;
     text-decoration: none;
+    display: inline-block;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    -webkit-transition: box-shadow 0.2s linear;
+    -moz-transition: box-shadow 0.2s linear;
+    -o-transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    -webkit-box-shadow: 0px 0px 5px 0px transparent;
+    -moz-box-shadow: 0px 0px 5px 0px transparent;
+    box-shadow: 0px 0px 5px 0px transparent;
     font-size: 0.8rem; }
     .contextual a:hover {
-      background: #476EC1;
-      text-decoration: none; }
+      background: #3346D4;
+      text-decoration: none;
+      border-width: 0;
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .contextual .position {
-    color: #10182A; }
+    color: #0F1332; }
+
+#context-menu ul {
+  padding: 0;
+  border-radius: 0;
+  border-color: #dddddd; }
+  #context-menu ul li {
+    border-radius: 0 !important;
+    border: 0 !important;
+    padding: 0; }
+    #context-menu ul li.folder > ul {
+      left: 145px; }
+    #context-menu ul li .icon, #context-menu ul li .icon-time-add, #context-menu ul li .icon-copy, #context-menu ul li .icon-del, #context-menu ul li .icon-checked {
+      background: #2D3DB6;
+      color: #FFFFFF;
+      padding: 5px 10px;
+      text-decoration: none;
+      display: inline-block;
+      -webkit-transition: background-color 0.2s linear;
+      -moz-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
+      -webkit-transition: box-shadow 0.2s linear;
+      -moz-transition: box-shadow 0.2s linear;
+      -o-transition: box-shadow 0.2s linear;
+      transition: box-shadow 0.2s linear;
+      -webkit-box-shadow: 0px 0px 5px 0px transparent;
+      -moz-box-shadow: 0px 0px 5px 0px transparent;
+      box-shadow: 0px 0px 5px 0px transparent;
+      width: 100%; }
+      #context-menu ul li .icon:hover, #context-menu ul li .icon-time-add:hover, #context-menu ul li .icon-copy:hover, #context-menu ul li .icon-del:hover, #context-menu ul li .icon-checked:hover {
+        background: #3346D4;
+        text-decoration: none;
+        border-width: 0;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      #context-menu ul li .icon:hover, #context-menu ul li .icon-time-add:hover, #context-menu ul li .icon-copy:hover, #context-menu ul li .icon-del:hover, #context-menu ul li .icon-checked:hover {
+        -webkit-box-shadow: 0px 0px 0px 0px transparent;
+        -moz-box-shadow: 0px 0px 0px 0px transparent;
+        box-shadow: 0px 0px 0px 0px transparent; }
+    #context-menu ul li:hover {
+      background-color: #dddddd; }
 
 #top-menu {
-  border-top: 4px solid #EF4670; }
+  border-top: 4px solid #EA1D77;
+  background-color: #FFFFFF; }
 
 #header {
-  background-color: #1C2944;
+  background-color: #161D4D;
   padding: 20px 10px 0;
   -webkit-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
@@ -655,8 +928,6 @@ div.jstElements {
     margin: 10px 0; }
   #header a {
     color: #FFFFFF; }
-    #header a:hover {
-      color: #EEB74C; }
   #header h1 {
     color: #FFFFFF;
     margin-bottom: 0; }
@@ -666,9 +937,9 @@ div.jstElements {
   padding: 20px 10px;
   color: #FFFFFF; }
   #footer a {
-    color: #476EC1; }
+    color: #3346D4; }
     #footer a:hover {
-      color: #FFC24B; }
+      color: #85F11E; }
   #footer h1 {
     color: #FFFFFF;
     margin-bottom: 0; }
@@ -685,7 +956,7 @@ div.jstElements {
     margin-right: 0;
     background-color: #fff;
     padding: 10px 10px;
-    border-left: 2px solid #D9456B; }
+    border-left: 2px solid #DB1D70; }
   #projects-index li ul {
     margin: 10px 20px; }
 
@@ -694,8 +965,11 @@ div.jstElements {
   padding: 10px 10px;
   background-color: #FFFFFF; }
 
-#query_form {
-  margin-bottom: 10px; }
+.controller-issues.action-index #content form {
+  padding: 0; }
+  .controller-issues.action-index #content form#query_form {
+    margin-bottom: 10px;
+    padding: 10px 10px; }
 
 .issue .splitcontent {
   padding-top: 20px;
@@ -747,17 +1021,33 @@ div.jstElements {
   margin-bottom: 0; }
 
 .controller-issues .icon-edit {
-  background: #3E5D9F;
+  background: #2D3DB6;
   color: #FFFFFF;
   padding: 5px 10px;
   text-decoration: none;
-  background: #49D368 !important;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #40B55A !important;
   color: #FFFFFF !important; }
   .controller-issues .icon-edit:hover {
-    background: #476EC1;
-    text-decoration: none; }
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
   .controller-issues .icon-edit:hover {
-    background: #40B55A !important; }
+    background: #49D368 !important; }
 
 #issue_tree, #relations, .attachments {
   border: 1px dotted #eeeeee;
@@ -765,7 +1055,14 @@ div.jstElements {
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
-  transition: border-color 0.2s ease; }
+  transition: border-color 0.2s ease;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+  #issue_tree::before, #issue_tree::after, #relations::before, #relations::after, .attachments::before, .attachments::after {
+    content: "";
+    display: table; }
+  #issue_tree::after, #relations::after, .attachments::after {
+    clear: both; }
   #issue_tree:hover, #relations:hover, .attachments:hover {
     border-color: #333333; }
   #issue_tree form, #issue_tree p, #relations form, #relations p, .attachments form, .attachments p {
@@ -775,6 +1072,9 @@ div.jstElements {
   #issue_tree table, #relations table, .attachments table {
     margin: 0;
     font-size: 0.8rem; }
+
+.attachments p {
+  padding-top: 5px; }
 
 .description .contextual, .journal .contextual, #issue_tree .contextual, #relations .contextual, .attachments .contextual {
   -webkit-transition: opacity 0.2s ease;
@@ -790,7 +1090,7 @@ div.jstElements {
   padding-top: 50px; }
   #history .journal {
     background-color: #FFFFFF;
-    border-left: 3px solid #D9456B;
+    border-left: 3px solid #DB1D70;
     margin: 10px 0;
     padding: 10px 10px; }
     #history .journal .details {
@@ -819,7 +1119,7 @@ div.jstElements {
 
 .controller-activities .user {
   font-size: 0.8rem;
-  color: #9B344E;
+  color: #A01A54;
   display: block; }
 
 .controller-activities dt span {
@@ -917,3 +1217,7 @@ div.jstElements {
   background-color: #FFFFFF;
   margin: 10px 0;
   padding: 10px 10px; }
+  #roadmap article form {
+    padding: 0; }
+  #roadmap article tr {
+    border: 1px solid #eeeeee; }

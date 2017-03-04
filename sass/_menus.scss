@@ -33,6 +33,7 @@
    
     a {
       padding: $base-v-spacer $base-h-spacer;
+      @include transition(background-color 0.2s ease);
       &:hover {
         background-color: $color-primary-lightest;
       }
@@ -45,7 +46,7 @@
     color: $color-neutral-lightest;
     margin-right: $base-h-spacer/2;
     @include box-shadow(inset 0px -10px 5px 0px rgba(0,0,0,0.1))
-
+    @include transition(background-color 0.2s ease);
 
     &:hover {
       background-color: $color-primary-lightest;
@@ -71,6 +72,35 @@
   .position {
     color: $color-primary-darkest;
   }
+}
+
+#context-menu {
+  ul {
+    padding: 0;
+    border-radius: 0;
+    border-color: $color-neutral-mid;
+    li {
+      border-radius: 0 !important;
+      border: 0 !important;
+      padding: 0;
+      &.folder > ul {
+        left: 145px;
+      }
+
+      .icon, .icon-time-add, .icon-copy, .icon-del, .icon-checked {
+        @include btn();
+        width: 100%;
+        &:hover {
+          @include box-shadow(0px 0px 0px 0px rgba(0, 0, 0, 0));
+        }
+      }
+
+      &:hover {
+        background-color: $color-neutral-mid;
+      }
+    }
+  }
+
 }
 
 #admin-menu a.projects {}

@@ -1,7 +1,40 @@
 
-form {
+#query_form,
+#issue-form,
+#new_version,
+#new_project,
+#new_issue_category,
+#news-form,
+#new_page,
+#new_document,
+.controller-files.action-new #content form {
   background-color: $color-neutral-lightest;
   padding: $base-v-spacer $base-h-spacer;
+
+  legend {
+    font-weight: bold;
+  }
+
+  label {
+    display: inline-block;
+    width: 120px;
+  }
+
+  .add-filter {
+    label {
+      width: auto;
+      font-weight: bold;
+    }
+  }
+
+  .icon-edit {
+    margin-left: $base-h-spacer/2;
+  }
+
+  .info  {
+    display: block;
+    font-size: $font-size-small;
+  }
 }
 
 fieldset {
@@ -27,32 +60,61 @@ fieldset {
 .select2 {
   margin-left: $base-h-spacer;
   min-width: 200px;
+  margin-right: $base-h-spacer;
 }
+
+input::-moz-focus-inner { border:0; padding:0 }
 
 input {
   display: inline-block;
   margin-left: $base-h-spacer;
+  margin-right: $base-h-spacer;
+  padding: 0 $base-h-spacer;
+  border: 1px solid $color-neutral-mid;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid $color-complement-light;
+  }
 
   &.select2-search__field,
-  &[name=commit] {
+  &[type=submit]{
     margin-left: 0;
+    line-height: inherit;
+    border: 0;
+    font-size: $font-size-normal;
+    font-family: $font-primary;
+  }
+  &[type=submit]{
+    @include btn-validate();
   }
 }
 
-#issue-form {
-  a:last-child {
-    display: inline-block;
-    margin-left: 10px;
-  }
+input[type=checkbox] {
+  margin: 0;
+  padding: 0;
+}
 
-  legend {
-    font-weight: bold;
-  }
+.select2-container--default,
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+input {
+  line-height: 2rem;
+}
 
-  label {
-    display: inline-block;
-    width: 120px;
-  }
+.select2-container,
+.select2-container .select2-selection--single {
+  height: 2rem;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+.select2-dropdown {
+  border-radius: 0;
+}
+
+.select2-results__option,
+.select2-search--dropdown .select2-search__field {
+  padding: 0 $base-h-spacer;
 }
 
 #issue_is_private_wrap {
@@ -72,6 +134,14 @@ div.jstElements {
   width: 100%;
   padding: $base-v-spacer $base-h-spacer;
   font-size: $font-size-normal;
+}
+
+#attachments_fields {
+  display: block;
+  span {
+    display: block;
+    margin-bottom: $base-v-spacer;
+  }
 }
 
 .required {

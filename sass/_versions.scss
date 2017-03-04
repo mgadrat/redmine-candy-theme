@@ -3,5 +3,13 @@
     background-color: $color-neutral-lightest;
     margin: $base-v-spacer 0;
     padding: $base-v-spacer $base-h-spacer;
+
+    form {
+      padding: 0;
+    }
+
+    tr {
+      border: 1px solid $color-neutral-light;
+    }
   }
 }
