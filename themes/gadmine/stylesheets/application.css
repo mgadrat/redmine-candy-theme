@@ -71,6 +71,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  overflow-x: hidden; }
+
 #top-menu {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
@@ -98,6 +101,7 @@ table {
     clear: both; }
 
 #main {
+  position: relative;
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
   #main::before, #main::after {
@@ -108,11 +112,36 @@ table {
 
 #sidebar {
   float: right;
-  width: 20%; }
+  width: 20%;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease; }
+  #sidebar .innerwrap {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
 
 #content {
   float: left;
-  width: 80%; }
+  width: 80%;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease; }
+
+.sidebar_closed #sidebar {
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .sidebar_closed #sidebar .innerwrap {
+    opacity: 0.01; }
+
+.sidebar_closed #content {
+  width: 100%; }
 
 #main.nosidebar #sidebar {
   display: none; }
@@ -343,7 +372,93 @@ blockquote {
   min-height: 70vh; }
 
 #sidebar {
-  padding: 30px 10px 10px; }
+  padding: 30px 10px 10px;
+  position: relative; }
+
+#sidebar-handle {
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #F06355 !important;
+  color: #FFFFFF !important;
+  position: absolute;
+  top: 0;
+  right: 10px; }
+  #sidebar-handle:hover {
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+  #sidebar-handle:hover {
+    background: #FF6858 !important; }
+  #sidebar-handle::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
+.sidebar_closed #sidebar-handle {
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  background: #40B55A !important;
+  color: #FFFFFF !important; }
+  .sidebar_closed #sidebar-handle:hover {
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+  .sidebar_closed #sidebar-handle:hover {
+    background: #49D368 !important; }
+  .sidebar_closed #sidebar-handle::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
 
 .icon-add {
   background: #2D3DB6;
@@ -351,6 +466,7 @@ blockquote {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
@@ -403,6 +519,7 @@ blockquote {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
@@ -503,6 +620,7 @@ blockquote {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
@@ -543,6 +661,7 @@ blockquote {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
@@ -583,6 +702,7 @@ blockquote {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
@@ -742,6 +862,7 @@ input {
     padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
     -webkit-transition: background-color 0.2s linear;
     -moz-transition: background-color 0.2s linear;
     -o-transition: background-color 0.2s linear;
@@ -874,6 +995,7 @@ div.jstElements {
     padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
     -webkit-transition: background-color 0.2s linear;
     -moz-transition: background-color 0.2s linear;
     -o-transition: background-color 0.2s linear;
@@ -912,6 +1034,7 @@ div.jstElements {
       padding: 5px 10px;
       text-decoration: none;
       display: inline-block;
+      cursor: pointer;
       -webkit-transition: background-color 0.2s linear;
       -moz-transition: background-color 0.2s linear;
       -o-transition: background-color 0.2s linear;
@@ -1054,6 +1177,7 @@ div.jstElements {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;

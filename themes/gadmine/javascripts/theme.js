@@ -10,4 +10,9 @@ $(function() {
     setTimeout( reattach_select2, 100 );
   }
 
+  $('#sidebar').wrapInner('<div class="innerwrap"></div>');
+  $('#sidebar').prepend('<div id="sidebar-handle"></div>');
+  $('#sidebar-handle').click(function() {
+    $('body').toggleClass('sidebar_closed');
+  });
 });

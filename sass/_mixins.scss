@@ -62,6 +62,7 @@
   padding: $base-v-spacer/2 $base-h-spacer;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   @include transition(background-color 0.2s linear);
   @include transition(box-shadow 0.2s linear);
   @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0))

@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; 
+}
+
 #top-menu {
   
   #account {
@@ -25,17 +29,42 @@
 }
 
 #main {
+  position: relative;
   @include clearfix();
 }
 
 #sidebar {
   float: right;
   width: 20%;
+  @include transition(width 1s ease);
+
+  .innerwrap {
+    opacity: 1;
+    @include transition(opacity .5s ease);
+  }
 }
 
 #content {
   float: left;
   width: 80%;
+  @include transition(width 1s ease);
+}
+
+.sidebar_closed {
+  #sidebar {
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .innerwrap {
+      opacity: 0.01;
+    }
+  }
+
+  #content {
+    width: 100%;
+  }
 }
 
 #main.nosidebar #sidebar { display: none; }

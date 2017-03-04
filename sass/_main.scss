@@ -261,6 +261,20 @@ blockquote {
 
 #sidebar {
   padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+  position: relative;
+}
+
+#sidebar-handle {
+  @include btn-cancel();
+  @include fa-icon($icon-arrow-right);
+  position: absolute;
+  top: 0;
+  right: $base-h-spacer;
+}
+
+.sidebar_closed #sidebar-handle {
+  @include btn-validate();
+  @include fa-icon($icon-arrow-left);
 }
 
 .icon-add { @include btn-validate(); @include fa-icon($fa-var-plus); }
