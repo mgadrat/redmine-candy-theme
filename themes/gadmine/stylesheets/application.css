@@ -381,6 +381,10 @@ blockquote {
 
 #sidebar {
   padding: 42px 10px 14px; }
+  #sidebar h3 {
+    margin-top: 28px; }
+    #sidebar h3:first-child {
+      margin-top: 0; }
 
 #sidebar-handle {
   background: #2D3DB6;

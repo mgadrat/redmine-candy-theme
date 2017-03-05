@@ -261,6 +261,14 @@ blockquote {
 
 #sidebar {
   padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+
+  h3 {
+    margin-top:$base-v-spacer*2;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 #sidebar-handle {
