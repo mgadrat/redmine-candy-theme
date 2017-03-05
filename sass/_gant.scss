@@ -1,0 +1,118 @@
+.gantt_hdr {
+  position:absolute;
+  top:0;
+  border: 0;
+  background-color: $color-neutral-lightest;
+  text-align: center;
+  overflow: hidden;
+}
+
+#gantt_area .gantt_hdr {
+  background-color: transparent;
+  border-top: 1px solid $color-neutral-mid;
+  border-bottom: 1px solid $color-neutral-mid;
+  border-right: 1px solid $color-neutral-mid;
+  &.nwday {
+    background-color: $color-neutral-lightest;
+    color: $color-neutral-dark;
+  }
+}
+
+.controller-gantts.action-show {
+  td {
+    padding: 0;
+  }
+  #query_form {
+    margin-bottom: $base-v-spacer;
+
+    table {
+      width: 100%;
+
+      label {
+        width: auto;
+      }
+    }
+  }
+}
+
+
+.gantt_subjects { font-size: $font-size-small; }
+.gantt_subjects div { 
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.task {
+  position: absolute;
+  height: $base-v-spacer;
+  font-size:$font-size-small;
+  padding:0;
+  margin:0;
+  line-height:$base-v-spacer;
+  white-space:nowrap;
+}
+
+.task.label {width:100%;}
+.task.label.project, .task.label.version { font-weight: bold; }
+
+.task_late { background:$color-cancel-light;}
+.task_done { background:$color-validate-light;}
+.task_todo { background:$color-neutral-dark;}
+
+.task_todo.parent {}
+.task_late.parent, .task_done.parent {}
+.task.parent.marker.starting  { position: absolute; width: 8px; height: 6px; margin-left: -4px; left: 0px; top: 5px;}
+.task.parent.marker.ending { position: absolute; width: 8px; height: 6px; margin-left: -4px; right: 0px; top: 5px;}
+
+.version {
+  height: $base-v-spacer/2;
+  &.task_late { background:$color-cancel-light;}
+  &.task_done { background:$color-validate-light;}
+  &.task_todo { background:$color-neutral-lightest;}
+  &.marker {border: 0; margin-left: -4px; margin-top: 1px; }
+}
+
+.project {
+  height: $base-v-spacer/2;
+  &.task_late,
+  &.task_done,
+  &.task_todo {
+    background-color: $color-primary-mid;
+  }
+  .marker {
+  }
+}
+
+.version-behind-schedule a, .issue-behind-schedule a {color: $color-cancel-light;}
+.version-overdue a, .issue-overdue a, .project-overdue a {color: $color-cancel-light;}
+
+.version-name {
+  @include fa-icon($icon-version);
+}
+.icon-projects {
+  @include fa-icon($icon-project);
+}
+
+.tip {
+  display: none;
+}
+
+.tooltip {
+
+  z-index: 25;
+  position: relative;
+  
+  &:hover {
+    .tip {
+      display: block;
+      width: 200px;
+      position: absolute;
+      top: $base-v-spacer;
+      left: $base-h-spacer;
+      font-size: $font-size-small;
+      background-color: $color-neutral-lightest;
+      padding: $base-v-spacer/2 $base-h-spacer/2;
+    }   
+  }
+}

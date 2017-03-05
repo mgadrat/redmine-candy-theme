@@ -139,6 +139,10 @@ body {
   -o-transition: width 1s ease;
   transition: width 1s ease; }
 
+.nosidebar #content {
+  width: 100%;
+  float: none; }
+
 .sidebar_closed #sidebar {
   width: 0; }
   .sidebar_closed #sidebar .innerwrap {
@@ -908,6 +912,7 @@ input {
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+.select2-container--default .select2-selection--single,
 .select2-dropdown {
   border-radius: 0; }
 
@@ -1371,6 +1376,145 @@ div.jstElements {
 .news .comments {
   font-size: 0.8rem;
   color: #333333; }
+
+.gantt_hdr {
+  position: absolute;
+  top: 0;
+  border: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+  overflow: hidden; }
+
+#gantt_area .gantt_hdr {
+  background-color: transparent;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd; }
+  #gantt_area .gantt_hdr.nwday {
+    background-color: #FFFFFF;
+    color: #333333; }
+
+.controller-gantts.action-show td {
+  padding: 0; }
+
+.controller-gantts.action-show #query_form {
+  margin-bottom: 14px; }
+  .controller-gantts.action-show #query_form table {
+    width: 100%; }
+    .controller-gantts.action-show #query_form table label {
+      width: auto; }
+
+.gantt_subjects {
+  font-size: 0.8rem; }
+
+.gantt_subjects div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.task {
+  position: absolute;
+  height: 14px;
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+  line-height: 14px;
+  white-space: nowrap; }
+
+.task.label {
+  width: 100%; }
+
+.task.label.project, .task.label.version {
+  font-weight: bold; }
+
+.task_late {
+  background: #FF6858; }
+
+.task_done {
+  background: #49D368; }
+
+.task_todo {
+  background: #333333; }
+
+.task.parent.marker.starting {
+  position: absolute;
+  width: 8px;
+  height: 6px;
+  margin-left: -4px;
+  left: 0px;
+  top: 5px; }
+
+.task.parent.marker.ending {
+  position: absolute;
+  width: 8px;
+  height: 6px;
+  margin-left: -4px;
+  right: 0px;
+  top: 5px; }
+
+.version {
+  height: 7px; }
+  .version.task_late {
+    background: #FF6858; }
+  .version.task_done {
+    background: #49D368; }
+  .version.task_todo {
+    background: #FFFFFF; }
+  .version.marker {
+    border: 0;
+    margin-left: -4px;
+    margin-top: 1px; }
+
+.project {
+  height: 7px; }
+  .project.task_late, .project.task_done, .project.task_todo {
+    background-color: #232E82; }
+
+.version-behind-schedule a, .issue-behind-schedule a {
+  color: #FF6858; }
+
+.version-overdue a, .issue-overdue a, .project-overdue a {
+  color: #FF6858; }
+
+.version-name::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.icon-projects::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.tip {
+  display: none; }
+
+.tooltip {
+  z-index: 25;
+  position: relative; }
+  .tooltip:hover .tip {
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    font-size: 0.8rem;
+    background-color: #FFFFFF;
+    padding: 7px 5px; }
 
 #roadmap article {
   background-color: #FFFFFF;

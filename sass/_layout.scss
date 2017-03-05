@@ -52,11 +52,15 @@ body {
   right: $base-h-spacer;
 }
 
-
 #content {
   float: left;
   width: 80%;
   @include transition(width 1s ease);
+}
+
+.nosidebar #content {
+  width: 100%;
+  float: none;
 }
 
 .sidebar_closed {
