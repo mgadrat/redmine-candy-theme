@@ -27,8 +27,8 @@ $color-secondary-1-dark: #3A6413;
 $color-secondary-1-darkest: #26410C;
 
 $color-neutral-lightest: #FFFFFF;
-$color-neutral-light: #eeeeee;
-$color-neutral-mid: #dddddd;
+$color-neutral-light: #dddddd;
+$color-neutral-mid: #cccccc;
 $color-neutral-dark: #333333;
 $color-neutral-darkest: #111111;
 
@@ -56,6 +56,7 @@ $color-cancel-darkest: #3C130F;
 $base-spacer: 10px;
 $base-h-spacer: $base-spacer;
 $base-v-spacer: $base-spacer*1.4;
+$base-highlight-border-width: $base-spacer/3;
 
 /**
  * ==============

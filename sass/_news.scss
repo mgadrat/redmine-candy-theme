@@ -8,3 +8,44 @@
     color: $color-neutral-dark;
   }
 }
+
+.news-article {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer $base-h-spacer;
+  border-left: $base-highlight-border-width solid $color-complement-light;
+  margin-bottom: $base-v-spacer;
+}
+
+#news_summary {
+  padding: $base-v-spacer $base-h-spacer;
+  display: block;
+  width: 100%;
+}
+
+#news-form {
+  margin-bottom: $base-v-spacer;
+}
+
+#comments {
+  .wiki, h4 {
+    background-color: $color-neutral-lightest;
+    border-left: $base-highlight-border-width solid $color-complement-light;
+    padding: $base-v-spacer $base-h-spacer;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    margin-top: $base-v-spacer;
+    font-size: $font-size-small;
+    padding-bottom: 0;
+  }
+
+  .wiki {
+    margin-bottom: $base-v-spacer;
+  }
+
+  .contextual {
+    margin-top: $base-v-spacer/2;
+    margin-right: $base-h-spacer/2;
+  }
+}

@@ -16,7 +16,7 @@
       margin-right: 0;
       background-color: #fff;
       padding: $base-v-spacer $base-h-spacer;
-      border-left: 2px solid $color-complement-light;
+      border-left: $base-highlight-border-width solid $color-complement-light;
     }
 
     ul {

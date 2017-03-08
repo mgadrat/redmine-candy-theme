@@ -103,6 +103,23 @@
 
 }
 
+#content .tabs {
+  ul {
+    margin: $base-v-spacer 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 $base-h-spacer 0 0;
+    a {
+      @include btn();
+
+      &.selected {
+        @include btn-validate();
+      }
+    }
+  }
+}
+
 #admin-menu a.projects {}
 #admin-menu a.users {}
 #admin-menu a.groups {}

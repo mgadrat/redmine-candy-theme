@@ -235,14 +235,14 @@ table {
   margin-bottom: 28px; }
   table caption {
     text-align: left;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     color: #333333;
     padding: 7px 10px;
     font-size: 0.8rem; }
   table.list {
     width: 100%; }
   table tr.even {
-    background-color: #dddddd; }
+    background-color: #cccccc; }
   table tr.odd {
     background-color: #FFFFFF; }
   table tr th {
@@ -250,7 +250,7 @@ table {
     color: #FFFFFF;
     padding: 14px 10px;
     text-align: left;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid #dddddd;
     font-size: 0.8rem; }
     table tr th a {
       color: #FFFFFF;
@@ -315,7 +315,7 @@ table {
 
 table.progress {
   margin: 0;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   width: 100%; }
   table.progress .done, table.progress .closed {
     background-color: #49D368; }
@@ -344,10 +344,10 @@ blockquote {
     top: 0;
     left: 0;
     font-size: 40px;
-    color: #dddddd;
+    color: #cccccc;
     display: block;
     height: 100%;
-    border-right: 2px dotted #dddddd;
+    border-right: 2px dotted #cccccc;
     padding-right: 10px; }
 
 .splitcontent {
@@ -376,7 +376,7 @@ blockquote {
 
 #content {
   padding: 42px 10px 14px;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   min-height: 70vh; }
 
 #sidebar {
@@ -663,7 +663,7 @@ blockquote {
     position: relative;
     top: 0; }
 
-.icon-checked {
+a.icon-checked {
   background: #2D3DB6;
   color: #FFFFFF;
   padding: 7px 10px;
@@ -683,16 +683,16 @@ blockquote {
   box-shadow: 0px 0px 5px 0px transparent;
   background: #40B55A !important;
   color: #FFFFFF !important; }
-  .icon-checked:hover {
+  a.icon-checked:hover {
     background: #3346D4;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
-  .icon-checked:hover {
+  a.icon-checked:hover {
     background: #49D368 !important; }
-  .icon-checked::before {
+  a.icon-checked::before {
     display: inline-block;
     margin-right: 5px;
     font: normal normal normal 1rem FontAwesome;
@@ -745,6 +745,18 @@ blockquote {
     position: relative;
     top: 0; }
 
+.icon-only.icon-checked::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
 #query_form,
 #issue-form,
 #new_version,
@@ -753,6 +765,8 @@ blockquote {
 #news-form,
 #new_page,
 #new_document,
+#repository-form,
+.edit_project,
 .controller-files.action-new #content form {
   background-color: #FFFFFF;
   padding: 14px 10px; }
@@ -764,6 +778,8 @@ blockquote {
   #news-form legend,
   #new_page legend,
   #new_document legend,
+  #repository-form legend,
+  .edit_project legend,
   .controller-files.action-new #content form legend {
     font-weight: bold; }
   #query_form label,
@@ -774,10 +790,12 @@ blockquote {
   #news-form label,
   #new_page label,
   #new_document label,
+  #repository-form label,
+  .edit_project label,
   .controller-files.action-new #content form label {
     display: inline-block;
     width: 120px;
-    border-bottom: 1px dotted #dddddd;
+    border-bottom: 1px dotted #cccccc;
     line-height: 2rem; }
   #query_form .add-filter label,
   #issue-form .add-filter label,
@@ -787,6 +805,8 @@ blockquote {
   #news-form .add-filter label,
   #new_page .add-filter label,
   #new_document .add-filter label,
+  #repository-form .add-filter label,
+  .edit_project .add-filter label,
   .controller-files.action-new #content form .add-filter label {
     width: auto;
     font-weight: bold; }
@@ -798,6 +818,8 @@ blockquote {
   #news-form .icon-edit,
   #new_page .icon-edit,
   #new_document .icon-edit,
+  #repository-form .icon-edit,
+  .edit_project .icon-edit,
   .controller-files.action-new #content form .icon-edit {
     margin-left: 5px; }
   #query_form .info,
@@ -808,6 +830,8 @@ blockquote {
   #news-form .info,
   #new_page .info,
   #new_document .info,
+  #repository-form .info,
+  .edit_project .info,
   .controller-files.action-new #content form .info {
     display: block;
     font-size: 0.8rem; }
@@ -856,7 +880,7 @@ input {
   margin-left: 10px;
   margin-right: 10px;
   padding: 0 10px;
-  border: 1px solid #dddddd;
+  border: 1px solid #cccccc;
   cursor: pointer;
   -webkit-transition: border-color 0.5s ease;
   -moz-transition: border-color 0.5s ease;
@@ -928,7 +952,7 @@ input {
   float: right; }
 
 div.jstElements {
-  background-color: #dddddd;
+  background-color: #cccccc;
   padding: 7px 10px; }
   div.jstElements button {
     cursor: pointer; }
@@ -995,7 +1019,7 @@ div.jstElements {
       -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
       box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05); }
     #main-menu > ul > li > a.selected {
-      background-color: #eeeeee;
+      background-color: #dddddd;
       color: #232E82;
       -webkit-box-shadow: inset 0px 0px 0px 0px transparent;
       -moz-box-shadow: inset 0px 0px 0px 0px transparent;
@@ -1003,7 +1027,7 @@ div.jstElements {
 
 .contextual {
   float: right;
-  color: #eeeeee;
+  color: #dddddd;
   margin: 0 0 0 10px; }
   .contextual a {
     background: #2D3DB6;
@@ -1037,7 +1061,7 @@ div.jstElements {
 #context-menu ul {
   padding: 0;
   border-radius: 0;
-  border-color: #dddddd; }
+  border-color: #cccccc; }
   #context-menu ul li {
     border-radius: 0 !important;
     border: 0 !important;
@@ -1075,7 +1099,68 @@ div.jstElements {
         -moz-box-shadow: 0px 0px 0px 0px transparent;
         box-shadow: 0px 0px 0px 0px transparent; }
     #context-menu ul li:hover {
-      background-color: #dddddd; }
+      background-color: #cccccc; }
+
+#content .tabs ul {
+  margin: 14px 0; }
+
+#content .tabs li {
+  display: inline-block;
+  margin: 0 10px 0 0; }
+  #content .tabs li a {
+    background: #2D3DB6;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    -webkit-transition: box-shadow 0.2s linear;
+    -moz-transition: box-shadow 0.2s linear;
+    -o-transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    -webkit-box-shadow: 0px 0px 5px 0px transparent;
+    -moz-box-shadow: 0px 0px 5px 0px transparent;
+    box-shadow: 0px 0px 5px 0px transparent; }
+    #content .tabs li a:hover {
+      background: #3346D4;
+      text-decoration: none;
+      border-width: 0;
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    #content .tabs li a.selected {
+      background: #2D3DB6;
+      color: #FFFFFF;
+      padding: 7px 10px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-transition: background-color 0.2s linear;
+      -moz-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
+      -webkit-transition: box-shadow 0.2s linear;
+      -moz-transition: box-shadow 0.2s linear;
+      -o-transition: box-shadow 0.2s linear;
+      transition: box-shadow 0.2s linear;
+      -webkit-box-shadow: 0px 0px 5px 0px transparent;
+      -moz-box-shadow: 0px 0px 5px 0px transparent;
+      box-shadow: 0px 0px 5px 0px transparent;
+      background: #40B55A !important;
+      color: #FFFFFF !important; }
+      #content .tabs li a.selected:hover {
+        background: #3346D4;
+        text-decoration: none;
+        border-width: 0;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      #content .tabs li a.selected:hover {
+        background: #49D368 !important; }
 
 #top-menu {
   border-top: 4px solid #EA1D77;
@@ -1123,7 +1208,7 @@ div.jstElements {
     margin-right: 0;
     background-color: #fff;
     padding: 14px 10px;
-    border-left: 2px solid #DB1D70; }
+    border-left: 3.33333px solid #DB1D70; }
   #projects-index li ul {
     margin: 14px 20px; }
 
@@ -1218,7 +1303,7 @@ div.jstElements {
     background: #49D368 !important; }
 
 #issue_tree, #relations, .attachments {
-  border: 1px dotted #eeeeee;
+  border: 1px dotted #dddddd;
   padding: 14px 10px 14px 0;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
@@ -1258,7 +1343,7 @@ div.jstElements {
   padding-top: 70px; }
   #history .journal {
     background-color: #FFFFFF;
-    border-left: 3px solid #DB1D70;
+    border-left: 3.33333px solid #DB1D70;
     margin: 14px 0;
     padding: 14px 10px; }
     #history .journal .details {
@@ -1275,7 +1360,7 @@ div.jstElements {
       margin-top: -14px;
       margin-bottom: 14px;
       padding: 7px 10px;
-      background-color: #dddddd; }
+      background-color: #cccccc; }
 
 .controller-activities h3 {
   margin: 14px 0 28px; }
@@ -1381,6 +1466,38 @@ div.jstElements {
   font-size: 0.8rem;
   color: #333333; }
 
+.news-article {
+  background-color: #FFFFFF;
+  padding: 14px 10px;
+  border-left: 3.33333px solid #DB1D70;
+  margin-bottom: 14px; }
+
+#news_summary {
+  padding: 14px 10px;
+  display: block;
+  width: 100%; }
+
+#news-form {
+  margin-bottom: 14px; }
+
+#comments .wiki, #comments h4 {
+  background-color: #FFFFFF;
+  border-left: 3.33333px solid #DB1D70;
+  padding: 14px 10px; }
+
+#comments h4 {
+  margin-bottom: 0;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  padding-bottom: 0; }
+
+#comments .wiki {
+  margin-bottom: 14px; }
+
+#comments .contextual {
+  margin-top: 7px;
+  margin-right: 5px; }
+
 .gantt_hdr {
   position: absolute;
   top: 0;
@@ -1391,9 +1508,9 @@ div.jstElements {
 
 #gantt_area .gantt_hdr {
   background-color: transparent;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd; }
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc; }
   #gantt_area .gantt_hdr.nwday {
     background-color: #FFFFFF;
     color: #333333; }
@@ -1527,4 +1644,4 @@ div.jstElements {
   #roadmap article form {
     padding: 0; }
   #roadmap article tr {
-    border: 1px solid #eeeeee; }
+    border: 1px solid #dddddd; }

@@ -290,5 +290,10 @@ blockquote {
 .icon-comment { @include fa-icon($icon-comment); }
 .icon-copy { @include fa-icon($icon-copy); }
 .icon-del { @include btn-cancel();@include fa-icon($icon-delete); }
-.icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
+a.icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
 .icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }
+
+.icon-only.icon-checked {
+  @include fa-icon($fa-var-check);
+}
+

@@ -101,7 +101,7 @@
 
   .journal {
     background-color: $color-neutral-lightest;
-    border-left: 3px solid $color-complement-light;
+    border-left: $base-highlight-border-width solid $color-complement-light;
     margin: $base-v-spacer 0;
     padding: $base-v-spacer $base-h-spacer;
 
