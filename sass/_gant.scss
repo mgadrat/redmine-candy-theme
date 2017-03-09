@@ -23,8 +23,6 @@
     padding: 0;
   }
   #query_form {
-    margin-bottom: $base-v-spacer;
-
     table {
       width: 100%;
 
@@ -37,7 +35,7 @@
 
 
 .gantt_subjects { font-size: $font-size-small; }
-.gantt_subjects div { 
+.gantt_subjects div {
   overflow: hidden;
   white-space:nowrap;
   text-overflow: ellipsis;
@@ -94,25 +92,3 @@
   @include fa-icon($icon-project);
 }
 
-.tip {
-  display: none;
-}
-
-.tooltip {
-
-  z-index: 25;
-  position: relative;
-  
-  &:hover {
-    .tip {
-      display: block;
-      width: 200px;
-      position: absolute;
-      top: $base-v-spacer;
-      left: $base-h-spacer;
-      font-size: $font-size-small;
-      background-color: $color-neutral-lightest;
-      padding: $base-v-spacer/2 $base-h-spacer/2;
-    }   
-  }
-}

@@ -1,0 +1,22 @@
+table.cal {
+  width: 100%;
+  background-color: $color-neutral-lightest;
+
+  td {
+    border: 1px solid $color-neutral-mid;
+  }
+
+  .starting {
+    @include fa-icon($icon-issue-start);
+  }
+  .ending {
+    @include fa-icon($icon-issue-stop);
+  }
+}
+
+.week-number {
+  width: $base-h-spacer*3;
+  text-align: center;
+  color: $color-neutral-mid;
+  font-size: $font-size-small;
+}

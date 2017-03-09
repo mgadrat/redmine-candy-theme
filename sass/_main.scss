@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 em {
-
+  font-style: italic;
 }
 
 strong {
@@ -256,7 +256,7 @@ blockquote {
 #content {
   padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
   background-color: $color-neutral-light;
-  min-height: 70vh;  
+  min-height: 70vh;
 }
 
 #sidebar {
@@ -280,6 +280,32 @@ blockquote {
   @include btn-validate();
   @include fa-icon($icon-arrow-left);
 }
+
+.tip {
+  display: none;
+}
+
+.tooltip {
+
+  z-index: 25;
+  position: relative;
+
+  &:hover {
+    .tip {
+      display: block;
+      width: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid $color-neutral-mid;
+      border-left: $base-highlight-border-width solid $color-complement-light;
+      font-size: $font-size-small;
+      background-color: $color-neutral-lightest;
+      padding: $base-v-spacer/2 $base-h-spacer/2;
+    }
+  }
+}
+
 
 .icon-add { @include btn-validate(); @include fa-icon($fa-var-plus); }
 .icon-time-add { @include fa-icon($icon-time) }

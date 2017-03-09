@@ -12,6 +12,7 @@
 .controller-files.action-new #content form {
   background-color: $color-neutral-lightest;
   padding: $base-v-spacer $base-h-spacer;
+  margin-bottom: $base-v-spacer;
 
   legend {
     font-weight: bold;

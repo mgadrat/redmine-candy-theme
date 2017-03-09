@@ -49,3 +49,14 @@
     margin-right: $base-h-spacer/2;
   }
 }
+
+.controller-news.action-show {
+  #content > p {
+    font-size: $font-size-small;
+    & >  em {
+      display: block;
+      margin-top: $base-v-spacer*-2;
+      margin-bottom: $base-v-spacer;
+    }
+  }
+}

@@ -213,6 +213,9 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   display: inline-block;
   padding: 0 10px; }
 
+em {
+  font-style: italic; }
+
 strong {
   font-weight: bold; }
 
@@ -467,6 +470,24 @@ blockquote {
     content: "";
     position: relative;
     top: 0; }
+
+.tip {
+  display: none; }
+
+.tooltip {
+  z-index: 25;
+  position: relative; }
+  .tooltip:hover .tip {
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #cccccc;
+    border-left: 3.33333px solid #DB1D70;
+    font-size: 0.8rem;
+    background-color: #FFFFFF;
+    padding: 7px 5px; }
 
 .icon-add {
   background: #2D3DB6;
@@ -769,7 +790,8 @@ a.icon-checked {
 .edit_project,
 .controller-files.action-new #content form {
   background-color: #FFFFFF;
-  padding: 14px 10px; }
+  padding: 14px 10px;
+  margin-bottom: 14px; }
   #query_form legend,
   #issue-form legend,
   #new_version legend,
@@ -1174,7 +1196,8 @@ div.jstElements {
   box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2); }
   #header form {
     background-color: transparent;
-    float: left; }
+    float: left;
+    margin-bottom: 14px; }
   #header #project_quick_jump_box {
     display: inline-block;
     margin: 14px 0; }
@@ -1220,7 +1243,6 @@ div.jstElements {
 .controller-issues.action-index #content form {
   padding: 0; }
   .controller-issues.action-index #content form#query_form {
-    margin-bottom: 14px;
     padding: 14px 10px; }
 
 .issue .splitcontent {
@@ -1458,6 +1480,40 @@ div.jstElements {
     top: 0;
     left: -22px; }
 
+table.cal {
+  width: 100%;
+  background-color: #FFFFFF; }
+  table.cal td {
+    border: 1px solid #cccccc; }
+  table.cal .starting::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  table.cal .ending::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
+.week-number {
+  width: 30px;
+  text-align: center;
+  color: #cccccc;
+  font-size: 0.8rem; }
+
 .news .summary {
   display: block;
   margin: 14px 0; }
@@ -1498,6 +1554,13 @@ div.jstElements {
   margin-top: 7px;
   margin-right: 5px; }
 
+.controller-news.action-show #content > p {
+  font-size: 0.8rem; }
+  .controller-news.action-show #content > p > em {
+    display: block;
+    margin-top: -28px;
+    margin-bottom: 14px; }
+
 .gantt_hdr {
   position: absolute;
   top: 0;
@@ -1518,12 +1581,10 @@ div.jstElements {
 .controller-gantts.action-show td {
   padding: 0; }
 
-.controller-gantts.action-show #query_form {
-  margin-bottom: 14px; }
-  .controller-gantts.action-show #query_form table {
-    width: 100%; }
-    .controller-gantts.action-show #query_form table label {
-      width: auto; }
+.controller-gantts.action-show #query_form table {
+  width: 100%; }
+  .controller-gantts.action-show #query_form table label {
+    width: auto; }
 
 .gantt_subjects {
   font-size: 0.8rem; }
@@ -1620,22 +1681,6 @@ div.jstElements {
   content: "";
   position: relative;
   top: 0; }
-
-.tip {
-  display: none; }
-
-.tooltip {
-  z-index: 25;
-  position: relative; }
-  .tooltip:hover .tip {
-    display: block;
-    width: 200px;
-    position: absolute;
-    top: 14px;
-    left: 10px;
-    font-size: 0.8rem;
-    background-color: #FFFFFF;
-    padding: 7px 5px; }
 
 #roadmap article {
   background-color: #FFFFFF;
