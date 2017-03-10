@@ -9,4 +9,25 @@
     }
 
   }
+
+  .group {
+    background-color: $color-neutral-dark;
+    color: $color-neutral-lightest;
+    .expander {
+      cursor: pointer;
+      @include fa-icon($icon-collapse-open, 1px);
+    }
+    &.open .expander {
+      @include fa-icon($icon-collapse-close, 1px);
+    }
+    a {
+      float: right;
+      color: $color-neutral-mid;
+      font-size: $font-size-small;
+    }
+    td {
+      padding-top: $base-v-spacer;
+      padding-bottom: $base-v-spacer/4;
+    }
+  }
 }

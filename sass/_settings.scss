@@ -27,8 +27,8 @@ $color-secondary-1-dark: #3A6413;
 $color-secondary-1-darkest: #26410C;
 
 $color-neutral-lightest: #FFFFFF;
-$color-neutral-light: #dddddd;
-$color-neutral-mid: #cccccc;
+$color-neutral-light: #EEEEEE;
+$color-neutral-mid: #DDDDDD;
 $color-neutral-dark: #333333;
 $color-neutral-darkest: #111111;
 
@@ -106,3 +106,5 @@ $icon-arrow-right: $fa-var-arrow-right;
 $icon-arrow-left: $fa-var-arrow-left;
 $icon-issue-start: $fa-var-play;
 $icon-issue-stop: $fa-var-pause;
+$icon-collapse-open: $fa-var-plus-square-o;
+$icon-collapse-close: $fa-var-minus-square-o;

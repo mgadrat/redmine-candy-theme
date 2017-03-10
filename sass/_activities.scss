@@ -1,7 +1,11 @@
 .controller-activities {
 
   h3 {
-    margin: $base-v-spacer 0 $base-v-spacer*2;
+    margin: $base-v-spacer*2 0 $base-v-spacer;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   #activity {
@@ -14,7 +18,7 @@
     font-size: $font-size-small;
     color: $color-complement-mid;
     display: block;
-  }  
+  }
   dt span {
     color: $color-neutral-dark;
     display: block;
@@ -29,7 +33,7 @@
       &::before {
         position: absolute;
         top: 0;
-        left: $base-h-spacer*-2;       
+        left: $base-h-spacer*-2;
       }
     }
 

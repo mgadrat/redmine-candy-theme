@@ -8,6 +8,7 @@
 #new_page,
 #new_document,
 #repository-form,
+#new_time_entry,
 .edit_project,
 .controller-files.action-new #content form {
   background-color: $color-neutral-lightest;
@@ -46,7 +47,7 @@ fieldset {
   padding: $base-v-spacer 0;
   &.collapsible {
     legend {
-      @include fa-icon($fa-var-minus-square-o, 1px);
+      @include fa-icon($icon-collapse-close, 1px);
       &::before {
         color: $color-primary-mid;
       }
@@ -55,7 +56,7 @@ fieldset {
     }
     &.collapsed {
       legend {
-        @include fa-icon($fa-var-plus-square-o, 1px);
+        @include fa-icon($icon-collapse-open, 1px);
       }
     }
   }

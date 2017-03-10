@@ -238,14 +238,14 @@ table {
   margin-bottom: 28px; }
   table caption {
     text-align: left;
-    background-color: #dddddd;
+    background-color: #EEEEEE;
     color: #333333;
     padding: 7px 10px;
     font-size: 0.8rem; }
   table.list {
     width: 100%; }
   table tr.even {
-    background-color: #cccccc; }
+    background-color: #DDDDDD; }
   table tr.odd {
     background-color: #FFFFFF; }
   table tr th {
@@ -253,7 +253,7 @@ table {
     color: #FFFFFF;
     padding: 14px 10px;
     text-align: left;
-    border-right: 1px solid #dddddd;
+    border-right: 1px solid #EEEEEE;
     font-size: 0.8rem; }
     table tr th a {
       color: #FFFFFF;
@@ -318,7 +318,7 @@ table {
 
 table.progress {
   margin: 0;
-  background-color: #dddddd;
+  background-color: #EEEEEE;
   width: 100%; }
   table.progress .done, table.progress .closed {
     background-color: #49D368; }
@@ -347,10 +347,10 @@ blockquote {
     top: 0;
     left: 0;
     font-size: 40px;
-    color: #cccccc;
+    color: #DDDDDD;
     display: block;
     height: 100%;
-    border-right: 2px dotted #cccccc;
+    border-right: 2px dotted #DDDDDD;
     padding-right: 10px; }
 
 .splitcontent {
@@ -379,7 +379,7 @@ blockquote {
 
 #content {
   padding: 42px 10px 14px;
-  background-color: #dddddd;
+  background-color: #EEEEEE;
   min-height: 70vh; }
 
 #sidebar {
@@ -483,7 +483,7 @@ blockquote {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #cccccc;
+    border: 1px solid #DDDDDD;
     border-left: 3.33333px solid #DB1D70;
     font-size: 0.8rem;
     background-color: #FFFFFF;
@@ -787,6 +787,7 @@ a.icon-checked {
 #new_page,
 #new_document,
 #repository-form,
+#new_time_entry,
 .edit_project,
 .controller-files.action-new #content form {
   background-color: #FFFFFF;
@@ -801,6 +802,7 @@ a.icon-checked {
   #new_page legend,
   #new_document legend,
   #repository-form legend,
+  #new_time_entry legend,
   .edit_project legend,
   .controller-files.action-new #content form legend {
     font-weight: bold; }
@@ -813,11 +815,12 @@ a.icon-checked {
   #new_page label,
   #new_document label,
   #repository-form label,
+  #new_time_entry label,
   .edit_project label,
   .controller-files.action-new #content form label {
     display: inline-block;
     width: 120px;
-    border-bottom: 1px dotted #cccccc;
+    border-bottom: 1px dotted #DDDDDD;
     line-height: 2rem; }
   #query_form .add-filter label,
   #issue-form .add-filter label,
@@ -828,6 +831,7 @@ a.icon-checked {
   #new_page .add-filter label,
   #new_document .add-filter label,
   #repository-form .add-filter label,
+  #new_time_entry .add-filter label,
   .edit_project .add-filter label,
   .controller-files.action-new #content form .add-filter label {
     width: auto;
@@ -841,6 +845,7 @@ a.icon-checked {
   #new_page .icon-edit,
   #new_document .icon-edit,
   #repository-form .icon-edit,
+  #new_time_entry .icon-edit,
   .edit_project .icon-edit,
   .controller-files.action-new #content form .icon-edit {
     margin-left: 5px; }
@@ -853,6 +858,7 @@ a.icon-checked {
   #new_page .info,
   #new_document .info,
   #repository-form .info,
+  #new_time_entry .info,
   .edit_project .info,
   .controller-files.action-new #content form .info {
     display: block;
@@ -902,7 +908,7 @@ input {
   margin-left: 10px;
   margin-right: 10px;
   padding: 0 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #DDDDDD;
   cursor: pointer;
   -webkit-transition: border-color 0.5s ease;
   -moz-transition: border-color 0.5s ease;
@@ -974,7 +980,7 @@ input {
   float: right; }
 
 div.jstElements {
-  background-color: #cccccc;
+  background-color: #DDDDDD;
   padding: 7px 10px; }
   div.jstElements button {
     cursor: pointer; }
@@ -1041,7 +1047,7 @@ div.jstElements {
       -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
       box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05); }
     #main-menu > ul > li > a.selected {
-      background-color: #dddddd;
+      background-color: #EEEEEE;
       color: #232E82;
       -webkit-box-shadow: inset 0px 0px 0px 0px transparent;
       -moz-box-shadow: inset 0px 0px 0px 0px transparent;
@@ -1049,7 +1055,7 @@ div.jstElements {
 
 .contextual {
   float: right;
-  color: #dddddd;
+  color: #EEEEEE;
   margin: 0 0 0 10px; }
   .contextual a {
     background: #2D3DB6;
@@ -1083,7 +1089,7 @@ div.jstElements {
 #context-menu ul {
   padding: 0;
   border-radius: 0;
-  border-color: #cccccc; }
+  border-color: #DDDDDD; }
   #context-menu ul li {
     border-radius: 0 !important;
     border: 0 !important;
@@ -1121,7 +1127,7 @@ div.jstElements {
         -moz-box-shadow: 0px 0px 0px 0px transparent;
         box-shadow: 0px 0px 0px 0px transparent; }
     #context-menu ul li:hover {
-      background-color: #cccccc; }
+      background-color: #DDDDDD; }
 
 #content .tabs ul {
   margin: 14px 0; }
@@ -1245,6 +1251,41 @@ div.jstElements {
   .controller-issues.action-index #content form#query_form {
     padding: 14px 10px; }
 
+.controller-issues.action-index #content .group {
+  background-color: #333333;
+  color: #FFFFFF; }
+  .controller-issues.action-index #content .group .expander {
+    cursor: pointer; }
+    .controller-issues.action-index #content .group .expander::before {
+      display: inline-block;
+      margin-right: 5px;
+      font: normal normal normal 1rem FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "";
+      position: relative;
+      top: 1px; }
+  .controller-issues.action-index #content .group.open .expander::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 1px; }
+  .controller-issues.action-index #content .group a {
+    float: right;
+    color: #DDDDDD;
+    font-size: 0.8rem; }
+  .controller-issues.action-index #content .group td {
+    padding-top: 14px;
+    padding-bottom: 3.5px; }
+
 .issue .splitcontent {
   padding-top: 28px;
   font-size: 0.8rem; }
@@ -1325,7 +1366,7 @@ div.jstElements {
     background: #49D368 !important; }
 
 #issue_tree, #relations, .attachments {
-  border: 1px dotted #dddddd;
+  border: 1px dotted #EEEEEE;
   padding: 14px 10px 14px 0;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
@@ -1382,10 +1423,12 @@ div.jstElements {
       margin-top: -14px;
       margin-bottom: 14px;
       padding: 7px 10px;
-      background-color: #cccccc; }
+      background-color: #DDDDDD; }
 
 .controller-activities h3 {
-  margin: 14px 0 28px; }
+  margin: 28px 0 14px; }
+  .controller-activities h3:first-child {
+    margin-top: 0; }
 
 .controller-activities #activity {
   background-color: #FFFFFF;
@@ -1484,7 +1527,7 @@ table.cal {
   width: 100%;
   background-color: #FFFFFF; }
   table.cal td {
-    border: 1px solid #cccccc; }
+    border: 1px solid #DDDDDD; }
   table.cal .starting::before {
     display: inline-block;
     margin-right: 5px;
@@ -1511,7 +1554,7 @@ table.cal {
 .week-number {
   width: 30px;
   text-align: center;
-  color: #cccccc;
+  color: #DDDDDD;
   font-size: 0.8rem; }
 
 .news .summary {
@@ -1571,9 +1614,9 @@ table.cal {
 
 #gantt_area .gantt_hdr {
   background-color: transparent;
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-  border-right: 1px solid #cccccc; }
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD; }
   #gantt_area .gantt_hdr.nwday {
     background-color: #FFFFFF;
     color: #333333; }
@@ -1689,4 +1732,4 @@ table.cal {
   #roadmap article form {
     padding: 0; }
   #roadmap article tr {
-    border: 1px solid #dddddd; }
+    border: 1px solid #EEEEEE; }
