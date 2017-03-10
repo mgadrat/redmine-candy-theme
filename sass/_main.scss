@@ -10,7 +10,7 @@ body, html {
   font-size: $font-size-base;
   font-family: $font-primary;
   color: $color-neutral-darkest;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   background-color: $color-neutral-dark;
 }
 
@@ -139,46 +139,12 @@ table {
     &.odd {
       background-color: $color-neutral-lightest;
     }
-    th {
-      background-color: $color-primary-mid;
-      color: $color-neutral-lightest;
-      padding: $base-v-spacer $base-h-spacer;
-      text-align: left;
-      border-right: 1px solid $color-neutral-light;
-      font-size: $font-size-small;
 
-      a {
-        color: $color-neutral-lightest;
-        display: block;
-        padding-right: 15px;
-        position: relative;
-        &.sort.desc {
-          @include fa-icon($fa-var-sort-desc);
-          &:before {
-            position: absolute;
-            right: $base-h-spacer*-.5;
-            top: 0;
-          }
-
-        };
-        &.sort.asc {
-          @include fa-icon($fa-var-sort-asc);
-          &:before {
-            position: absolute;
-            right: $base-h-spacer*-.5;
-            top: 5px;
-          }
-        };
-      }
-    }
     td {
       padding: $base-v-spacer/2 $base-h-spacer/2;
 
       &.checkbox {
         width: 30px;
-        input {
-          display: none;
-        }
       }
     }
     &.context-menu-selection {
@@ -193,6 +159,47 @@ table {
           font-size: $font-size-small;
         }
       }
+    }
+  }
+  thead th {
+    background-color: $color-primary-mid;
+    color: $color-neutral-lightest;
+    padding: $base-v-spacer $base-h-spacer;
+    text-align: left;
+    border-right: 1px solid $color-neutral-light;
+    font-size: $font-size-small;
+  }
+  tbody th {
+    background-color: $color-neutral-dark;
+    color: $color-neutral-lightest;
+    padding: $base-v-spacer/4 $base-h-spacer;
+    text-align: left;
+    border-right: 1px solid $color-neutral-light;
+    font-size: $font-size-small;
+  }
+  th {
+    a {
+      color: $color-neutral-lightest;
+      display: block;
+      padding-right: 15px;
+      position: relative;
+      &.sort.desc {
+        @include fa-icon($fa-var-sort-desc);
+        &:before {
+          position: absolute;
+          right: $base-h-spacer*-.5;
+          top: 0;
+        }
+
+      };
+      &.sort.asc {
+        @include fa-icon($fa-var-sort-asc);
+        &:before {
+          position: absolute;
+          right: $base-h-spacer*-.5;
+          top: 5px;
+        }
+      };
     }
   }
 }
@@ -229,6 +236,23 @@ blockquote {
     border-right: 2px dotted $color-neutral-mid;
     padding-right: $base-h-spacer;
   }
+}
+
+pre {
+  display: block;
+  background-color: $color-neutral-light;
+  border-left: $base-highlight-border-width solid $color-neutral-mid;
+  padding: $base-v-spacer $base-h-spacer;
+  overflow: auto;
+  word-wrap: nowrap;
+  font-family: $font-mono;
+}
+
+code {
+  display: inline-block;
+  padding: 2px;
+  background-color: $color-neutral-light;
+  font-family: $font-mono;
 }
 
 .splitcontent {
@@ -307,10 +331,22 @@ blockquote {
 }
 
 
+.text-diff {
+  padding: $base-v-spacer $base-h-spacer;
+  background-color: $color-neutral-lightest;
+  .diff_in {
+    color: $color-validate-mid;
+  }
+  .diff_out {
+    color: $color-cancel-mid;
+    text-decoration: line-through;
+  }
+}
+
 .icon-add { @include btn-validate(); @include fa-icon($fa-var-plus); }
 .icon-time-add { @include fa-icon($icon-time) }
 .icon-save { @include btn-validate(); @include fa-icon($icon-save); }
-.icon-edit { @include fa-icon($icon-edit); }
+.icon-edit { @include btn(); @include fa-icon($icon-edit); }
 .icon-fav-off { @include fa-icon($icon-watch); }
 .icon-fav { @include fa-icon($icon-unwatch); }
 .icon-comment { @include fa-icon($icon-comment); }

@@ -1,3 +1,13 @@
+.controller-projects {
+  .splitcontentleft,
+  .splitcontentright {
+    & > div {
+      padding: $base-v-spacer $base-h-spacer;
+      background-color: $color-neutral-lightest;
+    }
+  }
+}
+
 #projects-index {
 
   ul {

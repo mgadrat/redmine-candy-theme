@@ -1,0 +1,24 @@
+.controller-documents.action-index #content {
+  h4, p, .wiki {
+    background-color: $color-neutral-lightest;
+    padding: 0 $base-h-spacer;
+    border-left: $base-highlight-border-width solid $color-complement-light;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    padding: $base-v-spacer $base-h-spacer;
+  }
+
+  .wiki {
+    padding-bottom: $base-v-spacer;
+    padding-top: $base-v-spacer;
+    margin-bottom: $base-v-spacer;
+
+    p {
+      border: 0;
+      padding: 0;
+      margin-bottom: $base-v-spacer;
+    }
+  }
+}

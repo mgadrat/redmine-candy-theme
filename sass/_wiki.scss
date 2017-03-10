@@ -1,0 +1,19 @@
+.wiki.wiki-page {
+  padding: $base-v-spacer $base-h-spacer;
+  background-color: $color-neutral-lightest;
+
+  .contextual a{
+    font-size: $font-size-small;
+    padding: $base-v-spacer/4 $base-h-spacer/2;
+  }
+
+}
+
+.controller-wiki.action-show {
+  #content > .contextual {
+    position: relative;
+    top: $base-v-spacer;
+    right: $base-h-spacer;
+  }
+}
+

@@ -1,6 +1,7 @@
 
 #query_form,
 #issue-form,
+#wiki_form,
 #new_version,
 #new_project,
 #new_issue_category,
@@ -9,6 +10,8 @@
 #new_document,
 #repository-form,
 #new_time_entry,
+#new_board,
+#message-form,
 .edit_project,
 .controller-files.action-new #content form {
   background-color: $color-neutral-lightest;
@@ -61,6 +64,10 @@ fieldset {
     }
   }
 
+}
+
+#modules-form label {
+  width: auto;
 }
 
 .select2 {
@@ -139,10 +146,13 @@ div.jstElements {
   }
 }
 
-.jstEditor textarea {
-  width: 100%;
-  padding: $base-v-spacer $base-h-spacer;
-  font-size: $font-size-normal;
+.jstEditor {
+  margin-bottom: $base-v-spacer;
+  textarea {
+    width: 100%;
+    padding: $base-v-spacer $base-h-spacer;
+    font-size: $font-size-normal;
+  }
 }
 
 #attachments_fields {

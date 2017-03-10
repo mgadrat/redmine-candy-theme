@@ -1,0 +1,15 @@
+.controller-messages {
+  .message {
+    background-color: $color-neutral-lightest;
+    padding: $base-v-spacer $base-h-spacer;
+    margin-bottom: $base-v-spacer;
+
+    &.reply {
+      border-left: $base-highlight-border-width solid $color-complement-light;
+
+      h4 {
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

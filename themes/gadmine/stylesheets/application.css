@@ -164,7 +164,7 @@ body, html {
   font-size: 16px;
   font-family: "Mukta Vaani", helvetica, arial, sans-serif;
   color: #111111;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   background-color: #333333; }
 
 html {
@@ -248,54 +248,10 @@ table {
     background-color: #DDDDDD; }
   table tr.odd {
     background-color: #FFFFFF; }
-  table tr th {
-    background-color: #232E82;
-    color: #FFFFFF;
-    padding: 14px 10px;
-    text-align: left;
-    border-right: 1px solid #EEEEEE;
-    font-size: 0.8rem; }
-    table tr th a {
-      color: #FFFFFF;
-      display: block;
-      padding-right: 15px;
-      position: relative; }
-      table tr th a.sort.desc::before {
-        display: inline-block;
-        margin-right: 5px;
-        font: normal normal normal 1rem FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        content: "";
-        position: relative;
-        top: 0; }
-      table tr th a.sort.desc:before {
-        position: absolute;
-        right: -5px;
-        top: 0; }
-      table tr th a.sort.asc::before {
-        display: inline-block;
-        margin-right: 5px;
-        font: normal normal normal 1rem FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        content: "";
-        position: relative;
-        top: 0; }
-      table tr th a.sort.asc:before {
-        position: absolute;
-        right: -5px;
-        top: 5px; }
   table tr td {
     padding: 7px 5px; }
     table tr td.checkbox {
       width: 30px; }
-      table tr td.checkbox input {
-        display: none; }
   table tr.context-menu-selection {
     background-color: #60A91B !important; }
     table tr.context-menu-selection:hover {
@@ -315,6 +271,55 @@ table {
         top: 0; }
       table tr.context-menu-selection .checkbox::before {
         font-size: 0.8rem; }
+  table thead th {
+    background-color: #232E82;
+    color: #FFFFFF;
+    padding: 14px 10px;
+    text-align: left;
+    border-right: 1px solid #EEEEEE;
+    font-size: 0.8rem; }
+  table tbody th {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 3.5px 10px;
+    text-align: left;
+    border-right: 1px solid #EEEEEE;
+    font-size: 0.8rem; }
+  table th a {
+    color: #FFFFFF;
+    display: block;
+    padding-right: 15px;
+    position: relative; }
+    table th a.sort.desc::before {
+      display: inline-block;
+      margin-right: 5px;
+      font: normal normal normal 1rem FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "";
+      position: relative;
+      top: 0; }
+    table th a.sort.desc:before {
+      position: absolute;
+      right: -5px;
+      top: 0; }
+    table th a.sort.asc::before {
+      display: inline-block;
+      margin-right: 5px;
+      font: normal normal normal 1rem FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "";
+      position: relative;
+      top: 0; }
+    table th a.sort.asc:before {
+      position: absolute;
+      right: -5px;
+      top: 5px; }
 
 table.progress {
   margin: 0;
@@ -352,6 +357,21 @@ blockquote {
     height: 100%;
     border-right: 2px dotted #DDDDDD;
     padding-right: 10px; }
+
+pre {
+  display: block;
+  background-color: #EEEEEE;
+  border-left: 3.33333px solid #DDDDDD;
+  padding: 14px 10px;
+  overflow: auto;
+  word-wrap: nowrap;
+  font-family: monospace; }
+
+code {
+  display: inline-block;
+  padding: 2px;
+  background-color: #EEEEEE;
+  font-family: monospace; }
 
 .splitcontent {
   zoom: 1;
@@ -489,6 +509,15 @@ blockquote {
     background-color: #FFFFFF;
     padding: 7px 5px; }
 
+.text-diff {
+  padding: 14px 10px;
+  background-color: #FFFFFF; }
+  .text-diff .diff_in {
+    color: #2B803E; }
+  .text-diff .diff_out {
+    color: #AA4339;
+    text-decoration: line-through; }
+
 .icon-add {
   background: #2D3DB6;
   color: #FFFFFF;
@@ -583,17 +612,42 @@ blockquote {
     position: relative;
     top: 0; }
 
-.icon-edit::before {
+.icon-edit {
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 7px 10px;
+  text-decoration: none;
   display: inline-block;
-  margin-right: 5px;
-  font: normal normal normal 1rem FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-  position: relative;
-  top: 0; }
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent; }
+  .icon-edit:hover {
+    background: #3346D4;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+  .icon-edit::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
 
 .icon-fav-off::before {
   display: inline-block;
@@ -780,6 +834,7 @@ a.icon-checked {
 
 #query_form,
 #issue-form,
+#wiki_form,
 #new_version,
 #new_project,
 #new_issue_category,
@@ -788,6 +843,8 @@ a.icon-checked {
 #new_document,
 #repository-form,
 #new_time_entry,
+#new_board,
+#message-form,
 .edit_project,
 .controller-files.action-new #content form {
   background-color: #FFFFFF;
@@ -795,6 +852,7 @@ a.icon-checked {
   margin-bottom: 14px; }
   #query_form legend,
   #issue-form legend,
+  #wiki_form legend,
   #new_version legend,
   #new_project legend,
   #new_issue_category legend,
@@ -803,11 +861,14 @@ a.icon-checked {
   #new_document legend,
   #repository-form legend,
   #new_time_entry legend,
+  #new_board legend,
+  #message-form legend,
   .edit_project legend,
   .controller-files.action-new #content form legend {
     font-weight: bold; }
   #query_form label,
   #issue-form label,
+  #wiki_form label,
   #new_version label,
   #new_project label,
   #new_issue_category label,
@@ -816,6 +877,8 @@ a.icon-checked {
   #new_document label,
   #repository-form label,
   #new_time_entry label,
+  #new_board label,
+  #message-form label,
   .edit_project label,
   .controller-files.action-new #content form label {
     display: inline-block;
@@ -824,6 +887,7 @@ a.icon-checked {
     line-height: 2rem; }
   #query_form .add-filter label,
   #issue-form .add-filter label,
+  #wiki_form .add-filter label,
   #new_version .add-filter label,
   #new_project .add-filter label,
   #new_issue_category .add-filter label,
@@ -832,12 +896,15 @@ a.icon-checked {
   #new_document .add-filter label,
   #repository-form .add-filter label,
   #new_time_entry .add-filter label,
+  #new_board .add-filter label,
+  #message-form .add-filter label,
   .edit_project .add-filter label,
   .controller-files.action-new #content form .add-filter label {
     width: auto;
     font-weight: bold; }
   #query_form .icon-edit,
   #issue-form .icon-edit,
+  #wiki_form .icon-edit,
   #new_version .icon-edit,
   #new_project .icon-edit,
   #new_issue_category .icon-edit,
@@ -846,11 +913,14 @@ a.icon-checked {
   #new_document .icon-edit,
   #repository-form .icon-edit,
   #new_time_entry .icon-edit,
+  #new_board .icon-edit,
+  #message-form .icon-edit,
   .edit_project .icon-edit,
   .controller-files.action-new #content form .icon-edit {
     margin-left: 5px; }
   #query_form .info,
   #issue-form .info,
+  #wiki_form .info,
   #new_version .info,
   #new_project .info,
   #new_issue_category .info,
@@ -859,6 +929,8 @@ a.icon-checked {
   #new_document .info,
   #repository-form .info,
   #new_time_entry .info,
+  #new_board .info,
+  #message-form .info,
   .edit_project .info,
   .controller-files.action-new #content form .info {
     display: block;
@@ -893,6 +965,9 @@ fieldset {
     content: "";
     position: relative;
     top: 1px; }
+
+#modules-form label {
+  width: auto; }
 
 .select2 {
   margin-left: 10px;
@@ -985,10 +1060,12 @@ div.jstElements {
   div.jstElements button {
     cursor: pointer; }
 
-.jstEditor textarea {
-  width: 100%;
-  padding: 14px 10px;
-  font-size: 1rem; }
+.jstEditor {
+  margin-bottom: 14px; }
+  .jstEditor textarea {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 1rem; }
 
 #attachments_fields {
   display: block; }
@@ -1225,6 +1302,29 @@ div.jstElements {
     color: #FFFFFF;
     margin-bottom: 0; }
 
+.controller-documents.action-index #content h4, .controller-documents.action-index #content p, .controller-documents.action-index #content .wiki {
+  background-color: #FFFFFF;
+  padding: 0 10px;
+  border-left: 3.33333px solid #DB1D70;
+  margin-bottom: 0; }
+
+.controller-documents.action-index #content h4 {
+  padding: 14px 10px; }
+
+.controller-documents.action-index #content .wiki {
+  padding-bottom: 14px;
+  padding-top: 14px;
+  margin-bottom: 14px; }
+  .controller-documents.action-index #content .wiki p {
+    border: 0;
+    padding: 0;
+    margin-bottom: 14px; }
+
+.controller-projects .splitcontentleft > div,
+.controller-projects .splitcontentright > div {
+  padding: 14px 10px;
+  background-color: #FFFFFF; }
+
 #projects-index ul {
   margin: 0; }
 
@@ -1240,51 +1340,6 @@ div.jstElements {
     border-left: 3.33333px solid #DB1D70; }
   #projects-index li ul {
     margin: 14px 20px; }
-
-.controller-projects .splitcontentleft > div,
-.controller-projects .splitcontentright > div {
-  padding: 14px 10px;
-  background-color: #FFFFFF; }
-
-.controller-issues.action-index #content form {
-  padding: 0; }
-  .controller-issues.action-index #content form#query_form {
-    padding: 14px 10px; }
-
-.controller-issues.action-index #content .group {
-  background-color: #333333;
-  color: #FFFFFF; }
-  .controller-issues.action-index #content .group .expander {
-    cursor: pointer; }
-    .controller-issues.action-index #content .group .expander::before {
-      display: inline-block;
-      margin-right: 5px;
-      font: normal normal normal 1rem FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "";
-      position: relative;
-      top: 1px; }
-  .controller-issues.action-index #content .group.open .expander::before {
-    display: inline-block;
-    margin-right: 5px;
-    font: normal normal normal 1rem FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "";
-    position: relative;
-    top: 1px; }
-  .controller-issues.action-index #content .group a {
-    float: right;
-    color: #DDDDDD;
-    font-size: 0.8rem; }
-  .controller-issues.action-index #content .group td {
-    padding-top: 14px;
-    padding-bottom: 3.5px; }
 
 .issue .splitcontent {
   padding-top: 28px;
@@ -1334,6 +1389,9 @@ div.jstElements {
 .issue .author {
   font-size: 0.8rem;
   margin-bottom: 0; }
+
+.issues .checkbox input {
+  display: none; }
 
 .controller-issues .icon-edit {
   background: #2D3DB6;
@@ -1424,6 +1482,46 @@ div.jstElements {
       margin-bottom: 14px;
       padding: 7px 10px;
       background-color: #DDDDDD; }
+
+.controller-issues.action-index #content form {
+  padding: 0; }
+  .controller-issues.action-index #content form#query_form {
+    padding: 14px 10px; }
+
+.controller-issues.action-index #content .group {
+  background-color: #333333;
+  color: #FFFFFF; }
+  .controller-issues.action-index #content .group .expander {
+    cursor: pointer; }
+    .controller-issues.action-index #content .group .expander::before {
+      display: inline-block;
+      margin-right: 5px;
+      font: normal normal normal 1rem FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "";
+      position: relative;
+      top: 1px; }
+  .controller-issues.action-index #content .group.open .expander::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 1px; }
+  .controller-issues.action-index #content .group a {
+    float: right;
+    color: #DDDDDD;
+    font-size: 0.8rem; }
+  .controller-issues.action-index #content .group td {
+    padding-top: 14px;
+    padding-bottom: 3.5px; }
 
 .controller-activities h3 {
   margin: 28px 0 14px; }
@@ -1603,6 +1701,45 @@ table.cal {
     display: block;
     margin-top: -28px;
     margin-bottom: 14px; }
+
+.controller-messages .message {
+  background-color: #FFFFFF;
+  padding: 14px 10px;
+  margin-bottom: 14px; }
+  .controller-messages .message.reply {
+    border-left: 3.33333px solid #DB1D70; }
+    .controller-messages .message.reply h4 {
+      font-size: 0.8rem; }
+
+.controller-documents.action-index #content h4, .controller-documents.action-index #content p, .controller-documents.action-index #content .wiki {
+  background-color: #FFFFFF;
+  padding: 0 10px;
+  border-left: 3.33333px solid #DB1D70;
+  margin-bottom: 0; }
+
+.controller-documents.action-index #content h4 {
+  padding: 14px 10px; }
+
+.controller-documents.action-index #content .wiki {
+  padding-bottom: 14px;
+  padding-top: 14px;
+  margin-bottom: 14px; }
+  .controller-documents.action-index #content .wiki p {
+    border: 0;
+    padding: 0;
+    margin-bottom: 14px; }
+
+.wiki.wiki-page {
+  padding: 14px 10px;
+  background-color: #FFFFFF; }
+  .wiki.wiki-page .contextual a {
+    font-size: 0.8rem;
+    padding: 3.5px 5px; }
+
+.controller-wiki.action-show #content > .contextual {
+  position: relative;
+  top: 14px;
+  right: 10px; }
 
 .gantt_hdr {
   position: absolute;
