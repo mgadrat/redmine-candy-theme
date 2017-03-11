@@ -1668,6 +1668,36 @@ div.jstElements {
     position: absolute;
     top: 0;
     left: -22px; }
+  .controller-activities dt.attachment::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .controller-activities dt.attachment::before {
+    position: absolute;
+    top: 2px;
+    left: -22px; }
+  .controller-activities dt.reply::before, .controller-activities dt.message::before, .controller-activities dt.comment::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .controller-activities dt.reply::before, .controller-activities dt.message::before, .controller-activities dt.comment::before {
+    position: absolute;
+    top: 0;
+    left: -20px; }
 
 table.cal {
   width: 100%;

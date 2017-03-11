@@ -28,7 +28,7 @@
 
     position: relative;
 
-    &.time-entry{
+    &.time-entry {
       @include fa-icon($icon-time);
       &::before {
         position: absolute;
@@ -37,7 +37,7 @@
       }
     }
 
-    &.issue{
+    &.issue {
       @include fa-icon($icon-issue);
         &::before {
         position: absolute;
@@ -46,7 +46,7 @@
       }
     }
 
-    &.news{
+    &.news {
       @include fa-icon($icon-news);
       &::before {
         position: absolute;
@@ -55,7 +55,7 @@
       }
     }
 
-    &.issue-note{
+    &.issue-note {
       @include fa-icon($icon-comment);
       &::before {
         position: absolute;
@@ -64,12 +64,32 @@
       }
     }
 
-    &.wiki-page{
+    &.wiki-page {
       @include fa-icon($icon-wiki);
       &::before {
         position: absolute;
         top: 0;
         left: $base-h-spacer*-2.2;
+      }
+    }
+
+    &.attachment {
+      @include fa-icon($icon-file);
+      &::before {
+        position: absolute;
+        top: 2px;
+        left: $base-h-spacer*-2.2;
+      }
+    }
+
+    &.reply,
+    &.message,
+    &.comment {
+      @include fa-icon($icon-comment);
+      &::before {
+        position: absolute;
+        top: 0;
+        left: $base-h-spacer*-2;
       }
     }
 
