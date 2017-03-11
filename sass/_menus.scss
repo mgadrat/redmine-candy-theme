@@ -23,6 +23,7 @@
     left: 0;
     background-color: $color-primary-light;
     display: none;
+    z-index: 400;
     &.visible {
       display: block;
     }

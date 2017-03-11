@@ -1093,7 +1093,8 @@ div.jstElements {
     top: 100%;
     left: 0;
     background-color: #2D3DB6;
-    display: none; }
+    display: none;
+    z-index: 400; }
     #main-menu .menu-children.visible {
       display: block; }
     #main-menu .menu-children li, #main-menu .menu-children a {
@@ -1390,7 +1391,7 @@ div.jstElements {
   font-size: 0.8rem;
   margin-bottom: 0; }
 
-.issues .checkbox input {
+.issues .checkbox input, .related-issues .checkbox input {
   display: none; }
 
 .controller-issues .icon-edit {
