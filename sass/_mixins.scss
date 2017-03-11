@@ -66,9 +66,11 @@
   @include transition(background-color 0.2s linear);
   @include transition(box-shadow 0.2s linear);
   @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0))
+  @include border-radius(5px);
 
   &:hover {
     background: $color-primary-lightest;
+    color: $color-neutral-lightest;
     text-decoration: none;
     border-width: 0;
     @include box-shadow(0px 0px 2px 0px rgba(0, 0, 0, 0.6));

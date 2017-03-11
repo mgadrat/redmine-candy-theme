@@ -6,6 +6,10 @@
       background-color: $color-neutral-lightest;
     }
   }
+
+  .author {
+    font-size: $font-size-small;
+  }
 }
 
 #projects-index {
@@ -32,5 +36,23 @@
     ul {
       margin: $base-v-spacer $base-h-spacer*2;
     }
+  }
+}
+
+.controller-timelog {
+  #content .tabs {
+    background-color: $color-neutral-light;
+    margin-left: $base-h-spacer*-1;
+    margin-right: $base-h-spacer*-1;
+    padding-top: $base-v-spacer;
+  }
+
+  &.action-index #content .tabs {
+    margin-bottom: $base-v-spacer*-2;
+  }
+
+  &.action-report #content .tabs {
+    padding-bottom: $base-v-spacer;
+    margin-bottom: $base-v-spacer;
   }
 }

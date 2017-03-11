@@ -73,6 +73,15 @@
       }
     }
 
+    &.document {
+      @include fa-icon($icon-docs);
+      &::before {
+        position: absolute;
+        top: 1px;
+        left: $base-h-spacer*-2.1;
+      }
+    }
+
     &.attachment {
       @include fa-icon($icon-file);
       &::before {

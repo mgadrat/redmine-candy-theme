@@ -385,6 +385,10 @@ vertical-align: bottom;
   }
 }
 
+.controller-admin.action-info pre {
+  background-color: $color-neutral-lightest;
+}
+
 .icon-add { @include btn-validate(); @include fa-icon($fa-var-plus); }
 .icon-time-add { @include fa-icon($icon-time) }
 .icon-save { @include btn-validate(); @include fa-icon($icon-save); }
@@ -392,7 +396,8 @@ vertical-align: bottom;
 .icon-fav-off { @include fa-icon($icon-watch); }
 .icon-fav { @include fa-icon($icon-unwatch); }
 .icon-comment { @include fa-icon($icon-comment); }
-.icon-copy { @include fa-icon($icon-copy); }
+.icon-copy { @include btn(); @include fa-icon($icon-copy); }
+.icon-lock { @include btn(); @include fa-icon($icon-lock); }
 .icon-del { @include btn-cancel();@include fa-icon($icon-delete); }
 a.icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
 .icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }

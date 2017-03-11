@@ -21,7 +21,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: $color-primary-light;
+    font-size: $font-size-small;
+    background-color: $color-validate-lightest;
     display: none;
     z-index: 400;
     &.visible {
@@ -33,10 +34,11 @@
     }
    
     a {
-      padding: $base-v-spacer $base-h-spacer;
+      padding: $base-v-spacer/2 $base-h-spacer;
+      @include fa-icon($fa-var-plus);
       @include transition(background-color 0.2s ease);
       &:hover {
-        background-color: $color-primary-lightest;
+        background-color: $color-validate-light;
       }
     }
   }
@@ -115,22 +117,26 @@
       @include btn();
 
       &.selected {
-        @include btn-validate();
+        background-color: $color-complement-light;
       }
     }
   }
 }
 
-#admin-menu a.projects {}
-#admin-menu a.users {}
-#admin-menu a.groups {}
-#admin-menu a.roles {}
-#admin-menu a.trackers {}
-#admin-menu a.issue_statuses {}
-#admin-menu a.workflows {}
-#admin-menu a.custom_fields {}
-#admin-menu a.enumerations {}
-#admin-menu a.settings {}
-#admin-menu a.plugins {}
-#admin-menu a.info {}
-#admin-menu a.server_authentication {}
+#main-menu a.overview { @include fa-icon($icon-project); }
+#main-menu a.activity { @include fa-icon($icon-wiki); }
+#main-menu a.roadmap { @include fa-icon($icon-version); }
+#main-menu a.issues { @include fa-icon($icon-issue); }
+#main-menu a.gantt { @include fa-icon($icon-gantt); }
+#main-menu a.calendar { @include fa-icon($icon-cal); }
+#main-menu a.news { @include fa-icon($icon-news); }
+#main-menu a.documents { @include fa-icon($icon-docs); }
+#main-menu a.wiki { @include fa-icon($icon-wiki); }
+#main-menu a.boards { @include fa-icon($icon-comment); }
+#main-menu a.files { @include fa-icon($icon-file); }
+#main-menu a.settings { @include fa-icon($icon-settings); }
+
+#admin-menu {
+  padding: $base-v-spacer $base-h-spacer;
+  background-color: $color-neutral-lightest;
+}

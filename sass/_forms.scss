@@ -12,9 +12,29 @@
 #new_time_entry,
 #new_board,
 #message-form,
+#new_tracker,
+#new_issue_status,
+#custom_field_form,
+#new_enumeration,
+#auth_source_form,
+#tab-content-general form,
+#tab-content-display form,
+#tab-content-authentication form,
+#tab-content-api form,
+#tab-content-projects form,
+#tab-content-issues form,
+#tab-content-attachments form,
+#tab-content-notifications form,
+#tab-content-mail_handler form,
+#tab-content-repositories form,
 .edit_project,
+.controller-admin.action-projects #content form,
+.controller-users.action-index #content form,
 .controller-imports.action-new #content form,
 .controller-files.action-new #content form {
+
+  @include clearfix();
+
   background-color: $color-neutral-lightest;
   padding: $base-v-spacer $base-h-spacer;
   margin-bottom: $base-v-spacer;
@@ -25,9 +45,23 @@
 
   label {
     display: inline-block;
-    width: 120px;
+    width: 200px;
     border-bottom: 1px dotted $color-neutral-mid;
     line-height: $font-size-normal*2;
+
+    &.block {
+      width: auto;
+      display: block;
+      border: 0;
+      line-height: $font-size-normal*1.2;
+    }
+  }
+
+  .projects label{
+    width: auto;
+    display: block;
+    border: 0;
+    line-height: $font-size-normal*1.2;
   }
 
   .add-filter {
@@ -145,6 +179,11 @@ div.jstElements {
   button {
     cursor: pointer;
   }
+}
+
+textarea {
+  display: block;
+  min-width: 400px;
 }
 
 .jstEditor {

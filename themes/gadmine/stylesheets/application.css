@@ -427,10 +427,15 @@ code {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #F06355 !important;
   color: #FFFFFF !important; }
   #sidebar-handle:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -468,10 +473,15 @@ code {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .sidebar_closed #sidebar-handle:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -559,6 +569,9 @@ html > body #ajax-indicator {
     color: #AA4339;
     text-decoration: line-through; }
 
+.controller-admin.action-info pre {
+  background-color: #FFFFFF; }
+
 .icon-add {
   background: #2D3DB6;
   color: #FFFFFF;
@@ -577,10 +590,15 @@ html > body #ajax-indicator {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-add:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -630,10 +648,15 @@ html > body #ajax-indicator {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-save:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -670,9 +693,14 @@ html > body #ajax-indicator {
   transition: box-shadow 0.2s linear;
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent; }
+  box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
   .icon-edit:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -726,17 +754,89 @@ html > body #ajax-indicator {
   position: relative;
   top: 0; }
 
-.icon-copy::before {
+.icon-copy {
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 7px 10px;
+  text-decoration: none;
   display: inline-block;
-  margin-right: 5px;
-  font: normal normal normal 1rem FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-  position: relative;
-  top: 0; }
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .icon-copy:hover {
+    background: #3346D4;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+  .icon-copy::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
+.icon-lock {
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 7px 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .icon-lock:hover {
+    background: #3346D4;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+  .icon-lock::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
 
 .icon-del {
   background: #2D3DB6;
@@ -756,10 +856,15 @@ html > body #ajax-indicator {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #F06355 !important;
   color: #FFFFFF !important; }
   .icon-del:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -797,10 +902,15 @@ a.icon-checked {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #40B55A !important;
   color: #FFFFFF !important; }
   a.icon-checked:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -838,10 +948,15 @@ a.icon-checked {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #F06355 !important;
   color: #FFFFFF !important; }
   .icon-reload:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -886,12 +1001,132 @@ a.icon-checked {
 #new_time_entry,
 #new_board,
 #message-form,
+#new_tracker,
+#new_issue_status,
+#custom_field_form,
+#new_enumeration,
+#auth_source_form,
+#tab-content-general form,
+#tab-content-display form,
+#tab-content-authentication form,
+#tab-content-api form,
+#tab-content-projects form,
+#tab-content-issues form,
+#tab-content-attachments form,
+#tab-content-notifications form,
+#tab-content-mail_handler form,
+#tab-content-repositories form,
 .edit_project,
+.controller-admin.action-projects #content form,
+.controller-users.action-index #content form,
 .controller-imports.action-new #content form,
 .controller-files.action-new #content form {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
   background-color: #FFFFFF;
   padding: 14px 10px;
   margin-bottom: 14px; }
+  #query_form::before, #query_form::after,
+  #issue-form::before,
+  #issue-form::after,
+  #wiki_form::before,
+  #wiki_form::after,
+  #new_version::before,
+  #new_version::after,
+  #new_project::before,
+  #new_project::after,
+  #new_issue_category::before,
+  #new_issue_category::after,
+  #news-form::before,
+  #news-form::after,
+  #new_page::before,
+  #new_page::after,
+  #new_document::before,
+  #new_document::after,
+  #repository-form::before,
+  #repository-form::after,
+  #new_time_entry::before,
+  #new_time_entry::after,
+  #new_board::before,
+  #new_board::after,
+  #message-form::before,
+  #message-form::after,
+  #new_tracker::before,
+  #new_tracker::after,
+  #new_issue_status::before,
+  #new_issue_status::after,
+  #custom_field_form::before,
+  #custom_field_form::after,
+  #new_enumeration::before,
+  #new_enumeration::after,
+  #auth_source_form::before,
+  #auth_source_form::after,
+  #tab-content-general form::before,
+  #tab-content-general form::after,
+  #tab-content-display form::before,
+  #tab-content-display form::after,
+  #tab-content-authentication form::before,
+  #tab-content-authentication form::after,
+  #tab-content-api form::before,
+  #tab-content-api form::after,
+  #tab-content-projects form::before,
+  #tab-content-projects form::after,
+  #tab-content-issues form::before,
+  #tab-content-issues form::after,
+  #tab-content-attachments form::before,
+  #tab-content-attachments form::after,
+  #tab-content-notifications form::before,
+  #tab-content-notifications form::after,
+  #tab-content-mail_handler form::before,
+  #tab-content-mail_handler form::after,
+  #tab-content-repositories form::before,
+  #tab-content-repositories form::after,
+  .edit_project::before,
+  .edit_project::after,
+  .controller-admin.action-projects #content form::before,
+  .controller-admin.action-projects #content form::after,
+  .controller-users.action-index #content form::before,
+  .controller-users.action-index #content form::after,
+  .controller-imports.action-new #content form::before,
+  .controller-imports.action-new #content form::after,
+  .controller-files.action-new #content form::before,
+  .controller-files.action-new #content form::after {
+    content: "";
+    display: table; }
+  #query_form::after,
+  #issue-form::after,
+  #wiki_form::after,
+  #new_version::after,
+  #new_project::after,
+  #new_issue_category::after,
+  #news-form::after,
+  #new_page::after,
+  #new_document::after,
+  #repository-form::after,
+  #new_time_entry::after,
+  #new_board::after,
+  #message-form::after,
+  #new_tracker::after,
+  #new_issue_status::after,
+  #custom_field_form::after,
+  #new_enumeration::after,
+  #auth_source_form::after,
+  #tab-content-general form::after,
+  #tab-content-display form::after,
+  #tab-content-authentication form::after,
+  #tab-content-api form::after,
+  #tab-content-projects form::after,
+  #tab-content-issues form::after,
+  #tab-content-attachments form::after,
+  #tab-content-notifications form::after,
+  #tab-content-mail_handler form::after,
+  #tab-content-repositories form::after,
+  .edit_project::after,
+  .controller-admin.action-projects #content form::after,
+  .controller-users.action-index #content form::after,
+  .controller-imports.action-new #content form::after,
+  .controller-files.action-new #content form::after {
+    clear: both; }
   #query_form legend,
   #issue-form legend,
   #wiki_form legend,
@@ -905,7 +1140,24 @@ a.icon-checked {
   #new_time_entry legend,
   #new_board legend,
   #message-form legend,
+  #new_tracker legend,
+  #new_issue_status legend,
+  #custom_field_form legend,
+  #new_enumeration legend,
+  #auth_source_form legend,
+  #tab-content-general form legend,
+  #tab-content-display form legend,
+  #tab-content-authentication form legend,
+  #tab-content-api form legend,
+  #tab-content-projects form legend,
+  #tab-content-issues form legend,
+  #tab-content-attachments form legend,
+  #tab-content-notifications form legend,
+  #tab-content-mail_handler form legend,
+  #tab-content-repositories form legend,
   .edit_project legend,
+  .controller-admin.action-projects #content form legend,
+  .controller-users.action-index #content form legend,
   .controller-imports.action-new #content form legend,
   .controller-files.action-new #content form legend {
     font-weight: bold; }
@@ -922,13 +1174,104 @@ a.icon-checked {
   #new_time_entry label,
   #new_board label,
   #message-form label,
+  #new_tracker label,
+  #new_issue_status label,
+  #custom_field_form label,
+  #new_enumeration label,
+  #auth_source_form label,
+  #tab-content-general form label,
+  #tab-content-display form label,
+  #tab-content-authentication form label,
+  #tab-content-api form label,
+  #tab-content-projects form label,
+  #tab-content-issues form label,
+  #tab-content-attachments form label,
+  #tab-content-notifications form label,
+  #tab-content-mail_handler form label,
+  #tab-content-repositories form label,
   .edit_project label,
+  .controller-admin.action-projects #content form label,
+  .controller-users.action-index #content form label,
   .controller-imports.action-new #content form label,
   .controller-files.action-new #content form label {
     display: inline-block;
-    width: 120px;
+    width: 200px;
     border-bottom: 1px dotted #DDDDDD;
     line-height: 2rem; }
+    #query_form label.block,
+    #issue-form label.block,
+    #wiki_form label.block,
+    #new_version label.block,
+    #new_project label.block,
+    #new_issue_category label.block,
+    #news-form label.block,
+    #new_page label.block,
+    #new_document label.block,
+    #repository-form label.block,
+    #new_time_entry label.block,
+    #new_board label.block,
+    #message-form label.block,
+    #new_tracker label.block,
+    #new_issue_status label.block,
+    #custom_field_form label.block,
+    #new_enumeration label.block,
+    #auth_source_form label.block,
+    #tab-content-general form label.block,
+    #tab-content-display form label.block,
+    #tab-content-authentication form label.block,
+    #tab-content-api form label.block,
+    #tab-content-projects form label.block,
+    #tab-content-issues form label.block,
+    #tab-content-attachments form label.block,
+    #tab-content-notifications form label.block,
+    #tab-content-mail_handler form label.block,
+    #tab-content-repositories form label.block,
+    .edit_project label.block,
+    .controller-admin.action-projects #content form label.block,
+    .controller-users.action-index #content form label.block,
+    .controller-imports.action-new #content form label.block,
+    .controller-files.action-new #content form label.block {
+      width: auto;
+      display: block;
+      border: 0;
+      line-height: 1.2rem; }
+  #query_form .projects label,
+  #issue-form .projects label,
+  #wiki_form .projects label,
+  #new_version .projects label,
+  #new_project .projects label,
+  #new_issue_category .projects label,
+  #news-form .projects label,
+  #new_page .projects label,
+  #new_document .projects label,
+  #repository-form .projects label,
+  #new_time_entry .projects label,
+  #new_board .projects label,
+  #message-form .projects label,
+  #new_tracker .projects label,
+  #new_issue_status .projects label,
+  #custom_field_form .projects label,
+  #new_enumeration .projects label,
+  #auth_source_form .projects label,
+  #tab-content-general form .projects label,
+  #tab-content-display form .projects label,
+  #tab-content-authentication form .projects label,
+  #tab-content-api form .projects label,
+  #tab-content-projects form .projects label,
+  #tab-content-issues form .projects label,
+  #tab-content-attachments form .projects label,
+  #tab-content-notifications form .projects label,
+  #tab-content-mail_handler form .projects label,
+  #tab-content-repositories form .projects label,
+  .edit_project .projects label,
+  .controller-admin.action-projects #content form .projects label,
+  .controller-users.action-index #content form .projects label,
+  .controller-imports.action-new #content form .projects label,
+  .controller-files.action-new #content form .projects label {
+    width: auto;
+    display: block;
+    border: 0;
+    line-height: 1.2rem; }
   #query_form .add-filter label,
   #issue-form .add-filter label,
   #wiki_form .add-filter label,
@@ -942,7 +1285,24 @@ a.icon-checked {
   #new_time_entry .add-filter label,
   #new_board .add-filter label,
   #message-form .add-filter label,
+  #new_tracker .add-filter label,
+  #new_issue_status .add-filter label,
+  #custom_field_form .add-filter label,
+  #new_enumeration .add-filter label,
+  #auth_source_form .add-filter label,
+  #tab-content-general form .add-filter label,
+  #tab-content-display form .add-filter label,
+  #tab-content-authentication form .add-filter label,
+  #tab-content-api form .add-filter label,
+  #tab-content-projects form .add-filter label,
+  #tab-content-issues form .add-filter label,
+  #tab-content-attachments form .add-filter label,
+  #tab-content-notifications form .add-filter label,
+  #tab-content-mail_handler form .add-filter label,
+  #tab-content-repositories form .add-filter label,
   .edit_project .add-filter label,
+  .controller-admin.action-projects #content form .add-filter label,
+  .controller-users.action-index #content form .add-filter label,
   .controller-imports.action-new #content form .add-filter label,
   .controller-files.action-new #content form .add-filter label {
     width: auto;
@@ -960,7 +1320,24 @@ a.icon-checked {
   #new_time_entry .icon-edit,
   #new_board .icon-edit,
   #message-form .icon-edit,
+  #new_tracker .icon-edit,
+  #new_issue_status .icon-edit,
+  #custom_field_form .icon-edit,
+  #new_enumeration .icon-edit,
+  #auth_source_form .icon-edit,
+  #tab-content-general form .icon-edit,
+  #tab-content-display form .icon-edit,
+  #tab-content-authentication form .icon-edit,
+  #tab-content-api form .icon-edit,
+  #tab-content-projects form .icon-edit,
+  #tab-content-issues form .icon-edit,
+  #tab-content-attachments form .icon-edit,
+  #tab-content-notifications form .icon-edit,
+  #tab-content-mail_handler form .icon-edit,
+  #tab-content-repositories form .icon-edit,
   .edit_project .icon-edit,
+  .controller-admin.action-projects #content form .icon-edit,
+  .controller-users.action-index #content form .icon-edit,
   .controller-imports.action-new #content form .icon-edit,
   .controller-files.action-new #content form .icon-edit {
     margin-left: 5px; }
@@ -977,7 +1354,24 @@ a.icon-checked {
   #new_time_entry .info,
   #new_board .info,
   #message-form .info,
+  #new_tracker .info,
+  #new_issue_status .info,
+  #custom_field_form .info,
+  #new_enumeration .info,
+  #auth_source_form .info,
+  #tab-content-general form .info,
+  #tab-content-display form .info,
+  #tab-content-authentication form .info,
+  #tab-content-api form .info,
+  #tab-content-projects form .info,
+  #tab-content-issues form .info,
+  #tab-content-attachments form .info,
+  #tab-content-notifications form .info,
+  #tab-content-mail_handler form .info,
+  #tab-content-repositories form .info,
   .edit_project .info,
+  .controller-admin.action-projects #content form .info,
+  .controller-users.action-index #content form .info,
   .controller-imports.action-new #content form .info,
   .controller-files.action-new #content form .info {
     display: block;
@@ -1062,10 +1456,15 @@ input {
     -webkit-box-shadow: 0px 0px 5px 0px transparent;
     -moz-box-shadow: 0px 0px 5px 0px transparent;
     box-shadow: 0px 0px 5px 0px transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
     background: #40B55A !important;
     color: #FFFFFF !important; }
     input[type=submit]:hover {
       background: #3346D4;
+      color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
       -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -1107,6 +1506,10 @@ div.jstElements {
   div.jstElements button {
     cursor: pointer; }
 
+textarea {
+  display: block;
+  min-width: 400px; }
+
 .jstEditor {
   margin-bottom: 14px; }
   .jstEditor textarea {
@@ -1139,7 +1542,8 @@ div.jstElements {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #2D3DB6;
+    font-size: 0.8rem;
+    background-color: #40B55A;
     display: none;
     z-index: 400; }
     #main-menu .menu-children.visible {
@@ -1147,13 +1551,24 @@ div.jstElements {
     #main-menu .menu-children li, #main-menu .menu-children a {
       display: block; }
     #main-menu .menu-children a {
-      padding: 14px 10px;
+      padding: 7px 10px;
       -webkit-transition: background-color 0.2s ease;
       -moz-transition: background-color 0.2s ease;
       -o-transition: background-color 0.2s ease;
       transition: background-color 0.2s ease; }
+      #main-menu .menu-children a::before {
+        display: inline-block;
+        margin-right: 5px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: 0; }
       #main-menu .menu-children a:hover {
-        background-color: #3346D4; }
+        background-color: #49D368; }
   #main-menu > ul > li > a {
     padding: 7px 10px;
     background-color: #2D3DB6;
@@ -1200,9 +1615,14 @@ div.jstElements {
     -webkit-box-shadow: 0px 0px 5px 0px transparent;
     -moz-box-shadow: 0px 0px 5px 0px transparent;
     box-shadow: 0px 0px 5px 0px transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
     font-size: 0.8rem; }
     .contextual a:hover {
       background: #3346D4;
+      color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
       -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -1239,9 +1659,14 @@ div.jstElements {
       -webkit-box-shadow: 0px 0px 5px 0px transparent;
       -moz-box-shadow: 0px 0px 5px 0px transparent;
       box-shadow: 0px 0px 5px 0px transparent;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
       width: 100%; }
       #context-menu ul li .icon:hover, #context-menu ul li .icon-time-add:hover, #context-menu ul li .icon-copy:hover, #context-menu ul li .icon-del:hover, #context-menu ul li .icon-checked:hover {
         background: #3346D4;
+        color: #FFFFFF;
         text-decoration: none;
         border-width: 0;
         -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -1277,43 +1702,169 @@ div.jstElements {
     transition: box-shadow 0.2s linear;
     -webkit-box-shadow: 0px 0px 5px 0px transparent;
     -moz-box-shadow: 0px 0px 5px 0px transparent;
-    box-shadow: 0px 0px 5px 0px transparent; }
+    box-shadow: 0px 0px 5px 0px transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
     #content .tabs li a:hover {
       background: #3346D4;
+      color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
       -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
       -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
       box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
     #content .tabs li a.selected {
-      background: #2D3DB6;
-      color: #FFFFFF;
-      padding: 7px 10px;
-      text-decoration: none;
-      display: inline-block;
-      cursor: pointer;
-      -webkit-transition: background-color 0.2s linear;
-      -moz-transition: background-color 0.2s linear;
-      -o-transition: background-color 0.2s linear;
-      transition: background-color 0.2s linear;
-      -webkit-transition: box-shadow 0.2s linear;
-      -moz-transition: box-shadow 0.2s linear;
-      -o-transition: box-shadow 0.2s linear;
-      transition: box-shadow 0.2s linear;
-      -webkit-box-shadow: 0px 0px 5px 0px transparent;
-      -moz-box-shadow: 0px 0px 5px 0px transparent;
-      box-shadow: 0px 0px 5px 0px transparent;
-      background: #40B55A !important;
-      color: #FFFFFF !important; }
-      #content .tabs li a.selected:hover {
-        background: #3346D4;
-        text-decoration: none;
-        border-width: 0;
-        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
-      #content .tabs li a.selected:hover {
-        background: #49D368 !important; }
+      background-color: #DB1D70; }
+
+#main-menu a.overview::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.activity::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.roadmap::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.issues::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.gantt::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.calendar::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.news::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.documents::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.wiki::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.boards::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.files::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#main-menu a.settings::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#admin-menu {
+  padding: 14px 10px;
+  background-color: #FFFFFF; }
 
 #top-menu {
   border-top: 4px solid #EA1D77;
@@ -1373,6 +1924,9 @@ div.jstElements {
   padding: 14px 10px;
   background-color: #FFFFFF; }
 
+.controller-projects .author {
+  font-size: 0.8rem; }
+
 #projects-index ul {
   margin: 0; }
 
@@ -1388,6 +1942,19 @@ div.jstElements {
     border-left: 3.33333px solid #DB1D70; }
   #projects-index li ul {
     margin: 14px 20px; }
+
+.controller-timelog #content .tabs {
+  background-color: #EEEEEE;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 14px; }
+
+.controller-timelog.action-index #content .tabs {
+  margin-bottom: -28px; }
+
+.controller-timelog.action-report #content .tabs {
+  padding-bottom: 14px;
+  margin-bottom: 14px; }
 
 .issue .splitcontent {
   padding-top: 28px;
@@ -1459,10 +2026,15 @@ div.jstElements {
   -webkit-box-shadow: 0px 0px 5px 0px transparent;
   -moz-box-shadow: 0px 0px 5px 0px transparent;
   box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .controller-issues .icon-edit:hover {
     background: #3346D4;
+    color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
@@ -1668,6 +2240,21 @@ div.jstElements {
     position: absolute;
     top: 0;
     left: -22px; }
+  .controller-activities dt.document::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .controller-activities dt.document::before {
+    position: absolute;
+    top: 1px;
+    left: -21px; }
   .controller-activities dt.attachment::before {
     display: inline-block;
     margin-right: 5px;
