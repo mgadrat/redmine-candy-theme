@@ -13,6 +13,7 @@
 #new_board,
 #message-form,
 .edit_project,
+.controller-imports.action-new #content form,
 .controller-files.action-new #content form {
   background-color: $color-neutral-lightest;
   padding: $base-v-spacer $base-h-spacer;

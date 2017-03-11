@@ -330,6 +330,48 @@ code {
   }
 }
 
+/***** Flash & error messages ****/
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+  padding: $base-v-spacer $base-h-spacer;
+  margin-bottom: $base-v-spacer;
+}
+
+div.flash {margin-top: $base-v-spacer}
+
+div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
+  background-color: $color-cancel-lightest;
+  color: $color-cancel-dark;
+}
+
+div.flash.notice {
+  background-color: $color-validate-lightest;
+  color: $color-validate-dark;
+}
+
+/***** Ajax indicator ******/
+#ajax-indicator {
+position: absolute; /* fixed not supported by IE */
+background-color:#eee;
+border: 1px solid #bbb;
+top:35%;
+left:40%;
+width:20%;
+font-weight:bold;
+text-align:center;
+padding:0.6em;
+z-index:100;
+opacity: 0.5;
+}
+
+html>body #ajax-indicator { position: fixed; }
+
+#ajax-indicator span {
+background-position: 0% 40%;
+background-repeat: no-repeat;
+background-image: url(../images/loading.gif);
+padding-left: 26px;
+vertical-align: bottom;
+}
 
 .text-diff {
   padding: $base-v-spacer $base-h-spacer;

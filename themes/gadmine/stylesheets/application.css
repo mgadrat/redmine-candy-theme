@@ -509,6 +509,47 @@ code {
     background-color: #FFFFFF;
     padding: 7px 5px; }
 
+/***** Flash & error messages ****/
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+  padding: 14px 10px;
+  margin-bottom: 14px; }
+
+div.flash {
+  margin-top: 14px; }
+
+div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
+  background-color: #F06355;
+  color: #64261F; }
+
+div.flash.notice {
+  background-color: #40B55A;
+  color: #184C23; }
+
+/***** Ajax indicator ******/
+#ajax-indicator {
+  position: absolute;
+  /* fixed not supported by IE */
+  background-color: #eee;
+  border: 1px solid #bbb;
+  top: 35%;
+  left: 40%;
+  width: 20%;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.6em;
+  z-index: 100;
+  opacity: 0.5; }
+
+html > body #ajax-indicator {
+  position: fixed; }
+
+#ajax-indicator span {
+  background-position: 0% 40%;
+  background-repeat: no-repeat;
+  background-image: url(../images/loading.gif);
+  padding-left: 26px;
+  vertical-align: bottom; }
+
 .text-diff {
   padding: 14px 10px;
   background-color: #FFFFFF; }
@@ -846,6 +887,7 @@ a.icon-checked {
 #new_board,
 #message-form,
 .edit_project,
+.controller-imports.action-new #content form,
 .controller-files.action-new #content form {
   background-color: #FFFFFF;
   padding: 14px 10px;
@@ -864,6 +906,7 @@ a.icon-checked {
   #new_board legend,
   #message-form legend,
   .edit_project legend,
+  .controller-imports.action-new #content form legend,
   .controller-files.action-new #content form legend {
     font-weight: bold; }
   #query_form label,
@@ -880,6 +923,7 @@ a.icon-checked {
   #new_board label,
   #message-form label,
   .edit_project label,
+  .controller-imports.action-new #content form label,
   .controller-files.action-new #content form label {
     display: inline-block;
     width: 120px;
@@ -899,6 +943,7 @@ a.icon-checked {
   #new_board .add-filter label,
   #message-form .add-filter label,
   .edit_project .add-filter label,
+  .controller-imports.action-new #content form .add-filter label,
   .controller-files.action-new #content form .add-filter label {
     width: auto;
     font-weight: bold; }
@@ -916,6 +961,7 @@ a.icon-checked {
   #new_board .icon-edit,
   #message-form .icon-edit,
   .edit_project .icon-edit,
+  .controller-imports.action-new #content form .icon-edit,
   .controller-files.action-new #content form .icon-edit {
     margin-left: 5px; }
   #query_form .info,
@@ -932,6 +978,7 @@ a.icon-checked {
   #new_board .info,
   #message-form .info,
   .edit_project .info,
+  .controller-imports.action-new #content form .info,
   .controller-files.action-new #content form .info {
     display: block;
     font-size: 0.8rem; }
