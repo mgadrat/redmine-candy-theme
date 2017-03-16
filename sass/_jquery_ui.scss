@@ -1,0 +1,91 @@
+.ui-datepicker {
+
+  a {
+
+  }
+  table {
+
+  }
+
+  thead {
+
+  }
+  th {
+
+  }
+  tbody td {
+    padding: 0;
+    font-size: $font-size-small;
+  }
+  tbody td:last-child {
+
+  }
+  tbody tr {
+
+  }
+  tbody tr:last-child {
+
+  }
+  td span,
+  td a {
+    text-align: center;
+  }
+
+  .ui-datepicker-week-col {
+    text-align: center;
+  }
+
+  .ui-datepicker-header {
+
+  }
+  .ui-datepicker-title {
+
+  }
+  .ui-datepicker-prev, .ui-datepicker-next {
+
+  }
+  .ui-datepicker-prev {
+
+  }
+  .ui-datepicker-next {
+
+  }
+
+  .ui-widget-header {
+    background-color: $color-neutral-dark;
+  }
+
+  .ui-corner-all {
+    @include border-radius(0);
+  }
+}
+
+.ui-datepicker-calendar {
+  .ui-state-default {
+    padding: 0;
+    color: $color-neutral-dark;
+  }
+  .ui-state-hover {
+
+  }
+  .ui-state-active {
+
+  }
+  td:first-child .ui-state-active {
+
+  }
+  td:last-child .ui-state-active {
+
+  }
+  tr:last-child .ui-state-active {
+
+  }
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+
+}
+
+
+
+
