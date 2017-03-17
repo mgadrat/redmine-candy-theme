@@ -2527,25 +2527,27 @@ table.cal {
   position: relative;
   top: 0; }
 
-.ui-datepicker tbody td {
-  padding: 0;
-  font-size: 0.8rem; }
-
-.ui-datepicker td span,
-.ui-datepicker td a {
-  text-align: center; }
-
-.ui-datepicker .ui-datepicker-week-col {
-  text-align: center; }
-
-.ui-datepicker .ui-widget-header {
-  background-color: #333333; }
-
-.ui-datepicker .ui-corner-all {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0; }
+.ui-datepicker {
+  padding: 0; }
+  .ui-datepicker tbody td {
+    padding: 0;
+    font-size: 0.8rem; }
+  .ui-datepicker td span,
+  .ui-datepicker td a {
+    text-align: center; }
+  .ui-datepicker .ui-datepicker-week-col {
+    text-align: center; }
+  .ui-datepicker .ui-widget-header {
+    background: #333333;
+    padding: 0;
+    border: 0; }
+  .ui-datepicker.ui-corner-all, .ui-datepicker.ui-corner-all {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+  .ui-datepicker select {
+    height: auto; }
 
 .ui-datepicker-calendar .ui-state-default {
   padding: 0;

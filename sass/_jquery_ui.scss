@@ -1,5 +1,7 @@
 .ui-datepicker {
 
+  padding: 0;
+
   a {
 
   }
@@ -52,11 +54,18 @@
   }
 
   .ui-widget-header {
-    background-color: $color-neutral-dark;
+    background: $color-neutral-dark;
+    padding: 0;
+    border: 0;
   }
 
-  .ui-corner-all {
+  &.ui-corner-all,
+  &.ui-corner-all {
     @include border-radius(0);
+  }
+
+  select {
+    height: auto;
   }
 }
 
