@@ -3,17 +3,17 @@
   padding: 0;
 
   a {
-
+    border: 0;
   }
   table {
-
+    margin: 0;
   }
 
   thead {
 
   }
   th {
-
+    padding: 0;
   }
   tbody td {
     padding: 0;
@@ -38,19 +38,32 @@
   }
 
   .ui-datepicker-header {
-
+    font-size: $font-size-small;
   }
   .ui-datepicker-title {
 
   }
   .ui-datepicker-prev, .ui-datepicker-next {
+    text-align: center;
+    cursor: pointer;
+    top: 3px;
 
+    &.ui-state-hover {
+      background: transparent;
+      border: none;
+      color: $color-complement-lightest;
+    }
+    span {
+      display: none;
+    }
   }
   .ui-datepicker-prev {
-
+    @include fa-icon($icon-arrow-left);
+    left: 0;
   }
   .ui-datepicker-next {
-
+    @include fa-icon($icon-arrow-right);
+    right: 0;
   }
 
   .ui-widget-header {
@@ -60,26 +73,51 @@
   }
 
   &.ui-corner-all,
-  &.ui-corner-all {
+  .ui-corner-all {
     @include border-radius(0);
   }
 
   select {
     height: auto;
   }
+
+  .ui-datepicker-buttonpane {
+    margin: 0;
+    button {
+      @include btn();
+      @include box-shadow(0);
+      border-width: 0;
+      font-size: $font-size-small;
+
+      &.ui-datepicker-close {
+        @include btn-validate();
+      }
+    }
+  }
+}
+
+.ui-datepicker-trigger {
+  cursor: pointer;
 }
 
 .ui-datepicker-calendar {
+  margin: 0;
   .ui-state-default {
     padding: 0;
     color: $color-neutral-dark;
-  }
-  .ui-state-hover {
+    border: 0;
 
+    &.ui-state-hover {
+      background: $color-complement-lightest;
+    }
+    &.ui-state-highlight {
+      background: $color-neutral-mid;
+    }
+    &.ui-state-active {
+      background: $color-secondary-1-lightest;
+    }
   }
-  .ui-state-active {
 
-  }
   td:first-child .ui-state-active {
 
   }
@@ -94,7 +132,3 @@
 .ui-datepicker-unselectable .ui-state-default {
 
 }
-
-
-
-
