@@ -169,3 +169,7 @@
   }
 }
 
+.search_for_watchers {
+  @include fa-icon($icon-watch);
+}
+

@@ -1,3 +1,17 @@
+.ui-widget {
+  .ui-widget-header {
+    font-size: $font-size-small;
+    background: $color-neutral-dark;
+    padding: $base-v-spacer/2 $base-h-spacer/2;
+    border: 0;
+  }
+  &.ui-corner-all,
+  .ui-corner-all {
+    @include border-radius(0);
+  }
+}
+
+
 .ui-datepicker {
 
   padding: 0;
@@ -37,16 +51,10 @@
     text-align: center;
   }
 
-  .ui-datepicker-header {
-    font-size: $font-size-small;
-  }
-  .ui-datepicker-title {
-
-  }
   .ui-datepicker-prev, .ui-datepicker-next {
     text-align: center;
     cursor: pointer;
-    top: 3px;
+    top: $base-v-spacer/2;
 
     &.ui-state-hover {
       background: transparent;
@@ -64,17 +72,6 @@
   .ui-datepicker-next {
     @include fa-icon($icon-arrow-right);
     right: 0;
-  }
-
-  .ui-widget-header {
-    background: $color-neutral-dark;
-    padding: 0;
-    border: 0;
-  }
-
-  &.ui-corner-all,
-  .ui-corner-all {
-    @include border-radius(0);
   }
 
   select {
@@ -129,6 +126,41 @@
   }
 }
 
-.ui-datepicker-unselectable .ui-state-default {
+.ui-dialog {
+  padding: 0;
+  border: 0;
+  
+  #ajax-modal {
+    background-color: $color-neutral-lightest;
+  }
+  
+  #user_search {
+    margin-left: 0;
+  }
 
+  #users_for_watcher {
+    margin-bottom: $base-v-spacer;
+    label {
+      display: block;
+    }
+  }
+
+  input[type=button] {
+    @include btn-cancel();
+  }
+
+  .ui-dialog-titlebar-close {
+    span {display: none;}
+    @include fa-icon($icon-close);
+    border: 0;
+    background: transparent;
+    font-size: $font-size-normal;
+    padding: 0;
+    text-align: center;
+    color: $color-neutral-lightest;
+    &:hover {
+      color: $color-complement-lightest;
+    }
+  }
 }
+

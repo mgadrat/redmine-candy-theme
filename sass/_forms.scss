@@ -127,7 +127,8 @@ input {
   }
 
   &.select2-search__field,
-  &[type=submit]{
+  &[type=submit],
+  &[type=button]{
     margin-left: 0;
     line-height: inherit;
     border: 0;
@@ -136,6 +137,9 @@ input {
   }
   &[type=submit]{
     @include btn-validate();
+  }
+  &[type=button]{
+    @include btn();
   }
 }
 
