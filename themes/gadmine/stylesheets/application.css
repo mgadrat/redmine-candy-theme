@@ -2173,7 +2173,7 @@ textarea {
     padding-top: 14px;
     padding-bottom: 3.5px; }
 
-.search_for_watchers::before {
+.search_for_watchers a::before {
   display: inline-block;
   margin-right: 5px;
   font: normal normal normal 1rem FontAwesome;
