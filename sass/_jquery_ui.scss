@@ -134,8 +134,9 @@
     background-color: $color-neutral-lightest;
   }
   
-  #user_search {
+  input[type=text] {
     margin-left: 0;
+    max-width: 410px;
   }
 
   #users_for_watcher {

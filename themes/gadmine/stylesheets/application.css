@@ -2729,8 +2729,9 @@ table.cal {
   border: 0; }
   .ui-dialog #ajax-modal {
     background-color: #FFFFFF; }
-  .ui-dialog #user_search {
-    margin-left: 0; }
+  .ui-dialog input[type=text] {
+    margin-left: 0;
+    max-width: 410px; }
   .ui-dialog #users_for_watcher {
     margin-bottom: 14px; }
     .ui-dialog #users_for_watcher label {
