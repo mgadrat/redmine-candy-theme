@@ -105,11 +105,17 @@ fieldset {
   width: auto;
 }
 
-.select2 {
+#content .select2 {
   margin-left: $base-h-spacer;
   min-width: 200px;
   margin-right: $base-h-spacer;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 }
+
 
 input::-moz-focus-inner { border:0; padding:0 }
 
@@ -150,7 +156,9 @@ input[type=checkbox] {
 }
 
 .select2-container--default,
+.select2-selection--multiple,
 .select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-selection--multiple .select2-selection__rendered
 input {
   line-height: $font-size-normal*2;
 }
@@ -163,13 +171,51 @@ input {
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
 .select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple,
 .select2-dropdown {
-  border-radius: 0;
+  @include border-radius(0);
+  min-height: 0;
+}
+
+.select2-container--default .select2-selection--multiple {
+  line-height: 0rem;
 }
 
 .select2-results__option,
 .select2-search--dropdown .select2-search__field {
   padding: 0 $base-h-spacer;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  margin: 2px;
+  padding: 0 $base-h-spacer;
+  border: 0;
+  @include border-radius(5px);
+  font-size: $font-size-small;
+  background-color: $color-primary-mid;
+  color: $color-neutral-lightest;
+  line-height: $font-size-small*2;
+}
+
+.select2-container--default .select2-selection--multiple .select2-search--inline {
+  line-height: $font-size-small*2;
+  margin: 2px;
+  font-size: $font-size-small;
+
+  input {
+    padding: 0;
+    margin: 0;
+    line-height: $font-size-small*2;
+    height: auto;
+  }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: $color-neutral-lightest;
+  margin-right: $base-h-spacer/2;
+  &:hover {
+    color: $color-complement-lightest;
+  }
 }
 
 #issue_is_private_wrap {
@@ -209,4 +255,9 @@ textarea {
 
 .required {
   color: $color-cancel-mid;
+}
+
+.toggle-multiselect {
+  cursor: pointer;
+  @include fa-icon($icon-collapse-open);
 }
