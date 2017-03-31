@@ -60,3 +60,21 @@
     }
   }
 }
+
+.controller-welcome .news {
+
+  h3 {
+    @include fa-icon($icon-news);
+  }
+
+  p {
+    background-color: $color-neutral-lightest;
+    padding: $base-v-spacer $base-h-spacer;
+    border-left: $base-highlight-border-width solid $color-complement-light;
+    margin-bottom: $base-v-spacer;
+  }
+
+  .author {
+    font-size: $font-size-small;
+  }
+}

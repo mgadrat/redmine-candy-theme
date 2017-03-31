@@ -2468,6 +2468,27 @@ table.cal {
     margin-top: -28px;
     margin-bottom: 14px; }
 
+.controller-welcome .news h3::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.controller-welcome .news p {
+  background-color: #FFFFFF;
+  padding: 14px 10px;
+  border-left: 3.33333px solid #DB1D70;
+  margin-bottom: 14px; }
+
+.controller-welcome .news .author {
+  font-size: 0.8rem; }
+
 .controller-messages .message {
   background-color: #FFFFFF;
   padding: 14px 10px;
