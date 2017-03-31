@@ -307,25 +307,28 @@ code {
 
 .tip {
   display: none;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid $color-neutral-mid;
+  border-left: $base-highlight-border-width solid $color-complement-light;
+  font-size: $font-size-small;
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer/2 $base-h-spacer/2;
 }
 
 .tooltip {
 
   z-index: 25;
   position: relative;
+  background-color: red;
 
   &:hover {
+    z-index: 30;
     .tip {
       display: block;
-      width: 200px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border: 1px solid $color-neutral-mid;
-      border-left: $base-highlight-border-width solid $color-complement-light;
-      font-size: $font-size-small;
-      background-color: $color-neutral-lightest;
-      padding: $base-v-spacer/2 $base-h-spacer/2;
+
     }
   }
 }

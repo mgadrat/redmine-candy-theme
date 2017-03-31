@@ -502,22 +502,25 @@ code {
     top: 0; }
 
 .tip {
-  display: none; }
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #DDDDDD;
+  border-left: 3.33333px solid #DB1D70;
+  font-size: 0.8rem;
+  background-color: #FFFFFF;
+  padding: 7px 5px; }
 
 .tooltip {
   z-index: 25;
-  position: relative; }
-  .tooltip:hover .tip {
-    display: block;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #DDDDDD;
-    border-left: 3.33333px solid #DB1D70;
-    font-size: 0.8rem;
-    background-color: #FFFFFF;
-    padding: 7px 5px; }
+  position: relative;
+  background-color: red; }
+  .tooltip:hover {
+    z-index: 30; }
+    .tooltip:hover .tip {
+      display: block; }
 
 /***** Flash & error messages ****/
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
