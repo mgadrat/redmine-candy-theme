@@ -7,6 +7,9 @@
     padding: $base-v-spacer/4 $base-h-spacer/2;
   }
 
+  h1 {
+    margin-top: $base-v-spacer*3;
+  }
 }
 
 .controller-wiki.action-show {
@@ -16,4 +19,41 @@
     right: $base-h-spacer;
   }
 }
+
+#wiki_add_attachment {
+
+  padding: $base-v-spacer $base-h-spacer;
+  margin: $base-v-spacer 0;
+  background-color: $color-neutral-lightest;
+
+  & > p {
+    margin: 0;
+    a {
+      @include btn-validate();
+      @include fa-icon($icon-add);
+    }
+  }
+
+  .box {
+    margin-top: $base-v-spacer;
+
+    input {
+      margin: 0;
+    }
+  }
+}
+
+.wiki-anchor {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover {
+    .wiki-anchor {
+      display: inline-block;
+      padding: 0 $base-h-spacer;
+    }
+  }
+}
+
 

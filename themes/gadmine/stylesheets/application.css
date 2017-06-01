@@ -206,13 +206,6 @@ h3, h4, h5, h6 {
 h1, h2 {
   font-family: "Source Sans Pro", sans-serif; }
 
-.wiki-anchor {
-  display: none; }
-
-h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .wiki-anchor, h5:hover .wiki-anchor, h6:hover .wiki-anchor {
-  display: inline-block;
-  padding: 0 10px; }
-
 em {
   font-style: italic; }
 
@@ -227,6 +220,20 @@ hr {
 
 #content ul, #content ol, #content dl {
   margin: 10px 20px; }
+  #content ul ul, #content ul ol, #content ol ul, #content ol ol, #content dl ul, #content dl ol {
+    margin-top: 0; }
+
+#content ul {
+  list-style-type: initial; }
+
+#content ol {
+  list-style-type: decimal; }
+  #content ol ol {
+    list-style-type: lower-alpha; }
+    #content ol ol ol {
+      list-style-type: lower-roman; }
+      #content ol ol ol ol {
+        list-style-type: circle; }
 
 #content dt {
   font-weight: bold; }
@@ -334,6 +341,7 @@ blockquote {
   padding-left: 60px;
   position: relative;
   margin: 20px 0;
+  min-height: 40px;
   display: block;
   color: #333333; }
   blockquote::before {
@@ -363,6 +371,7 @@ pre {
   background-color: #EEEEEE;
   border-left: 5px solid #DDDDDD;
   padding: 10px 10px;
+  margin: 10px 0;
   overflow: auto;
   word-wrap: nowrap;
   font-family: monospace; }
@@ -2581,11 +2590,76 @@ table.cal {
   .wiki.wiki-page .contextual a {
     font-size: 0.8rem;
     padding: 2.5px 5px; }
+  .wiki.wiki-page h1 {
+    margin-top: 30px; }
 
 .controller-wiki.action-show #content > .contextual {
   position: relative;
   top: 10px;
   right: 10px; }
+
+#wiki_add_attachment {
+  padding: 10px 10px;
+  margin: 10px 0;
+  background-color: #FFFFFF; }
+  #wiki_add_attachment > p {
+    margin: 0; }
+    #wiki_add_attachment > p a {
+      background: #2D3DB6;
+      color: #FFFFFF;
+      padding: 5px 10px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-transition: background-color 0.2s linear;
+      -moz-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
+      -webkit-transition: box-shadow 0.2s linear;
+      -moz-transition: box-shadow 0.2s linear;
+      -o-transition: box-shadow 0.2s linear;
+      transition: box-shadow 0.2s linear;
+      -webkit-box-shadow: 0px 0px 5px 0px transparent;
+      -moz-box-shadow: 0px 0px 5px 0px transparent;
+      box-shadow: 0px 0px 5px 0px transparent;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      background: #40B55A !important;
+      color: #FFFFFF !important; }
+      #wiki_add_attachment > p a:hover {
+        background: #3346D4;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-width: 0;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      #wiki_add_attachment > p a:hover {
+        background: #49D368 !important; }
+      #wiki_add_attachment > p a::before {
+        display: inline-block;
+        margin-right: 5px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: 0; }
+  #wiki_add_attachment .box {
+    margin-top: 10px; }
+    #wiki_add_attachment .box input {
+      margin: 0; }
+
+.wiki-anchor {
+  display: none; }
+
+h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .wiki-anchor, h5:hover .wiki-anchor, h6:hover .wiki-anchor {
+  display: inline-block;
+  padding: 0 10px; }
 
 .gantt_hdr {
   position: absolute;
