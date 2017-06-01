@@ -55,8 +55,8 @@ $color-cancel-darkest: #3C130F;
 // margin // padding // spacers
 $base-spacer: 10px;
 $base-h-spacer: $base-spacer;
-$base-v-spacer: $base-spacer*1.4;
-$base-highlight-border-width: $base-spacer/3;
+$base-v-spacer: $base-spacer;
+$base-highlight-border-width: $base-spacer/2;
 
 /**
  * ==============
@@ -64,10 +64,10 @@ $base-highlight-border-width: $base-spacer/3;
  * ==============
  */
 
-@import url('https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:200');
 
-$font-primary: 'Mukta Vaani', helvetica, arial, sans-serif;
-$font-secondary: 'Domine', georgia, serif;
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Source Sans Pro', sans-serif;
 $font-mono: monospace;
 
 $font-size-base: 16px; // only for the body/html elements

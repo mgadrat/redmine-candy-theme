@@ -22,12 +22,12 @@ html {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: $base-v-spacer*3;
   }
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: $base-v-spacer*3;
+  font-size: 1.6rem;
+  margin-bottom: $base-v-spacer*2;
   }
 h3 {
   font-size: 1.17rem;
@@ -164,7 +164,7 @@ table {
   thead th {
     background-color: $color-primary-mid;
     color: $color-neutral-lightest;
-    padding: $base-v-spacer $base-h-spacer;
+    padding: $base-v-spacer/2 $base-h-spacer;
     text-align: left;
     border-right: 1px solid $color-neutral-light;
     font-size: $font-size-small;
@@ -278,13 +278,18 @@ code {
 }
 
 #content {
-  padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+  padding: $base-h-spacer $base-v-spacer;
   background-color: $color-neutral-light;
   min-height: 70vh;
+
+  & > h2,
+  & > .contextual {
+    margin-top: $base-v-spacer*3;
+  }
 }
 
 #sidebar {
-  padding: $base-v-spacer*3 $base-h-spacer $base-v-spacer;
+  padding: $base-v-spacer*4 $base-h-spacer $base-v-spacer;
 
   h3 {
     margin-top:$base-v-spacer*2;

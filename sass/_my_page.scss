@@ -1,0 +1,40 @@
+.mypage-box {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer $base-h-spacer;
+  margin-bottom: $base-v-spacer;
+
+  table  tr {
+    &.odd {
+      background-color: $color-neutral-light;
+    }
+  }
+}
+
+.block-receiver {
+  border: 2px dashed $color-neutral-dark;
+  padding: $base-v-spacer $base-h-spacer;
+  margin-bottom: $base-v-spacer;
+}
+
+.ui-sortable-handle {
+  cursor: move;
+  opacity: 0.8;
+
+  .close-icon {
+
+    @include fa-icon($icon-close);
+
+  }
+}
+
+.action-page_layout {
+  .contextual #block-form {
+    float: left;
+  }
+  .icon-cancel {
+    float: right;
+    margin-left: $base-h-spacer;
+    @include btn-cancel();
+    @include fa-icon($icon-close);
+  }
+}

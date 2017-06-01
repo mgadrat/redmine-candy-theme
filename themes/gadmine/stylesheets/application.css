@@ -16,7 +16,7 @@
  * ==== FONT ====
  * ==============
  */
-@import url("https://fonts.googleapis.com/css?family=Domine:700|Maitree|Mukta+Vaani:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:200");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -162,7 +162,7 @@ a {
 
 body, html {
   font-size: 16px;
-  font-family: "Mukta Vaani", helvetica, arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #111111;
   line-height: 1.4rem;
   background-color: #333333; }
@@ -174,37 +174,37 @@ html {
   box-sizing: inherit; }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 42px; }
+  font-size: 2.2rem;
+  margin-bottom: 30px; }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 42px; }
+  font-size: 1.6rem;
+  margin-bottom: 20px; }
 
 h3 {
   font-size: 1.17rem;
-  margin-bottom: 21px; }
+  margin-bottom: 15px; }
 
 h4 {
   font-size: 1.12rem;
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
 
 h5 {
   font-size: .83rem;
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
 
 h6 {
   font-size: .75rem;
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
 
 p {
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
 
 h3, h4, h5, h6 {
   font-weight: bold; }
 
 h1, h2 {
-  font-family: "Domine", georgia, serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .wiki-anchor {
   display: none; }
@@ -220,27 +220,27 @@ strong {
   font-weight: bold; }
 
 hr {
-  margin: 14px 0;
+  margin: 10px 0;
   background-color: #DB1D70;
   height: 1px;
   border: 0; }
 
 #content ul, #content ol, #content dl {
-  margin: 14px 20px; }
+  margin: 10px 20px; }
 
 #content dt {
   font-weight: bold; }
 
 #content dd {
-  margin: 0 0 14px 0; }
+  margin: 0 0 10px 0; }
 
 table {
-  margin-bottom: 28px; }
+  margin-bottom: 20px; }
   table caption {
     text-align: left;
     background-color: #EEEEEE;
     color: #333333;
-    padding: 7px 10px;
+    padding: 5px 10px;
     font-size: 0.8rem; }
   table.list {
     width: 100%; }
@@ -249,7 +249,7 @@ table {
   table tr.odd {
     background-color: #FFFFFF; }
   table tr td {
-    padding: 7px 5px; }
+    padding: 5px 5px; }
     table tr td.checkbox {
       width: 30px; }
   table tr.context-menu-selection {
@@ -274,14 +274,14 @@ table {
   table thead th {
     background-color: #232E82;
     color: #FFFFFF;
-    padding: 14px 10px;
+    padding: 5px 10px;
     text-align: left;
     border-right: 1px solid #EEEEEE;
     font-size: 0.8rem; }
   table tbody th {
     background-color: #333333;
     color: #FFFFFF;
-    padding: 3.5px 10px;
+    padding: 2.5px 10px;
     text-align: left;
     border-right: 1px solid #EEEEEE;
     font-size: 0.8rem; }
@@ -333,7 +333,7 @@ table.progress {
 blockquote {
   padding-left: 60px;
   position: relative;
-  margin: 28px 0;
+  margin: 20px 0;
   display: block;
   color: #333333; }
   blockquote::before {
@@ -361,8 +361,8 @@ blockquote {
 pre {
   display: block;
   background-color: #EEEEEE;
-  border-left: 3.33333px solid #DDDDDD;
-  padding: 14px 10px;
+  border-left: 5px solid #DDDDDD;
+  padding: 10px 10px;
   overflow: auto;
   word-wrap: nowrap;
   font-family: monospace; }
@@ -398,21 +398,24 @@ code {
   background-color: #FFFFFF; }
 
 #content {
-  padding: 42px 10px 14px;
+  padding: 10px 10px;
   background-color: #EEEEEE;
   min-height: 70vh; }
+  #content > h2,
+  #content > .contextual {
+    margin-top: 30px; }
 
 #sidebar {
-  padding: 42px 10px 14px; }
+  padding: 40px 10px 10px; }
   #sidebar h3 {
-    margin-top: 28px; }
+    margin-top: 20px; }
     #sidebar h3:first-child {
       margin-top: 0; }
 
 #sidebar-handle {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -458,7 +461,7 @@ code {
 .sidebar_closed #sidebar-handle {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -508,10 +511,10 @@ code {
   top: 0;
   left: 0;
   border: 1px solid #DDDDDD;
-  border-left: 3.33333px solid #DB1D70;
+  border-left: 5px solid #DB1D70;
   font-size: 0.8rem;
   background-color: #FFFFFF;
-  padding: 7px 5px; }
+  padding: 5px 5px; }
 
 .tooltip {
   z-index: 25;
@@ -524,11 +527,11 @@ code {
 
 /***** Flash & error messages ****/
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
-  padding: 14px 10px;
-  margin-bottom: 14px; }
+  padding: 10px 10px;
+  margin-bottom: 10px; }
 
 div.flash {
-  margin-top: 14px; }
+  margin-top: 10px; }
 
 div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
   background-color: #F06355;
@@ -564,7 +567,7 @@ html > body #ajax-indicator {
   vertical-align: bottom; }
 
 .text-diff {
-  padding: 14px 10px;
+  padding: 10px 10px;
   background-color: #FFFFFF; }
   .text-diff .diff_in {
     color: #2B803E; }
@@ -578,7 +581,7 @@ html > body #ajax-indicator {
 .icon-add {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -636,7 +639,7 @@ html > body #ajax-indicator {
 .icon-save {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -682,7 +685,7 @@ html > body #ajax-indicator {
 .icon-edit {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -760,7 +763,7 @@ html > body #ajax-indicator {
 .icon-copy {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -802,7 +805,7 @@ html > body #ajax-indicator {
 .icon-lock {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -844,7 +847,7 @@ html > body #ajax-indicator {
 .icon-del {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -890,7 +893,7 @@ html > body #ajax-indicator {
 a.icon-checked {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -936,7 +939,7 @@ a.icon-checked {
 .icon-reload {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -998,6 +1001,9 @@ a.icon-checked {
 #new_project,
 #new_issue_category,
 #news-form,
+#login-form,
+#new_user,
+#my_account_form,
 #new_page,
 #new_document,
 #repository-form,
@@ -1009,6 +1015,8 @@ a.icon-checked {
 #custom_field_form,
 #new_enumeration,
 #auth_source_form,
+form.edit_board,
+#edit_wiki,
 #tab-content-general form,
 #tab-content-display form,
 #tab-content-authentication form,
@@ -1027,8 +1035,8 @@ a.icon-checked {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
   background-color: #FFFFFF;
-  padding: 14px 10px;
-  margin-bottom: 14px; }
+  padding: 10px 10px;
+  margin-bottom: 10px; }
   #query_form::before, #query_form::after,
   #issue-form::before,
   #issue-form::after,
@@ -1042,6 +1050,12 @@ a.icon-checked {
   #new_issue_category::after,
   #news-form::before,
   #news-form::after,
+  #login-form::before,
+  #login-form::after,
+  #new_user::before,
+  #new_user::after,
+  #my_account_form::before,
+  #my_account_form::after,
   #new_page::before,
   #new_page::after,
   #new_document::before,
@@ -1064,6 +1078,10 @@ a.icon-checked {
   #new_enumeration::after,
   #auth_source_form::before,
   #auth_source_form::after,
+  form.edit_board::before,
+  form.edit_board::after,
+  #edit_wiki::before,
+  #edit_wiki::after,
   #tab-content-general form::before,
   #tab-content-general form::after,
   #tab-content-display form::before,
@@ -1103,6 +1121,9 @@ a.icon-checked {
   #new_project::after,
   #new_issue_category::after,
   #news-form::after,
+  #login-form::after,
+  #new_user::after,
+  #my_account_form::after,
   #new_page::after,
   #new_document::after,
   #repository-form::after,
@@ -1114,6 +1135,8 @@ a.icon-checked {
   #custom_field_form::after,
   #new_enumeration::after,
   #auth_source_form::after,
+  form.edit_board::after,
+  #edit_wiki::after,
   #tab-content-general form::after,
   #tab-content-display form::after,
   #tab-content-authentication form::after,
@@ -1137,6 +1160,9 @@ a.icon-checked {
   #new_project legend,
   #new_issue_category legend,
   #news-form legend,
+  #login-form legend,
+  #new_user legend,
+  #my_account_form legend,
   #new_page legend,
   #new_document legend,
   #repository-form legend,
@@ -1148,6 +1174,8 @@ a.icon-checked {
   #custom_field_form legend,
   #new_enumeration legend,
   #auth_source_form legend,
+  form.edit_board legend,
+  #edit_wiki legend,
   #tab-content-general form legend,
   #tab-content-display form legend,
   #tab-content-authentication form legend,
@@ -1171,6 +1199,9 @@ a.icon-checked {
   #new_project label,
   #new_issue_category label,
   #news-form label,
+  #login-form label,
+  #new_user label,
+  #my_account_form label,
   #new_page label,
   #new_document label,
   #repository-form label,
@@ -1182,6 +1213,8 @@ a.icon-checked {
   #custom_field_form label,
   #new_enumeration label,
   #auth_source_form label,
+  form.edit_board label,
+  #edit_wiki label,
   #tab-content-general form label,
   #tab-content-display form label,
   #tab-content-authentication form label,
@@ -1208,6 +1241,9 @@ a.icon-checked {
     #new_project label.block,
     #new_issue_category label.block,
     #news-form label.block,
+    #login-form label.block,
+    #new_user label.block,
+    #my_account_form label.block,
     #new_page label.block,
     #new_document label.block,
     #repository-form label.block,
@@ -1219,6 +1255,8 @@ a.icon-checked {
     #custom_field_form label.block,
     #new_enumeration label.block,
     #auth_source_form label.block,
+    form.edit_board label.block,
+    #edit_wiki label.block,
     #tab-content-general form label.block,
     #tab-content-display form label.block,
     #tab-content-authentication form label.block,
@@ -1245,6 +1283,9 @@ a.icon-checked {
   #new_project .projects label,
   #new_issue_category .projects label,
   #news-form .projects label,
+  #login-form .projects label,
+  #new_user .projects label,
+  #my_account_form .projects label,
   #new_page .projects label,
   #new_document .projects label,
   #repository-form .projects label,
@@ -1256,6 +1297,8 @@ a.icon-checked {
   #custom_field_form .projects label,
   #new_enumeration .projects label,
   #auth_source_form .projects label,
+  form.edit_board .projects label,
+  #edit_wiki .projects label,
   #tab-content-general form .projects label,
   #tab-content-display form .projects label,
   #tab-content-authentication form .projects label,
@@ -1282,6 +1325,9 @@ a.icon-checked {
   #new_project .add-filter label,
   #new_issue_category .add-filter label,
   #news-form .add-filter label,
+  #login-form .add-filter label,
+  #new_user .add-filter label,
+  #my_account_form .add-filter label,
   #new_page .add-filter label,
   #new_document .add-filter label,
   #repository-form .add-filter label,
@@ -1293,6 +1339,8 @@ a.icon-checked {
   #custom_field_form .add-filter label,
   #new_enumeration .add-filter label,
   #auth_source_form .add-filter label,
+  form.edit_board .add-filter label,
+  #edit_wiki .add-filter label,
   #tab-content-general form .add-filter label,
   #tab-content-display form .add-filter label,
   #tab-content-authentication form .add-filter label,
@@ -1317,6 +1365,9 @@ a.icon-checked {
   #new_project .icon-edit,
   #new_issue_category .icon-edit,
   #news-form .icon-edit,
+  #login-form .icon-edit,
+  #new_user .icon-edit,
+  #my_account_form .icon-edit,
   #new_page .icon-edit,
   #new_document .icon-edit,
   #repository-form .icon-edit,
@@ -1328,6 +1379,8 @@ a.icon-checked {
   #custom_field_form .icon-edit,
   #new_enumeration .icon-edit,
   #auth_source_form .icon-edit,
+  form.edit_board .icon-edit,
+  #edit_wiki .icon-edit,
   #tab-content-general form .icon-edit,
   #tab-content-display form .icon-edit,
   #tab-content-authentication form .icon-edit,
@@ -1351,6 +1404,9 @@ a.icon-checked {
   #new_project .info,
   #new_issue_category .info,
   #news-form .info,
+  #login-form .info,
+  #new_user .info,
+  #my_account_form .info,
   #new_page .info,
   #new_document .info,
   #repository-form .info,
@@ -1362,6 +1418,8 @@ a.icon-checked {
   #custom_field_form .info,
   #new_enumeration .info,
   #auth_source_form .info,
+  form.edit_board .info,
+  #edit_wiki .info,
   #tab-content-general form .info,
   #tab-content-display form .info,
   #tab-content-authentication form .info,
@@ -1381,7 +1439,7 @@ a.icon-checked {
     font-size: 0.8rem; }
 
 fieldset {
-  padding: 14px 0; }
+  padding: 10px 0; }
   fieldset.collapsible legend {
     cursor: pointer;
     font-weight: bold; }
@@ -1443,11 +1501,11 @@ input {
     line-height: inherit;
     border: 0;
     font-size: 1rem;
-    font-family: "Mukta Vaani", helvetica, arial, sans-serif; }
+    font-family: "Open Sans", sans-serif; }
   input[type=submit] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1481,7 +1539,7 @@ input {
   input[type=button] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1577,7 +1635,7 @@ input {
 
 div.jstElements {
   background-color: #DDDDDD;
-  padding: 7px 10px; }
+  padding: 5px 10px; }
   div.jstElements button {
     cursor: pointer; }
 
@@ -1586,17 +1644,17 @@ textarea {
   min-width: 400px; }
 
 .jstEditor {
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
   .jstEditor textarea {
     width: 100%;
-    padding: 14px 10px;
+    padding: 10px 10px;
     font-size: 1rem; }
 
 #attachments_fields {
   display: block; }
   #attachments_fields span {
     display: block;
-    margin-bottom: 14px; }
+    margin-bottom: 10px; }
 
 .required {
   color: #AA4339; }
@@ -1619,14 +1677,14 @@ textarea {
   display: inline-block; }
 
 #top-menu a {
-  padding: 14px 20px; }
+  padding: 10px 20px; }
 
 #top-menu #loggedas a {
   padding-left: 0; }
 
 #main-menu {
   position: relative;
-  padding-top: 28px; }
+  padding-top: 20px; }
   #main-menu .menu-children {
     position: absolute;
     top: 100%;
@@ -1640,7 +1698,7 @@ textarea {
     #main-menu .menu-children li, #main-menu .menu-children a {
       display: block; }
     #main-menu .menu-children a {
-      padding: 7px 10px;
+      padding: 5px 10px;
       -webkit-transition: background-color 0.2s ease;
       -moz-transition: background-color 0.2s ease;
       -o-transition: background-color 0.2s ease;
@@ -1659,7 +1717,7 @@ textarea {
       #main-menu .menu-children a:hover {
         background-color: #49D368; }
   #main-menu > ul > li > a {
-    padding: 7px 10px;
+    padding: 5px 10px;
     background-color: #2D3DB6;
     color: #FFFFFF;
     margin-right: 5px;
@@ -1689,7 +1747,7 @@ textarea {
   .contextual a {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1733,7 +1791,7 @@ textarea {
     #context-menu ul li .icon, #context-menu ul li .icon-time-add, #context-menu ul li .icon-copy, #context-menu ul li .icon-del, #context-menu ul li .icon-checked {
       background: #2D3DB6;
       color: #FFFFFF;
-      padding: 7px 10px;
+      padding: 5px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -1769,7 +1827,7 @@ textarea {
       background-color: #DDDDDD; }
 
 #content .tabs ul {
-  margin: 14px 0; }
+  margin: 10px 0; }
 
 #content .tabs li {
   display: inline-block;
@@ -1777,7 +1835,7 @@ textarea {
   #content .tabs li a {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1952,7 +2010,7 @@ textarea {
   top: 0; }
 
 #admin-menu {
-  padding: 14px 10px;
+  padding: 10px 10px;
   background-color: #FFFFFF; }
 
 #top-menu {
@@ -1961,26 +2019,27 @@ textarea {
 
 #header {
   background-color: #161D4D;
-  padding: 28px 10px 0;
+  padding: 30px 10px 0;
   -webkit-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2); }
   #header form {
     background-color: transparent;
     float: left;
-    margin-bottom: 14px; }
+    margin-bottom: 10px; }
   #header #project_quick_jump_box {
     display: inline-block;
-    margin: 14px 0; }
+    min-width: 300px;
+    margin: 10px 0; }
   #header a {
     color: #FFFFFF; }
   #header h1 {
     color: #FFFFFF;
-    margin-bottom: 0; }
+    margin-bottom: 30px; }
 
 #footer {
   background-color: #333333;
-  padding: 28px 10px;
+  padding: 20px 10px;
   color: #FFFFFF; }
   #footer a {
     color: #3346D4; }
@@ -1993,24 +2052,24 @@ textarea {
 .controller-documents.action-index #content h4, .controller-documents.action-index #content p, .controller-documents.action-index #content .wiki {
   background-color: #FFFFFF;
   padding: 0 10px;
-  border-left: 3.33333px solid #DB1D70;
+  border-left: 5px solid #DB1D70;
   margin-bottom: 0; }
 
 .controller-documents.action-index #content h4 {
-  padding: 14px 10px; }
+  padding: 10px 10px; }
 
 .controller-documents.action-index #content .wiki {
-  padding-bottom: 14px;
-  padding-top: 14px;
-  margin-bottom: 14px; }
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px; }
   .controller-documents.action-index #content .wiki p {
     border: 0;
     padding: 0;
-    margin-bottom: 14px; }
+    margin-bottom: 10px; }
 
 .controller-projects .splitcontentleft > div,
 .controller-projects .splitcontentright > div {
-  padding: 14px 10px;
+  padding: 10px 10px;
   background-color: #FFFFFF; }
 
 .controller-projects .author {
@@ -2020,44 +2079,44 @@ textarea {
   margin: 0; }
 
 #projects-index li {
-  margin: 14px 10px; }
+  margin: 10px 10px; }
   #projects-index li a {
     font-size: 1.2rem; }
   #projects-index li.root {
     margin-left: 0;
     margin-right: 0;
     background-color: #fff;
-    padding: 14px 10px;
-    border-left: 3.33333px solid #DB1D70; }
+    padding: 10px 10px;
+    border-left: 5px solid #DB1D70; }
   #projects-index li ul {
-    margin: 14px 20px; }
+    margin: 10px 20px; }
 
 .controller-timelog #content .tabs {
   background-color: #EEEEEE;
   margin-left: -10px;
   margin-right: -10px;
-  padding-top: 14px; }
+  padding-top: 10px; }
 
 .controller-timelog.action-index #content .tabs {
-  margin-bottom: -28px; }
+  margin-bottom: -20px; }
 
 .controller-timelog.action-report #content .tabs {
-  padding-bottom: 14px;
-  margin-bottom: 14px; }
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
 
 .issue .splitcontent {
-  padding-top: 28px;
+  padding-top: 20px;
   font-size: 0.8rem; }
   .issue .splitcontent > div {
-    margin-bottom: 14px; }
+    margin-bottom: 10px; }
 
 .issue hr {
   display: none; }
 
 .issue .description {
   background-color: #FFFFFF;
-  padding: 14px 10px;
-  margin: 42px 0; }
+  padding: 10px 10px;
+  margin: 30px 0; }
   .issue .description hr {
     display: block; }
 
@@ -2067,7 +2126,7 @@ textarea {
 
 .issue .label, .issue .value {
   display: inline-block;
-  margin-bottom: 3.5px; }
+  margin-bottom: 2.5px; }
 
 .issue .progress .value {
   display: block; }
@@ -2076,7 +2135,7 @@ textarea {
   margin-bottom: 0; }
 
 .issue .attributes {
-  margin-bottom: -14px; }
+  margin-bottom: -10px; }
 
 .issue .subject h3::before {
   display: inline-block;
@@ -2100,7 +2159,7 @@ textarea {
 .controller-issues .icon-edit {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 7px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -2134,7 +2193,7 @@ textarea {
 
 #issue_tree, #relations, .attachments {
   border: 1px dotted #EEEEEE;
-  padding: 14px 10px 14px 0;
+  padding: 10px 10px 10px 0;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
@@ -2157,7 +2216,7 @@ textarea {
     font-size: 0.8rem; }
 
 .attachments p {
-  padding-top: 7px; }
+  padding-top: 5px; }
 
 .description .contextual, .journal .contextual, #issue_tree .contextual, #relations .contextual, .attachments .contextual {
   -webkit-transition: opacity 0.2s ease;
@@ -2170,12 +2229,12 @@ textarea {
   opacity: 1; }
 
 #history {
-  padding-top: 70px; }
+  padding-top: 50px; }
   #history .journal {
     background-color: #FFFFFF;
-    border-left: 3.33333px solid #DB1D70;
-    margin: 14px 0;
-    padding: 14px 10px; }
+    border-left: 5px solid #DB1D70;
+    margin: 10px 0;
+    padding: 10px 10px; }
     #history .journal .details {
       font-size: 0.8rem; }
       #history .journal .details i {
@@ -2187,15 +2246,15 @@ textarea {
       font-size: 0.8rem;
       margin-left: -10px;
       margin-right: -10px;
-      margin-top: -14px;
-      margin-bottom: 14px;
-      padding: 7px 10px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
       background-color: #DDDDDD; }
 
 .controller-issues.action-index #content form {
   padding: 0; }
   .controller-issues.action-index #content form#query_form {
-    padding: 14px 10px; }
+    padding: 10px 10px; }
 
 .controller-issues.action-index #content .group {
   background-color: #333333;
@@ -2229,8 +2288,8 @@ textarea {
     color: #DDDDDD;
     font-size: 0.8rem; }
   .controller-issues.action-index #content .group td {
-    padding-top: 14px;
-    padding-bottom: 3.5px; }
+    padding-top: 10px;
+    padding-bottom: 2.5px; }
 
 .search_for_watchers a::before {
   display: inline-block;
@@ -2245,14 +2304,14 @@ textarea {
   top: 0; }
 
 .controller-activities h3 {
-  margin: 28px 0 14px; }
+  margin: 20px 0 10px; }
   .controller-activities h3:first-child {
     margin-top: 0; }
 
 .controller-activities #activity {
   background-color: #FFFFFF;
-  padding: 14px 10px;
-  margin-bottom: 14px; }
+  padding: 10px 10px;
+  margin-bottom: 10px; }
 
 .controller-activities .user {
   font-size: 0.8rem;
@@ -2423,7 +2482,7 @@ table.cal {
 
 .news .summary {
   display: block;
-  margin: 14px 0; }
+  margin: 10px 0; }
 
 .news .comments {
   font-size: 0.8rem;
@@ -2431,42 +2490,42 @@ table.cal {
 
 .news-article {
   background-color: #FFFFFF;
-  padding: 14px 10px;
-  border-left: 3.33333px solid #DB1D70;
-  margin-bottom: 14px; }
+  padding: 10px 10px;
+  border-left: 5px solid #DB1D70;
+  margin-bottom: 10px; }
 
 #news_summary {
-  padding: 14px 10px;
+  padding: 10px 10px;
   display: block;
   width: 100%; }
 
 #news-form {
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
 
 #comments .wiki, #comments h4 {
   background-color: #FFFFFF;
-  border-left: 3.33333px solid #DB1D70;
-  padding: 14px 10px; }
+  border-left: 5px solid #DB1D70;
+  padding: 10px 10px; }
 
 #comments h4 {
   margin-bottom: 0;
-  margin-top: 14px;
+  margin-top: 10px;
   font-size: 0.8rem;
   padding-bottom: 0; }
 
 #comments .wiki {
-  margin-bottom: 14px; }
+  margin-bottom: 10px; }
 
 #comments .contextual {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-right: 5px; }
 
 .controller-news.action-show #content > p {
   font-size: 0.8rem; }
   .controller-news.action-show #content > p > em {
     display: block;
-    margin-top: -28px;
-    margin-bottom: 14px; }
+    margin-top: -20px;
+    margin-bottom: 10px; }
 
 .controller-welcome .news h3::before {
   display: inline-block;
@@ -2482,50 +2541,50 @@ table.cal {
 
 .controller-welcome .news p {
   background-color: #FFFFFF;
-  padding: 14px 10px;
-  border-left: 3.33333px solid #DB1D70;
-  margin-bottom: 14px; }
+  padding: 10px 10px;
+  border-left: 5px solid #DB1D70;
+  margin-bottom: 10px; }
 
 .controller-welcome .news .author {
   font-size: 0.8rem; }
 
 .controller-messages .message {
   background-color: #FFFFFF;
-  padding: 14px 10px;
-  margin-bottom: 14px; }
+  padding: 10px 10px;
+  margin-bottom: 10px; }
   .controller-messages .message.reply {
-    border-left: 3.33333px solid #DB1D70; }
+    border-left: 5px solid #DB1D70; }
     .controller-messages .message.reply h4 {
       font-size: 0.8rem; }
 
 .controller-documents.action-index #content h4, .controller-documents.action-index #content p, .controller-documents.action-index #content .wiki {
   background-color: #FFFFFF;
   padding: 0 10px;
-  border-left: 3.33333px solid #DB1D70;
+  border-left: 5px solid #DB1D70;
   margin-bottom: 0; }
 
 .controller-documents.action-index #content h4 {
-  padding: 14px 10px; }
+  padding: 10px 10px; }
 
 .controller-documents.action-index #content .wiki {
-  padding-bottom: 14px;
-  padding-top: 14px;
-  margin-bottom: 14px; }
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px; }
   .controller-documents.action-index #content .wiki p {
     border: 0;
     padding: 0;
-    margin-bottom: 14px; }
+    margin-bottom: 10px; }
 
 .wiki.wiki-page {
-  padding: 14px 10px;
+  padding: 10px 10px;
   background-color: #FFFFFF; }
   .wiki.wiki-page .contextual a {
     font-size: 0.8rem;
-    padding: 3.5px 5px; }
+    padding: 2.5px 5px; }
 
 .controller-wiki.action-show #content > .contextual {
   position: relative;
-  top: 14px;
+  top: 10px;
   right: 10px; }
 
 .gantt_hdr {
@@ -2563,11 +2622,11 @@ table.cal {
 
 .task {
   position: absolute;
-  height: 14px;
+  height: 10px;
   font-size: 0.8rem;
   padding: 0;
   margin: 0;
-  line-height: 14px;
+  line-height: 10px;
   white-space: nowrap; }
 
 .task.label {
@@ -2602,7 +2661,7 @@ table.cal {
   top: 5px; }
 
 .version {
-  height: 7px; }
+  height: 5px; }
   .version.task_late {
     background: #FF6858; }
   .version.task_done {
@@ -2615,7 +2674,7 @@ table.cal {
     margin-top: 1px; }
 
 .project {
-  height: 7px; }
+  height: 5px; }
   .project.task_late, .project.task_done, .project.task_todo {
     background-color: #232E82; }
 
@@ -2652,7 +2711,7 @@ table.cal {
 .ui-widget .ui-widget-header {
   font-size: 0.8rem;
   background: #333333;
-  padding: 7px 5px;
+  padding: 5px 5px;
   border: 0; }
 
 .ui-widget.ui-corner-all,
@@ -2681,7 +2740,7 @@ table.cal {
   .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
     text-align: center;
     cursor: pointer;
-    top: 7px; }
+    top: 5px; }
     .ui-datepicker .ui-datepicker-prev.ui-state-hover, .ui-datepicker .ui-datepicker-next.ui-state-hover {
       background: transparent;
       border: none;
@@ -2721,7 +2780,7 @@ table.cal {
     .ui-datepicker .ui-datepicker-buttonpane button {
       background: #2D3DB6;
       color: #FFFFFF;
-      padding: 7px 10px;
+      padding: 5px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -2756,7 +2815,7 @@ table.cal {
       .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {
         background: #2D3DB6;
         color: #FFFFFF;
-        padding: 7px 10px;
+        padding: 5px 10px;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
@@ -2813,13 +2872,13 @@ table.cal {
     margin-left: 0;
     max-width: 410px; }
   .ui-dialog #users_for_watcher {
-    margin-bottom: 14px; }
+    margin-bottom: 10px; }
     .ui-dialog #users_for_watcher label {
       display: block; }
   .ui-dialog input[type=button] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -2873,10 +2932,88 @@ table.cal {
     .ui-dialog .ui-dialog-titlebar-close:hover {
       color: #EA1D77; }
 
+.mypage-box {
+  background-color: #FFFFFF;
+  padding: 10px 10px;
+  margin-bottom: 10px; }
+  .mypage-box table tr.odd {
+    background-color: #EEEEEE; }
+
+.block-receiver {
+  border: 2px dashed #333333;
+  padding: 10px 10px;
+  margin-bottom: 10px; }
+
+.ui-sortable-handle {
+  cursor: move;
+  opacity: 0.8; }
+  .ui-sortable-handle .close-icon::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
+.action-page_layout .contextual #block-form {
+  float: left; }
+
+.action-page_layout .icon-cancel {
+  float: right;
+  margin-left: 10px;
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #F06355 !important;
+  color: #FFFFFF !important; }
+  .action-page_layout .icon-cancel:hover {
+    background: #3346D4;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+  .action-page_layout .icon-cancel:hover {
+    background: #FF6858 !important; }
+  .action-page_layout .icon-cancel::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+
 #roadmap article {
   background-color: #FFFFFF;
-  margin: 14px 0;
-  padding: 14px 10px; }
+  margin: 10px 0;
+  padding: 10px 10px; }
   #roadmap article form {
     padding: 0; }
   #roadmap article tr {
