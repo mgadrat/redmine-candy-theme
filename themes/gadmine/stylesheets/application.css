@@ -175,30 +175,30 @@ html {
 
 h1 {
   font-size: 2.2rem;
-  margin-bottom: 30px; }
+  margin-bottom: 36px; }
 
 h2 {
   font-size: 1.6rem;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
 
 h3 {
   font-size: 1.17rem;
-  margin-bottom: 15px; }
+  margin-bottom: 18px; }
 
 h4 {
   font-size: 1.12rem;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 h5 {
   font-size: .83rem;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 h6 {
   font-size: .75rem;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 p {
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 h3, h4, h5, h6 {
   font-weight: bold; }
@@ -213,13 +213,13 @@ strong {
   font-weight: bold; }
 
 hr {
-  margin: 10px 0;
+  margin: 12px 0;
   background-color: #DB1D70;
   height: 1px;
   border: 0; }
 
 #content ul, #content ol, #content dl {
-  margin: 10px 20px; }
+  margin: 12px 20px; }
   #content ul ul, #content ul ol, #content ol ul, #content ol ol, #content dl ul, #content dl ol {
     margin-top: 0; }
 
@@ -239,15 +239,15 @@ hr {
   font-weight: bold; }
 
 #content dd {
-  margin: 0 0 10px 0; }
+  margin: 0 0 12px 0; }
 
 table {
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   table caption {
     text-align: left;
     background-color: #EEEEEE;
     color: #333333;
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-size: 0.8rem; }
   table.list {
     width: 100%; }
@@ -256,7 +256,7 @@ table {
   table tr.odd {
     background-color: #FFFFFF; }
   table tr td {
-    padding: 5px 5px; }
+    padding: 6px 5px; }
     table tr td.checkbox {
       width: 30px; }
   table tr.context-menu-selection {
@@ -281,14 +281,14 @@ table {
   table thead th {
     background-color: #232E82;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 6px 10px;
     text-align: left;
     border-right: 1px solid #EEEEEE;
     font-size: 0.8rem; }
   table tbody th {
     background-color: #333333;
     color: #FFFFFF;
-    padding: 2.5px 10px;
+    padding: 3px 10px;
     text-align: left;
     border-right: 1px solid #EEEEEE;
     font-size: 0.8rem; }
@@ -340,8 +340,8 @@ table.progress {
 blockquote {
   padding-left: 60px;
   position: relative;
-  margin: 20px 0;
-  min-height: 40px;
+  margin: 24px 0;
+  min-height: 48px;
   display: block;
   color: #333333; }
   blockquote::before {
@@ -370,8 +370,8 @@ pre {
   display: block;
   background-color: #EEEEEE;
   border-left: 5px solid #DDDDDD;
-  padding: 10px 10px;
-  margin: 10px 0;
+  padding: 12px 10px;
+  margin: 12px 0;
   overflow: auto;
   word-wrap: nowrap;
   font-family: monospace; }
@@ -407,24 +407,24 @@ code {
   background-color: #FFFFFF; }
 
 #content {
-  padding: 10px 10px;
+  padding: 10px 12px;
   background-color: #EEEEEE;
   min-height: 70vh; }
   #content > h2,
   #content > .contextual {
-    margin-top: 30px; }
+    margin-top: 36px; }
 
 #sidebar {
-  padding: 40px 10px 10px; }
+  padding: 48px 10px 12px; }
   #sidebar h3 {
-    margin-top: 20px; }
+    margin-top: 24px; }
     #sidebar h3:first-child {
       margin-top: 0; }
 
 #sidebar-handle {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -470,7 +470,7 @@ code {
 .sidebar_closed #sidebar-handle {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -523,7 +523,7 @@ code {
   border-left: 5px solid #DB1D70;
   font-size: 0.8rem;
   background-color: #FFFFFF;
-  padding: 5px 5px; }
+  padding: 6px 5px; }
 
 .tooltip {
   z-index: 25;
@@ -536,11 +536,11 @@ code {
 
 /***** Flash & error messages ****/
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 12px 10px;
+  margin-bottom: 12px; }
 
 div.flash {
-  margin-top: 10px; }
+  margin-top: 12px; }
 
 div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
   background-color: #F06355;
@@ -576,7 +576,7 @@ html > body #ajax-indicator {
   vertical-align: bottom; }
 
 .text-diff {
-  padding: 10px 10px;
+  padding: 12px 10px;
   background-color: #FFFFFF; }
   .text-diff .diff_in {
     color: #2B803E; }
@@ -590,7 +590,7 @@ html > body #ajax-indicator {
 .icon-add {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -648,7 +648,7 @@ html > body #ajax-indicator {
 .icon-save {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -694,7 +694,7 @@ html > body #ajax-indicator {
 .icon-edit {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -772,7 +772,7 @@ html > body #ajax-indicator {
 .icon-copy {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -814,7 +814,7 @@ html > body #ajax-indicator {
 .icon-lock {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -856,7 +856,7 @@ html > body #ajax-indicator {
 .icon-del {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -902,7 +902,7 @@ html > body #ajax-indicator {
 a.icon-checked {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -948,7 +948,7 @@ a.icon-checked {
 .icon-reload {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -988,6 +988,20 @@ a.icon-checked {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "";
+    position: relative;
+    top: 0; }
+
+.ui-sortable-handle {
+  cursor: move; }
+  .ui-sortable-handle::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
     position: relative;
     top: 0; }
 
@@ -1044,8 +1058,8 @@ form.edit_board,
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 12px 10px;
+  margin-bottom: 12px; }
   #query_form::before, #query_form::after,
   #issue-form::before,
   #issue-form::after,
@@ -1448,7 +1462,7 @@ form.edit_board,
     font-size: 0.8rem; }
 
 fieldset {
-  padding: 10px 0; }
+  padding: 12px 0; }
   fieldset.collapsible legend {
     cursor: pointer;
     font-weight: bold; }
@@ -1514,7 +1528,7 @@ input {
   input[type=submit] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1548,7 +1562,7 @@ input {
   input[type=button] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1580,6 +1594,38 @@ input[type=checkbox] {
   display: inline-block;
   margin: 0 5px 0 0;
   padding: 0; }
+
+.query-columns input[type=button] {
+  background: #2D3DB6;
+  color: #FFFFFF;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: 0px 0px 5px 0px transparent;
+  -moz-box-shadow: 0px 0px 5px 0px transparent;
+  box-shadow: 0px 0px 5px 0px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 6px; }
+  .query-columns input[type=button]:hover {
+    background: #3346D4;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-width: 0;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
 
 .select2-container--default,
 .select2-selection--multiple,
@@ -1644,7 +1690,7 @@ input {
 
 div.jstElements {
   background-color: #DDDDDD;
-  padding: 5px 10px; }
+  padding: 6px 10px; }
   div.jstElements button {
     cursor: pointer; }
 
@@ -1653,17 +1699,17 @@ textarea {
   min-width: 400px; }
 
 .jstEditor {
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
   .jstEditor textarea {
     width: 100%;
-    padding: 10px 10px;
+    padding: 12px 10px;
     font-size: 1rem; }
 
 #attachments_fields {
   display: block; }
   #attachments_fields span {
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 12px; }
 
 .required {
   color: #AA4339; }
@@ -1686,14 +1732,14 @@ textarea {
   display: inline-block; }
 
 #top-menu a {
-  padding: 10px 20px; }
+  padding: 12px 20px; }
 
 #top-menu #loggedas a {
   padding-left: 0; }
 
 #main-menu {
   position: relative;
-  padding-top: 20px; }
+  padding-top: 24px; }
   #main-menu .menu-children {
     position: absolute;
     top: 100%;
@@ -1707,7 +1753,7 @@ textarea {
     #main-menu .menu-children li, #main-menu .menu-children a {
       display: block; }
     #main-menu .menu-children a {
-      padding: 5px 10px;
+      padding: 6px 10px;
       -webkit-transition: background-color 0.2s ease;
       -moz-transition: background-color 0.2s ease;
       -o-transition: background-color 0.2s ease;
@@ -1726,7 +1772,7 @@ textarea {
       #main-menu .menu-children a:hover {
         background-color: #49D368; }
   #main-menu > ul > li > a {
-    padding: 5px 10px;
+    padding: 6px 10px;
     background-color: #2D3DB6;
     color: #FFFFFF;
     margin-right: 5px;
@@ -1756,7 +1802,7 @@ textarea {
   .contextual a {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1800,7 +1846,7 @@ textarea {
     #context-menu ul li .icon, #context-menu ul li .icon-time-add, #context-menu ul li .icon-copy, #context-menu ul li .icon-del, #context-menu ul li .icon-checked {
       background: #2D3DB6;
       color: #FFFFFF;
-      padding: 5px 10px;
+      padding: 6px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -1836,7 +1882,7 @@ textarea {
       background-color: #DDDDDD; }
 
 #content .tabs ul {
-  margin: 10px 0; }
+  margin: 12px 0; }
 
 #content .tabs li {
   display: inline-block;
@@ -1844,7 +1890,7 @@ textarea {
   #content .tabs li a {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -2019,7 +2065,7 @@ textarea {
   top: 0; }
 
 #admin-menu {
-  padding: 10px 10px;
+  padding: 12px 10px;
   background-color: #FFFFFF; }
 
 #top-menu {
@@ -2028,27 +2074,27 @@ textarea {
 
 #header {
   background-color: #161D4D;
-  padding: 30px 10px 0;
+  padding: 36px 10px 0;
   -webkit-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.2); }
   #header form {
     background-color: transparent;
     float: left;
-    margin-bottom: 10px; }
+    margin-bottom: 12px; }
   #header #project_quick_jump_box {
     display: inline-block;
     min-width: 300px;
-    margin: 10px 0; }
+    margin: 12px 0; }
   #header a {
     color: #FFFFFF; }
   #header h1 {
     color: #FFFFFF;
-    margin-bottom: 30px; }
+    margin-bottom: 36px; }
 
 #footer {
   background-color: #333333;
-  padding: 20px 10px;
+  padding: 24px 10px;
   color: #FFFFFF; }
   #footer a {
     color: #3346D4; }
@@ -2065,20 +2111,20 @@ textarea {
   margin-bottom: 0; }
 
 .controller-documents.action-index #content h4 {
-  padding: 10px 10px; }
+  padding: 12px 10px; }
 
 .controller-documents.action-index #content .wiki {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 10px; }
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin-bottom: 12px; }
   .controller-documents.action-index #content .wiki p {
     border: 0;
     padding: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 12px; }
 
 .controller-projects .splitcontentleft > div,
 .controller-projects .splitcontentright > div {
-  padding: 10px 10px;
+  padding: 12px 10px;
   background-color: #FFFFFF; }
 
 .controller-projects .author {
@@ -2088,44 +2134,44 @@ textarea {
   margin: 0; }
 
 #projects-index li {
-  margin: 10px 10px; }
+  margin: 12px 10px; }
   #projects-index li a {
     font-size: 1.2rem; }
   #projects-index li.root {
     margin-left: 0;
     margin-right: 0;
     background-color: #fff;
-    padding: 10px 10px;
+    padding: 12px 10px;
     border-left: 5px solid #DB1D70; }
   #projects-index li ul {
-    margin: 10px 20px; }
+    margin: 12px 20px; }
 
 .controller-timelog #content .tabs {
   background-color: #EEEEEE;
   margin-left: -10px;
   margin-right: -10px;
-  padding-top: 10px; }
+  padding-top: 12px; }
 
 .controller-timelog.action-index #content .tabs {
-  margin-bottom: -20px; }
+  margin-bottom: -24px; }
 
 .controller-timelog.action-report #content .tabs {
-  padding-bottom: 10px;
-  margin-bottom: 10px; }
+  padding-bottom: 12px;
+  margin-bottom: 12px; }
 
 .issue .splitcontent {
-  padding-top: 20px;
+  padding-top: 24px;
   font-size: 0.8rem; }
   .issue .splitcontent > div {
-    margin-bottom: 10px; }
+    margin-bottom: 12px; }
 
 .issue hr {
   display: none; }
 
 .issue .description {
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin: 30px 0; }
+  padding: 12px 10px;
+  margin: 36px 0; }
   .issue .description hr {
     display: block; }
 
@@ -2135,7 +2181,7 @@ textarea {
 
 .issue .label, .issue .value {
   display: inline-block;
-  margin-bottom: 2.5px; }
+  margin-bottom: 3px; }
 
 .issue .progress .value {
   display: block; }
@@ -2144,7 +2190,7 @@ textarea {
   margin-bottom: 0; }
 
 .issue .attributes {
-  margin-bottom: -10px; }
+  margin-bottom: -12px; }
 
 .issue .subject h3::before {
   display: inline-block;
@@ -2168,7 +2214,7 @@ textarea {
 .controller-issues .icon-edit {
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -2202,7 +2248,7 @@ textarea {
 
 #issue_tree, #relations, .attachments {
   border: 1px dotted #EEEEEE;
-  padding: 10px 10px 10px 0;
+  padding: 12px 10px 12px 0;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
@@ -2225,7 +2271,7 @@ textarea {
     font-size: 0.8rem; }
 
 .attachments p {
-  padding-top: 5px; }
+  padding-top: 6px; }
 
 .description .contextual, .journal .contextual, #issue_tree .contextual, #relations .contextual, .attachments .contextual {
   -webkit-transition: opacity 0.2s ease;
@@ -2238,12 +2284,12 @@ textarea {
   opacity: 1; }
 
 #history {
-  padding-top: 50px; }
+  padding-top: 60px; }
   #history .journal {
     background-color: #FFFFFF;
     border-left: 5px solid #DB1D70;
-    margin: 10px 0;
-    padding: 10px 10px; }
+    margin: 12px 0;
+    padding: 12px 10px; }
     #history .journal .details {
       font-size: 0.8rem; }
       #history .journal .details i {
@@ -2255,15 +2301,15 @@ textarea {
       font-size: 0.8rem;
       margin-left: -10px;
       margin-right: -10px;
-      margin-top: -10px;
-      margin-bottom: 10px;
-      padding: 5px 10px;
+      margin-top: -12px;
+      margin-bottom: 12px;
+      padding: 6px 10px;
       background-color: #DDDDDD; }
 
 .controller-issues.action-index #content form {
   padding: 0; }
   .controller-issues.action-index #content form#query_form {
-    padding: 10px 10px; }
+    padding: 12px 10px; }
 
 .controller-issues.action-index #content .group {
   background-color: #333333;
@@ -2297,8 +2343,8 @@ textarea {
     color: #DDDDDD;
     font-size: 0.8rem; }
   .controller-issues.action-index #content .group td {
-    padding-top: 10px;
-    padding-bottom: 2.5px; }
+    padding-top: 12px;
+    padding-bottom: 3px; }
 
 .search_for_watchers a::before {
   display: inline-block;
@@ -2312,15 +2358,22 @@ textarea {
   position: relative;
   top: 0; }
 
+#preview > fieldset {
+  background-color: #FFFFFF;
+  padding: 12px 10px;
+  border-left: 5px solid #DB1D70; }
+  #preview > fieldset legend {
+    display: none; }
+
 .controller-activities h3 {
-  margin: 20px 0 10px; }
+  margin: 24px 0 12px; }
   .controller-activities h3:first-child {
     margin-top: 0; }
 
 .controller-activities #activity {
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 12px 10px;
+  margin-bottom: 12px; }
 
 .controller-activities .user {
   font-size: 0.8rem;
@@ -2491,7 +2544,7 @@ table.cal {
 
 .news .summary {
   display: block;
-  margin: 10px 0; }
+  margin: 12px 0; }
 
 .news .comments {
   font-size: 0.8rem;
@@ -2499,42 +2552,47 @@ table.cal {
 
 .news-article {
   background-color: #FFFFFF;
-  padding: 10px 10px;
+  padding: 12px 10px;
   border-left: 5px solid #DB1D70;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
+  .news-article .author {
+    font-size: 0.8rem; }
+
+#add-news {
+  margin-top: 36px; }
 
 #news_summary {
-  padding: 10px 10px;
+  padding: 12px 10px;
   display: block;
   width: 100%; }
 
 #news-form {
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 #comments .wiki, #comments h4 {
   background-color: #FFFFFF;
   border-left: 5px solid #DB1D70;
-  padding: 10px 10px; }
+  padding: 12px 10px; }
 
 #comments h4 {
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 0.8rem;
   padding-bottom: 0; }
 
 #comments .wiki {
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 #comments .contextual {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-right: 5px; }
 
 .controller-news.action-show #content > p {
   font-size: 0.8rem; }
   .controller-news.action-show #content > p > em {
     display: block;
-    margin-top: -20px;
-    margin-bottom: 10px; }
+    margin-top: -24px;
+    margin-bottom: 12px; }
 
 .controller-welcome .news h3::before {
   display: inline-block;
@@ -2550,17 +2608,17 @@ table.cal {
 
 .controller-welcome .news p {
   background-color: #FFFFFF;
-  padding: 10px 10px;
+  padding: 12px 10px;
   border-left: 5px solid #DB1D70;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 .controller-welcome .news .author {
   font-size: 0.8rem; }
 
 .controller-messages .message {
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 12px 10px;
+  margin-bottom: 12px; }
   .controller-messages .message.reply {
     border-left: 5px solid #DB1D70; }
     .controller-messages .message.reply h4 {
@@ -2573,41 +2631,41 @@ table.cal {
   margin-bottom: 0; }
 
 .controller-documents.action-index #content h4 {
-  padding: 10px 10px; }
+  padding: 12px 10px; }
 
 .controller-documents.action-index #content .wiki {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 10px; }
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin-bottom: 12px; }
   .controller-documents.action-index #content .wiki p {
     border: 0;
     padding: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 12px; }
 
 .wiki.wiki-page {
-  padding: 10px 10px;
+  padding: 12px 10px;
   background-color: #FFFFFF; }
   .wiki.wiki-page .contextual a {
     font-size: 0.8rem;
-    padding: 2.5px 5px; }
+    padding: 3px 5px; }
   .wiki.wiki-page h1 {
-    margin-top: 30px; }
+    margin-top: 36px; }
 
 .controller-wiki.action-show #content > .contextual {
   position: relative;
-  top: 10px;
+  top: 12px;
   right: 10px; }
 
 #wiki_add_attachment {
-  padding: 10px 10px;
-  margin: 10px 0;
+  padding: 12px 10px;
+  margin: 12px 0;
   background-color: #FFFFFF; }
   #wiki_add_attachment > p {
     margin: 0; }
     #wiki_add_attachment > p a {
       background: #2D3DB6;
       color: #FFFFFF;
-      padding: 5px 10px;
+      padding: 6px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -2650,7 +2708,7 @@ table.cal {
         position: relative;
         top: 0; }
   #wiki_add_attachment .box {
-    margin-top: 10px; }
+    margin-top: 12px; }
     #wiki_add_attachment .box input {
       margin: 0; }
 
@@ -2696,11 +2754,11 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
 
 .task {
   position: absolute;
-  height: 10px;
+  height: 12px;
   font-size: 0.8rem;
   padding: 0;
   margin: 0;
-  line-height: 10px;
+  line-height: 12px;
   white-space: nowrap; }
 
 .task.label {
@@ -2735,7 +2793,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   top: 5px; }
 
 .version {
-  height: 5px; }
+  height: 6px; }
   .version.task_late {
     background: #FF6858; }
   .version.task_done {
@@ -2748,7 +2806,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     margin-top: 1px; }
 
 .project {
-  height: 5px; }
+  height: 6px; }
   .project.task_late, .project.task_done, .project.task_todo {
     background-color: #232E82; }
 
@@ -2785,7 +2843,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
 .ui-widget .ui-widget-header {
   font-size: 0.8rem;
   background: #333333;
-  padding: 5px 5px;
+  padding: 6px 5px;
   border: 0; }
 
 .ui-widget.ui-corner-all,
@@ -2814,7 +2872,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
     text-align: center;
     cursor: pointer;
-    top: 5px; }
+    top: 6px; }
     .ui-datepicker .ui-datepicker-prev.ui-state-hover, .ui-datepicker .ui-datepicker-next.ui-state-hover {
       background: transparent;
       border: none;
@@ -2854,7 +2912,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     .ui-datepicker .ui-datepicker-buttonpane button {
       background: #2D3DB6;
       color: #FFFFFF;
-      padding: 5px 10px;
+      padding: 6px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -2889,7 +2947,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
       .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {
         background: #2D3DB6;
         color: #FFFFFF;
-        padding: 5px 10px;
+        padding: 6px 10px;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
@@ -2946,13 +3004,13 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     margin-left: 0;
     max-width: 410px; }
   .ui-dialog #users_for_watcher {
-    margin-bottom: 10px; }
+    margin-bottom: 12px; }
     .ui-dialog #users_for_watcher label {
       display: block; }
   .ui-dialog input[type=button] {
     background: #2D3DB6;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -3008,15 +3066,15 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
 
 .mypage-box {
   background-color: #FFFFFF;
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 12px 10px;
+  margin-bottom: 12px; }
   .mypage-box table tr.odd {
     background-color: #EEEEEE; }
 
 .block-receiver {
   border: 2px dashed #333333;
-  padding: 10px 10px;
-  margin-bottom: 10px; }
+  padding: 12px 10px;
+  margin-bottom: 12px; }
 
 .ui-sortable-handle {
   cursor: move;
@@ -3041,7 +3099,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   margin-left: 10px;
   background: #2D3DB6;
   color: #FFFFFF;
-  padding: 5px 10px;
+  padding: 6px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -3084,10 +3142,36 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     position: relative;
     top: 0; }
 
+.controller-users .splitcontentleft, .controller-users .splitcontentright {
+  padding: 12px 10px;
+  background-color: #FFFFFF;
+  float: none;
+  margin-bottom: 12px;
+  width: 100%; }
+
+#tab-content-boards {
+  background-color: #FFFFFF;
+  padding: 12px 10px; }
+  #tab-content-boards .table-list-header {
+    background-color: #232E82;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    text-align: left;
+    border-right: 1px solid #EEEEEE;
+    font-size: 0.8rem; }
+  #tab-content-boards .table-list-cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 2px; }
+    #tab-content-boards .table-list-cell.name {
+      width: 30%; }
+    #tab-content-boards .table-list-cell.buttons {
+      width: 15%; }
+
 #roadmap article {
   background-color: #FFFFFF;
-  margin: 10px 0;
-  padding: 10px 10px; }
+  margin: 12px 0;
+  padding: 12px 10px; }
   #roadmap article form {
     padding: 0; }
   #roadmap article tr {

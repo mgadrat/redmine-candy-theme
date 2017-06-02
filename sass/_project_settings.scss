@@ -1,0 +1,29 @@
+#tab-content-boards {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer $base-h-spacer;
+
+  .table-list-header {
+    background-color: $color-primary-mid;
+    color: $color-neutral-lightest;
+    padding: $base-v-spacer/2 $base-h-spacer;
+    text-align: left;
+    border-right: 1px solid $color-neutral-light;
+    font-size: $font-size-small;
+  }
+
+  .table-list-cell {
+      display: table-cell;
+      vertical-align: top;
+      padding: 2px;
+
+      &.name {
+        width: 30%;
+      }
+
+      &.buttons {
+        width: 15%;
+      }
+  }
+
+}
+

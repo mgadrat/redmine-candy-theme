@@ -38,3 +38,13 @@
     @include fa-icon($icon-close);
   }
 }
+
+.controller-users {
+  .splitcontentleft, .splitcontentright {
+    padding: $base-v-spacer $base-h-spacer;
+    background-color: $color-neutral-lightest;
+    float: none;
+    margin-bottom: $base-v-spacer;
+    width: 100%;
+  }
+}

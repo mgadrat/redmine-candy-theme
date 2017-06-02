@@ -173,3 +173,12 @@
   @include fa-icon($icon-watch);
 }
 
+#preview > fieldset {
+  background-color: $color-neutral-lightest;
+  padding: $base-v-spacer $base-h-spacer;
+  border-left: $base-highlight-border-width solid $color-complement-light;
+
+  legend {
+    display: none;
+  }
+}

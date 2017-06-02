@@ -160,6 +160,14 @@ input[type=checkbox] {
   padding: 0;
 }
 
+.query-columns {
+  input[type=button]{
+    @include btn();
+    margin-bottom: $base-v-spacer/2;
+  }  
+}
+
+
 .select2-container--default,
 .select2-selection--multiple,
 .select2-container--default .select2-selection--single .select2-selection__rendered,

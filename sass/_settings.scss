@@ -55,7 +55,7 @@ $color-cancel-darkest: #3C130F;
 // margin // padding // spacers
 $base-spacer: 10px;
 $base-h-spacer: $base-spacer;
-$base-v-spacer: $base-spacer;
+$base-v-spacer: $base-spacer*1.2;
 $base-highlight-border-width: $base-spacer/2;
 
 /**
@@ -115,3 +115,4 @@ $icon-issue-start: $fa-var-play;
 $icon-issue-stop: $fa-var-pause;
 $icon-collapse-open: $fa-var-plus-square-o;
 $icon-collapse-close: $fa-var-minus-square-o;
+$icon-sort: $fa-var-sort;
