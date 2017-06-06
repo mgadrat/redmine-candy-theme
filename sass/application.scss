@@ -1,25 +1,30 @@
 
+// SASS tools
 @import 'fa_variables';
-@import 'settings';
+@import 'variables';
 @import 'mixins';
 @import 'reset';
-@import 'layout';
-@import 'main';
-@import 'forms';
-@import 'menus';
-@import 'header';
-@import 'footer';
-@import 'documents';
-@import 'projects';
-@import 'issues';
-@import 'activities';
-@import 'calendar';
-@import 'news';
-@import 'forum';
-@import 'documents';
-@import 'wiki';
-@import 'gant';
-@import 'jquery_ui';
-@import 'my_page';
-@import 'project_settings';
-@import 'versions';
+
+// Components of the theme
+@import 'components/layout';
+@import 'components/main';
+@import 'components/forms';
+@import 'components/menus';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/jquery_ui';
+
+// Sections in redmine
+@import 'sections/documents';
+@import 'sections/projects';
+@import 'sections/issues';
+@import 'sections/activities';
+@import 'sections/calendar';
+@import 'sections/news';
+@import 'sections/forum';
+@import 'sections/documents';
+@import 'sections/wiki';
+@import 'sections/gant';
+@import 'sections/my_page';
+@import 'sections/project_settings';
+@import 'sections/versions';

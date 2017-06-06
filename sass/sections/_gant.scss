@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.gantt_hdr {
+  border-left: 0 !important;
+}
+
 #gantt_area .gantt_hdr {
   background-color: transparent;
   border-top: 1px solid $color-neutral-mid;
@@ -28,6 +32,15 @@
 
       label {
         width: auto;
+      }
+    }
+  }
+  #content {
+    & > table {
+      border: 1px solid $color-neutral-mid !important;
+      background-color: $color-neutral-lightest;
+      & > tbody > tr > td:last-child {
+        background-color: $color-neutral-light;
       }
     }
   }
