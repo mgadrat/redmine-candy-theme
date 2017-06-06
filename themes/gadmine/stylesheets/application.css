@@ -328,6 +328,9 @@ table {
       right: -5px;
       top: 5px; }
 
+#check_all {
+  display: block; }
+
 table.progress {
   margin: 0;
   background-color: #EEEEEE;
