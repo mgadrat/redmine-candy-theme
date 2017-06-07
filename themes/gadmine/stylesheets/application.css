@@ -245,7 +245,7 @@ table {
   margin-bottom: 24px; }
   table caption {
     text-align: left;
-    background-color: #EEEEEE;
+    background-color: #F2F2F2;
     color: #333333;
     padding: 6px 10px;
     font-size: 0.8rem; }
@@ -259,6 +259,8 @@ table {
     padding: 6px 5px; }
     table tr td.checkbox {
       width: 30px; }
+      table tr td.checkbox input {
+        display: none; }
   table tr.context-menu-selection {
     background-color: #60A91B !important; }
     table tr.context-menu-selection:hover {
@@ -283,14 +285,14 @@ table {
     color: #FFFFFF;
     padding: 6px 10px;
     text-align: left;
-    border-right: 1px solid #EEEEEE;
+    border-right: 1px solid #F2F2F2;
     font-size: 0.8rem; }
   table tbody th {
     background-color: #333333;
     color: #FFFFFF;
     padding: 3px 10px;
     text-align: left;
-    border-right: 1px solid #EEEEEE;
+    border-right: 1px solid #F2F2F2;
     font-size: 0.8rem; }
   table th a {
     color: #FFFFFF;
@@ -333,7 +335,7 @@ table {
 
 table.progress {
   margin: 0;
-  background-color: #EEEEEE;
+  background-color: #F2F2F2;
   width: 100%; }
   table.progress .done, table.progress .closed {
     background-color: #49D368; }
@@ -371,7 +373,7 @@ blockquote {
 
 pre {
   display: block;
-  background-color: #EEEEEE;
+  background-color: #F2F2F2;
   border-left: 5px solid #DDDDDD;
   padding: 12px 10px;
   margin: 12px 0;
@@ -382,7 +384,7 @@ pre {
 code {
   display: inline-block;
   padding: 2px;
-  background-color: #EEEEEE;
+  background-color: #F2F2F2;
   font-family: monospace; }
 
 .splitcontent {
@@ -411,7 +413,7 @@ code {
 
 #content {
   padding: 10px 12px;
-  background-color: #EEEEEE;
+  background-color: #F2F2F2;
   min-height: 70vh; }
   #content > h2,
   #content > .contextual {
@@ -425,9 +427,9 @@ code {
       margin-top: 0; }
 
 #sidebar-handle {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -449,7 +451,7 @@ code {
   background: #F06355 !important;
   color: #FFFFFF !important; }
   #sidebar-handle:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -471,9 +473,9 @@ code {
     top: 0; }
 
 .sidebar_closed #sidebar-handle {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -495,7 +497,7 @@ code {
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .sidebar_closed #sidebar-handle:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -530,12 +532,17 @@ code {
 
 .tooltip {
   z-index: 25;
-  position: relative;
-  background-color: red; }
+  position: relative; }
   .tooltip:hover {
     z-index: 30; }
     .tooltip:hover .tip {
       display: block; }
+
+.gravatar {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 50%;
+  vertical-align: middle; }
 
 /***** Flash & error messages ****/
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
@@ -591,9 +598,9 @@ html > body #ajax-indicator {
   background-color: #FFFFFF; }
 
 .icon-add {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -615,7 +622,7 @@ html > body #ajax-indicator {
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-add:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -649,9 +656,9 @@ html > body #ajax-indicator {
   top: 0; }
 
 .icon-save {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -673,7 +680,7 @@ html > body #ajax-indicator {
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .icon-save:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -695,9 +702,9 @@ html > body #ajax-indicator {
     top: 0; }
 
 .icon-edit {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -717,7 +724,7 @@ html > body #ajax-indicator {
   -ms-border-radius: 5px;
   border-radius: 5px; }
   .icon-edit:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -773,9 +780,9 @@ html > body #ajax-indicator {
   top: 0; }
 
 .icon-copy {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -795,7 +802,7 @@ html > body #ajax-indicator {
   -ms-border-radius: 5px;
   border-radius: 5px; }
   .icon-copy:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -815,9 +822,9 @@ html > body #ajax-indicator {
     top: 0; }
 
 .icon-lock {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -837,7 +844,7 @@ html > body #ajax-indicator {
   -ms-border-radius: 5px;
   border-radius: 5px; }
   .icon-lock:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -857,39 +864,7 @@ html > body #ajax-indicator {
     top: 0; }
 
 .icon-del {
-  background: #2D3DB6;
-  color: #FFFFFF;
-  padding: 6px 10px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-transition: background-color 0.2s linear;
-  -moz-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
-  -webkit-transition: box-shadow 0.2s linear;
-  -moz-transition: box-shadow 0.2s linear;
-  -o-transition: box-shadow 0.2s linear;
-  transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  background: #F06355 !important;
-  color: #FFFFFF !important; }
-  .icon-del:hover {
-    background: #3346D4;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
-  .icon-del:hover {
-    background: #FF6858 !important; }
+  color: #FF6858; }
   .icon-del::before {
     display: inline-block;
     margin-right: 5px;
@@ -903,9 +878,9 @@ html > body #ajax-indicator {
     top: 0; }
 
 a.icon-checked {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -927,7 +902,7 @@ a.icon-checked {
   background: #40B55A !important;
   color: #FFFFFF !important; }
   a.icon-checked:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -949,9 +924,9 @@ a.icon-checked {
     top: 1px; }
 
 .icon-reload {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -973,7 +948,7 @@ a.icon-checked {
   background: #F06355 !important;
   color: #FFFFFF !important; }
   .icon-reload:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -993,6 +968,18 @@ a.icon-checked {
     content: "";
     position: relative;
     top: 0; }
+
+.icon-link-break::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
 
 .ui-sortable-handle {
   cursor: move; }
@@ -1054,6 +1041,7 @@ form.edit_board,
 #tab-content-mail_handler form,
 #tab-content-repositories form,
 .edit_project,
+.controller-my.action-password #content form,
 .controller-admin.action-projects #content form,
 .controller-users.action-index #content form,
 .controller-imports.action-new #content form,
@@ -1130,6 +1118,8 @@ form.edit_board,
   #tab-content-repositories form::after,
   .edit_project::before,
   .edit_project::after,
+  .controller-my.action-password #content form::before,
+  .controller-my.action-password #content form::after,
   .controller-admin.action-projects #content form::before,
   .controller-admin.action-projects #content form::after,
   .controller-users.action-index #content form::before,
@@ -1174,6 +1164,7 @@ form.edit_board,
   #tab-content-mail_handler form::after,
   #tab-content-repositories form::after,
   .edit_project::after,
+  .controller-my.action-password #content form::after,
   .controller-admin.action-projects #content form::after,
   .controller-users.action-index #content form::after,
   .controller-imports.action-new #content form::after,
@@ -1213,6 +1204,7 @@ form.edit_board,
   #tab-content-mail_handler form legend,
   #tab-content-repositories form legend,
   .edit_project legend,
+  .controller-my.action-password #content form legend,
   .controller-admin.action-projects #content form legend,
   .controller-users.action-index #content form legend,
   .controller-imports.action-new #content form legend,
@@ -1252,6 +1244,7 @@ form.edit_board,
   #tab-content-mail_handler form label,
   #tab-content-repositories form label,
   .edit_project label,
+  .controller-my.action-password #content form label,
   .controller-admin.action-projects #content form label,
   .controller-users.action-index #content form label,
   .controller-imports.action-new #content form label,
@@ -1294,6 +1287,7 @@ form.edit_board,
     #tab-content-mail_handler form label.block,
     #tab-content-repositories form label.block,
     .edit_project label.block,
+    .controller-my.action-password #content form label.block,
     .controller-admin.action-projects #content form label.block,
     .controller-users.action-index #content form label.block,
     .controller-imports.action-new #content form label.block,
@@ -1336,6 +1330,7 @@ form.edit_board,
   #tab-content-mail_handler form .projects label,
   #tab-content-repositories form .projects label,
   .edit_project .projects label,
+  .controller-my.action-password #content form .projects label,
   .controller-admin.action-projects #content form .projects label,
   .controller-users.action-index #content form .projects label,
   .controller-imports.action-new #content form .projects label,
@@ -1378,6 +1373,7 @@ form.edit_board,
   #tab-content-mail_handler form .add-filter label,
   #tab-content-repositories form .add-filter label,
   .edit_project .add-filter label,
+  .controller-my.action-password #content form .add-filter label,
   .controller-admin.action-projects #content form .add-filter label,
   .controller-users.action-index #content form .add-filter label,
   .controller-imports.action-new #content form .add-filter label,
@@ -1418,6 +1414,7 @@ form.edit_board,
   #tab-content-mail_handler form .icon-edit,
   #tab-content-repositories form .icon-edit,
   .edit_project .icon-edit,
+  .controller-my.action-password #content form .icon-edit,
   .controller-admin.action-projects #content form .icon-edit,
   .controller-users.action-index #content form .icon-edit,
   .controller-imports.action-new #content form .icon-edit,
@@ -1457,6 +1454,7 @@ form.edit_board,
   #tab-content-mail_handler form .info,
   #tab-content-repositories form .info,
   .edit_project .info,
+  .controller-my.action-password #content form .info,
   .controller-admin.action-projects #content form .info,
   .controller-users.action-index #content form .info,
   .controller-imports.action-new #content form .info,
@@ -1529,9 +1527,9 @@ input {
     font-size: 1rem;
     font-family: "Open Sans", sans-serif; }
   input[type=submit] {
-    background: #2D3DB6;
+    background: #232E82;
     color: #FFFFFF;
-    padding: 6px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1553,7 +1551,7 @@ input {
     background: #40B55A !important;
     color: #FFFFFF !important; }
     input[type=submit]:hover {
-      background: #3346D4;
+      background: #2D3DB6;
       color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
@@ -1563,9 +1561,9 @@ input {
     input[type=submit]:hover {
       background: #49D368 !important; }
   input[type=button] {
-    background: #2D3DB6;
+    background: #232E82;
     color: #FFFFFF;
-    padding: 6px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1585,7 +1583,7 @@ input {
     -ms-border-radius: 5px;
     border-radius: 5px; }
     input[type=button]:hover {
-      background: #3346D4;
+      background: #2D3DB6;
       color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
@@ -1599,9 +1597,9 @@ input[type=checkbox] {
   padding: 0; }
 
 .query-columns input[type=button] {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -1622,7 +1620,7 @@ input[type=checkbox] {
   border-radius: 5px;
   margin-bottom: 6px; }
   .query-columns input[type=button]:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -1792,7 +1790,7 @@ textarea {
       -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
       box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05); }
     #main-menu > ul > li > a.selected {
-      background-color: #EEEEEE;
+      background-color: #F2F2F2;
       color: #232E82;
       -webkit-box-shadow: inset 0px 0px 0px 0px transparent;
       -moz-box-shadow: inset 0px 0px 0px 0px transparent;
@@ -1800,12 +1798,12 @@ textarea {
 
 .contextual {
   float: right;
-  color: #EEEEEE;
+  color: #F2F2F2;
   margin: 0 0 0 10px; }
   .contextual a {
-    background: #2D3DB6;
+    background: #232E82;
     color: #FFFFFF;
-    padding: 6px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1826,13 +1824,22 @@ textarea {
     border-radius: 5px;
     font-size: 0.8rem; }
     .contextual a:hover {
-      background: #3346D4;
+      background: #2D3DB6;
       color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
       -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
       -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
       box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    .contextual a.icon-del {
+      color: #FF6858;
+      background-color: transparent !important; }
+      .contextual a.icon-del:hover {
+        background-color: #FF6858 !important;
+        color: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 2px 0px transparent;
+        -moz-box-shadow: 0px 0px 2px 0px transparent;
+        box-shadow: 0px 0px 2px 0px transparent; }
   .contextual .position {
     color: #0F1332; }
 
@@ -1846,10 +1853,12 @@ textarea {
     padding: 0; }
     #context-menu ul li.folder > ul {
       left: 145px; }
+    #context-menu ul li a {
+      border-radius: 0 !important; }
     #context-menu ul li .icon, #context-menu ul li .icon-time-add, #context-menu ul li .icon-copy, #context-menu ul li .icon-del, #context-menu ul li .icon-checked {
-      background: #2D3DB6;
+      background: #232E82;
       color: #FFFFFF;
-      padding: 6px 10px;
+      padding: 3px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -1870,7 +1879,7 @@ textarea {
       border-radius: 5px;
       width: 100%; }
       #context-menu ul li .icon:hover, #context-menu ul li .icon-time-add:hover, #context-menu ul li .icon-copy:hover, #context-menu ul li .icon-del:hover, #context-menu ul li .icon-checked:hover {
-        background: #3346D4;
+        background: #2D3DB6;
         color: #FFFFFF;
         text-decoration: none;
         border-width: 0;
@@ -1891,9 +1900,9 @@ textarea {
   display: inline-block;
   margin: 0 10px 0 0; }
   #content .tabs li a {
-    background: #2D3DB6;
+    background: #232E82;
     color: #FFFFFF;
-    padding: 6px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1913,7 +1922,7 @@ textarea {
     -ms-border-radius: 5px;
     border-radius: 5px; }
     #content .tabs li a:hover {
-      background: #3346D4;
+      background: #2D3DB6;
       color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
@@ -2177,9 +2186,9 @@ textarea {
   .ui-datepicker .ui-datepicker-buttonpane {
     margin: 0; }
     .ui-datepicker .ui-datepicker-buttonpane button {
-      background: #2D3DB6;
+      background: #232E82;
       color: #FFFFFF;
-      padding: 6px 10px;
+      padding: 3px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -2204,7 +2213,7 @@ textarea {
       border-width: 0;
       font-size: 0.8rem; }
       .ui-datepicker .ui-datepicker-buttonpane button:hover {
-        background: #3346D4;
+        background: #2D3DB6;
         color: #FFFFFF;
         text-decoration: none;
         border-width: 0;
@@ -2212,9 +2221,9 @@ textarea {
         -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
       .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {
-        background: #2D3DB6;
+        background: #232E82;
         color: #FFFFFF;
-        padding: 6px 10px;
+        padding: 3px 10px;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
@@ -2236,7 +2245,7 @@ textarea {
         background: #40B55A !important;
         color: #FFFFFF !important; }
         .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close:hover {
-          background: #3346D4;
+          background: #2D3DB6;
           color: #FFFFFF;
           text-decoration: none;
           border-width: 0;
@@ -2275,9 +2284,9 @@ textarea {
     .ui-dialog #users_for_watcher label {
       display: block; }
   .ui-dialog input[type=button] {
-    background: #2D3DB6;
+    background: #232E82;
     color: #FFFFFF;
-    padding: 6px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -2299,7 +2308,7 @@ textarea {
     background: #F06355 !important;
     color: #FFFFFF !important; }
     .ui-dialog input[type=button]:hover {
-      background: #3346D4;
+      background: #2D3DB6;
       color: #FFFFFF;
       text-decoration: none;
       border-width: 0;
@@ -2352,16 +2361,45 @@ textarea {
 .controller-projects .splitcontentleft > div,
 .controller-projects .splitcontentright > div {
   padding: 12px 10px;
+  margin-bottom: 12px;
   background-color: #FFFFFF; }
+  .controller-projects .splitcontentleft > div.news > p > a,
+  .controller-projects .splitcontentright > div.news > p > a {
+    font-weight: bold; }
+  .controller-projects .splitcontentleft > div.projects,
+  .controller-projects .splitcontentright > div.projects {
+    color: #FFFFFF; }
+    .controller-projects .splitcontentleft > div.projects h3,
+    .controller-projects .splitcontentright > div.projects h3 {
+      color: #111111; }
+    .controller-projects .splitcontentleft > div.projects .project,
+    .controller-projects .splitcontentright > div.projects .project {
+      display: block;
+      height: auto; }
+      .controller-projects .splitcontentleft > div.projects .project::before,
+      .controller-projects .splitcontentright > div.projects .project::before {
+        display: inline-block;
+        margin-right: 5px;
+        font: normal normal normal 1rem FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        position: relative;
+        top: 0; }
 
 .controller-projects .author {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  position: relative;
+  top: -24px; }
 
 #projects-index ul {
   margin: 0; }
 
 #projects-index li {
-  margin: 12px 10px; }
+  margin: 12px 10px;
+  list-style: none; }
   #projects-index li a {
     font-size: 1.2rem; }
   #projects-index li.root {
@@ -2374,7 +2412,7 @@ textarea {
     margin: 12px 20px; }
 
 .controller-timelog #content .tabs {
-  background-color: #EEEEEE;
+  background-color: #F2F2F2;
   margin-left: -10px;
   margin-right: -10px;
   padding-top: 12px; }
@@ -2386,8 +2424,16 @@ textarea {
   padding-bottom: 12px;
   margin-bottom: 12px; }
 
+.controller-issues.action-show #content > h2 {
+  margin-bottom: 12px; }
+
+.issue .next-prev-links {
+  margin-top: 12px; }
+
 .issue .splitcontent {
-  padding-top: 24px;
+  background-color: #FFFFFF;
+  padding: 12px;
+  margin-top: 12px;
   font-size: 0.8rem; }
   .issue .splitcontent > div {
     margin-bottom: 12px; }
@@ -2404,7 +2450,8 @@ textarea {
 
 .issue .label {
   font-weight: bold;
-  margin-right: 10px; }
+  margin-right: 10px;
+  width: 170px; }
 
 .issue .label, .issue .value {
   display: inline-block;
@@ -2419,17 +2466,38 @@ textarea {
 .issue .attributes {
   margin-bottom: -12px; }
 
-.issue .subject h3::before {
-  display: inline-block;
-  margin-right: 5px;
-  font: normal normal normal 1rem FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-  position: relative;
-  top: 2px; }
+.issue > .gravatar {
+  float: left; }
+
+.issue .subject h3 {
+  margin-bottom: 6px;
+  color: #DB1D70; }
+  .issue .subject h3::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 2px; }
+
+.issue .subject div > p {
+  margin: 0;
+  font-size: 0.8rem; }
+  .issue .subject div > p::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
 
 .issue .author {
   font-size: 0.8rem;
@@ -2439,9 +2507,9 @@ textarea {
   display: none; }
 
 .controller-issues .icon-edit {
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -2463,7 +2531,7 @@ textarea {
   background: #40B55A !important;
   color: #FFFFFF !important; }
   .controller-issues .icon-edit:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -2474,7 +2542,7 @@ textarea {
     background: #49D368 !important; }
 
 #issue_tree, #relations, .attachments {
-  border: 1px dotted #EEEEEE;
+  border: 1px dotted #F2F2F2;
   padding: 12px 10px 12px 0;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
@@ -2499,6 +2567,28 @@ textarea {
 
 .attachments p {
   padding-top: 6px; }
+  .attachments p::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .attachments p .icon-magnifier::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
 
 .description .contextual, .journal .contextual, #issue_tree .contextual, #relations .contextual, .attachments .contextual {
   -webkit-transition: opacity 0.2s ease;
@@ -2517,13 +2607,15 @@ textarea {
     border-left: 5px solid #DB1D70;
     margin: 12px 0;
     padding: 12px 10px; }
+    #history .journal .journal-link {
+      float: right; }
     #history .journal .details {
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      line-height: 0.8rem; }
       #history .journal .details i {
-        text-decoration: underline;
-        color: #AA4339; }
+        color: #FF6858; }
         #history .journal .details i:last-child {
-          color: #2B803E; }
+          color: #49D368; }
     #history .journal > div > h4 {
       font-size: 0.8rem;
       margin-left: -10px;
@@ -2572,6 +2664,21 @@ textarea {
   .controller-issues.action-index #content .group td {
     padding-top: 12px;
     padding-bottom: 3px; }
+
+.list.issues td {
+  font-size: 0.8rem; }
+
+.list.issues .id {
+  text-align: center; }
+
+.list.issues .description {
+  padding-left: 40px;
+  border-top: 1px solid #F2F2F2; }
+
+.list.issues .description,
+.list.issues .id,
+.list.issues .subject {
+  font-size: 1rem; }
 
 .search_for_watchers a::before {
   display: inline-block;
@@ -2890,9 +2997,9 @@ table.cal {
   #wiki_add_attachment > p {
     margin: 0; }
     #wiki_add_attachment > p a {
-      background: #2D3DB6;
+      background: #232E82;
       color: #FFFFFF;
-      padding: 6px 10px;
+      padding: 3px 10px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -2914,7 +3021,7 @@ table.cal {
       background: #40B55A !important;
       color: #FFFFFF !important; }
       #wiki_add_attachment > p a:hover {
-        background: #3346D4;
+        background: #2D3DB6;
         color: #FFFFFF;
         text-decoration: none;
         border-width: 0;
@@ -2978,7 +3085,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   border: 1px solid #DDDDDD !important;
   background-color: #FFFFFF; }
   .controller-gantts.action-show #content > table > tbody > tr > td:last-child {
-    background-color: #EEEEEE; }
+    background-color: #F2F2F2; }
 
 .gantt_subjects {
   font-size: 0.8rem; }
@@ -3081,7 +3188,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   padding: 12px 10px;
   margin-bottom: 12px; }
   .mypage-box table tr.odd {
-    background-color: #EEEEEE; }
+    background-color: #F2F2F2; }
 
 .block-receiver {
   border: 2px dashed #333333;
@@ -3109,9 +3216,9 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
 .action-page_layout .icon-cancel {
   float: right;
   margin-left: 10px;
-  background: #2D3DB6;
+  background: #232E82;
   color: #FFFFFF;
-  padding: 6px 10px;
+  padding: 3px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -3133,7 +3240,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   background: #F06355 !important;
   color: #FFFFFF !important; }
   .action-page_layout .icon-cancel:hover {
-    background: #3346D4;
+    background: #2D3DB6;
     color: #FFFFFF;
     text-decoration: none;
     border-width: 0;
@@ -3169,7 +3276,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     color: #FFFFFF;
     padding: 6px 10px;
     text-align: left;
-    border-right: 1px solid #EEEEEE;
+    border-right: 1px solid #F2F2F2;
     font-size: 0.8rem; }
   #tab-content-boards .table-list-cell {
     display: table-cell;
@@ -3187,4 +3294,4 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   #roadmap article form {
     padding: 0; }
   #roadmap article tr {
-    border: 1px solid #EEEEEE; }
+    border: 1px solid #F2F2F2; }

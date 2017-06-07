@@ -151,6 +151,9 @@ table {
 
       &.checkbox {
         width: 30px;
+        input {
+          display: none;
+        }
       }
     }
     &.context-menu-selection {
@@ -338,7 +341,6 @@ code {
 
   z-index: 25;
   position: relative;
-  background-color: red;
 
   &:hover {
     z-index: 30;
@@ -347,6 +349,13 @@ code {
 
     }
   }
+}
+
+.gravatar {
+  display: inline-block;
+  margin: $base-h-spacer/2;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 /***** Flash & error messages ****/
@@ -417,9 +426,10 @@ vertical-align: bottom;
 .icon-comment { @include fa-icon($icon-comment); }
 .icon-copy { @include btn(); @include fa-icon($icon-copy); }
 .icon-lock { @include btn(); @include fa-icon($icon-lock); }
-.icon-del { @include btn-cancel();@include fa-icon($icon-delete); }
+.icon-del { @include fa-icon($icon-delete); color: $color-cancel-light}
 a.icon-checked { @include btn-validate(); @include fa-icon($icon-apply, 1px) }
 .icon-reload { @include btn-cancel(); @include fa-icon($icon-reload) }
+.icon-link-break { @include fa-icon($icon-unlink) }
 
 .ui-sortable-handle {
   @include fa-icon($icon-sort);

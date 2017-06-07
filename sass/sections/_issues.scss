@@ -1,7 +1,19 @@
 
+.controller-issues.action-show #content > h2 {
+  margin-bottom: $base-v-spacer;
+}
+
 .issue {
+
+  .next-prev-links {
+    margin-top: $base-v-spacer;
+  }
+
   .splitcontent {
-    padding-top: $base-v-spacer*2;
+    background-color: $color-neutral-lightest;
+    padding: $base-v-spacer;
+    margin-top: $base-v-spacer;
+
     font-size: $font-size-small;
     & > div {
       margin-bottom: $base-v-spacer;
@@ -24,6 +36,7 @@
   .label {
     font-weight: bold;
     margin-right: $base-h-spacer;
+    width: 170px;
   }
 
   .label, .value {
@@ -43,10 +56,19 @@
   .attributes {
     margin-bottom: -$base-v-spacer;
   }
-
+  & > .gravatar {
+    float: left;
+  }
   .subject {
     h3 {
       @include fa-icon($icon-issue, 2px);
+      margin-bottom: $base-v-spacer/2;
+      color: $color-complement-light;
+    }
+    & div > p {
+      @include fa-icon($icon-parent);
+      margin: 0;
+      font-size: $font-size-small;
     }
   }
   .author {
@@ -89,6 +111,11 @@
 
 .attachments p {
   padding-top: $base-v-spacer/2;
+  @include fa-icon($icon_file);
+
+  .icon-magnifier {
+    @include fa-icon($icon_watch);
+  }
 }
 .description, .journal, #issue_tree, #relations, .attachments  {
   .contextual {
@@ -110,16 +137,20 @@
     border-left: $base-highlight-border-width solid $color-complement-light;
     margin: $base-v-spacer 0;
     padding: $base-v-spacer $base-h-spacer;
+    
+    .journal-link {
+      float: right;
+    }
 
     .details {
       font-size: $font-size-small;
+      line-height: $font-size-small;
 
       i{
-        text-decoration: underline;
-        color: $color-cancel-mid;
+        color: $color-cancel-light;
 
         &:last-child {
-          color: $color-validate-mid;
+          color: $color-validate-light;
         }
       }
     }
@@ -166,6 +197,24 @@
       padding-top: $base-v-spacer;
       padding-bottom: $base-v-spacer/4;
     }
+  }
+}
+
+.list.issues {
+  td {
+    font-size: $font-size-small;
+  }
+  .id {
+    text-align: center;
+  }
+  .description {
+    padding-left: 30px + $base-h-spacer;
+    border-top: 1px solid $color-neutral-light;
+  }
+  .description,
+  .id,
+  .subject {
+    font-size: $font-size-normal;
   }
 }
 

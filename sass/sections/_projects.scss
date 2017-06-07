@@ -3,12 +3,31 @@
   .splitcontentright {
     & > div {
       padding: $base-v-spacer $base-h-spacer;
+      margin-bottom: $base-v-spacer;
       background-color: $color-neutral-lightest;
+
+      &.news > p > a {
+        font-weight: bold;
+      }
+
+      &.projects {
+        color: $color-neutral-lightest;
+        h3 {
+          color: $color-neutral-darkest;
+        }
+        .project {
+          display: block;
+          height: auto;
+          @include fa-icon($icon-project);
+        }
+      }
     }
   }
 
   .author {
     font-size: $font-size-small;
+    position: relative;
+    top: -2 * $base-v-spacer;
   }
 }
 
@@ -20,6 +39,7 @@
 
   li{
     margin: $base-v-spacer $base-h-spacer;
+    list-style: none;
 
     a {
       font-size: $font-size-big;
