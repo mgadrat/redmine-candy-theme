@@ -1,6 +1,6 @@
 # Redmine Candy Theme
 
-A sweet SASS theme with configurable colors and spacers.
+A sweet redmine theme builded with SASS and love.
 
 ## Installation
 
