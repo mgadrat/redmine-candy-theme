@@ -1,10 +1,10 @@
-# gadmine
+# Redmine Candy Theme
 
-A redmine theme for me, by me, that I like :)
+A sweet SASS theme with configurable colors and spacers.
 
 ## Installation
 
-The redmine theme is in the themes/gadmine folder.
+The redmine theme is in the themes/candy folder.
 
 See [redmine theme installation on redmine](http://www.redmine.org/projects/redmine/wiki/Themes)
 

@@ -16,28 +16,28 @@ gulp.task('scripts', function() {
 gulp.task('custom-styles', function() {
   return gulp.src('../sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('../themes/gadmine/stylesheets/'))
+    .pipe(gulp.dest('../themes/candy/stylesheets/'))
     .pipe(notify("Your css is ready!"));
 });
 
 gulp.task('custom-scripts', function() {
   return gulp.src('../js/**/*.js')
     .pipe(concat('theme.js'))
-    .pipe(gulp.dest('../themes/gadmine/javascripts/'))
+    .pipe(gulp.dest('../themes/candy/javascripts/'))
     .pipe(notify("Your js is ready!"));
 });
 
 gulp.task('add-vendor-css', function() {
-  return gulp.src(['../vendor/select2.min.css', '../themes/gadmine/stylesheets/application.css'])
+  return gulp.src(['../vendor/select2.min.css', '../themes/candy/stylesheets/application.css'])
     .pipe(concat('application.css'))
-    .pipe(gulp.dest('../themes/gadmine/stylesheets/'))
+    .pipe(gulp.dest('../themes/candy/stylesheets/'))
     .pipe(notify("Vendors css is ready!"));
 })
 
 gulp.task('add-vendor-js', function() {
-  return gulp.src(['../vendor/select2.full.min.js', '../themes/gadmine/javascripts/theme.js'])
+  return gulp.src(['../vendor/select2.full.min.js', '../themes/candy/javascripts/theme.js'])
     .pipe(concat('theme.js'))
-    .pipe(gulp.dest('../themes/gadmine/javascripts/'))
+    .pipe(gulp.dest('../themes/candy/javascripts/'))
     .pipe(notify("Vendors js is ready!"));
 })
 
