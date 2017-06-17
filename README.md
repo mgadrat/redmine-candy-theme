@@ -10,19 +10,27 @@ See [redmine theme installation on redmine](http://www.redmine.org/projects/redm
 
 ## Development
 
-TODO: Steps to start dev
+### Using Gulp
+
+1. [Install Gulp](http://gulpjs.com/)
+2. Open a terminal in the `tools/` folder
+3. Run `npm install` to install dependencies
+4. Run `gulp` to start the task manager
+
+### Local environment with Docker
+
+1. [Install Docker and Docker Compose](https://docs.docker.com/engine/installation/)
+2. Open a terminal in the `docker/` folder
+3. Run `docker-compose -f stack.yml up`
+4. visit http://localhost/
+
+note: Make sure you firewall don't block incoming requests from yoursel
 
 ## References and links
 
 ### Redmine
 
 [HowTo create a custom Redmine theme](http://www.redmine.org/projects/redmine/wiki/HowTo_create_a_custom_Redmine_theme) 
-
-### Redmine VM (to develop and test)
-
-[Bitnami Redmine virtual machine to test the theme](https://bitnami.com/stack/redmine )
-
-[How to install guest addition on said machine](https://docs.bitnami.com/virtual-machine/faq/#how-to-install-virtualbox-guest-additions-on-bitnami-virtual-machines)
 
 ### Librairies
 
