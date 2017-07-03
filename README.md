@@ -21,10 +21,13 @@ See [redmine theme installation on redmine](http://www.redmine.org/projects/redm
 
 1. [Install Docker and Docker Compose](https://docs.docker.com/engine/installation/)
 2. Open a terminal in the `docker/` folder
-3. Run `docker-compose -f stack.yml up`
+3. Run `docker-compose -f docker-compose.yml up`
 4. visit http://localhost/
 
-note: Make sure you firewall don't block incoming requests from yoursel
+notes:
+Make sure you firewall don't block incoming requests from yoursel
+First time you up the containers the redmine one kind of crash because the SQL one
+is not ready yet. You can just up a second time and it will work.
 
 ## References and links
 
