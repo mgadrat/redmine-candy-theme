@@ -430,6 +430,7 @@ code {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -476,6 +477,7 @@ code {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -605,6 +607,7 @@ html > body #ajax-indicator {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -663,6 +666,7 @@ html > body #ajax-indicator {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -709,6 +713,7 @@ html > body #ajax-indicator {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -787,6 +792,7 @@ html > body #ajax-indicator {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -829,6 +835,7 @@ html > body #ajax-indicator {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -885,6 +892,7 @@ a.icon-checked {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -931,6 +939,7 @@ a.icon-checked {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -1534,6 +1543,7 @@ input {
     background: #232E82;
     color: #FFFFFF;
     padding: 3px 10px;
+    margin-top: 3px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1568,6 +1578,7 @@ input {
     background: #232E82;
     color: #FFFFFF;
     padding: 3px 10px;
+    margin-top: 3px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1604,6 +1615,7 @@ input[type=checkbox] {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -1808,6 +1820,7 @@ textarea {
     background: #232E82;
     color: #FFFFFF;
     padding: 3px 10px;
+    margin-top: 3px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -1863,6 +1876,7 @@ textarea {
       background: #232E82;
       color: #FFFFFF;
       padding: 3px 10px;
+      margin-top: 3px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -1907,6 +1921,7 @@ textarea {
     background: #232E82;
     color: #FFFFFF;
     padding: 3px 10px;
+    margin-top: 3px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -2193,6 +2208,7 @@ textarea {
       background: #232E82;
       color: #FFFFFF;
       padding: 3px 10px;
+      margin-top: 3px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -2228,6 +2244,7 @@ textarea {
         background: #232E82;
         color: #FFFFFF;
         padding: 3px 10px;
+        margin-top: 3px;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
@@ -2291,6 +2308,7 @@ textarea {
     background: #232E82;
     color: #FFFFFF;
     padding: 3px 10px;
+    margin-top: 3px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -2514,6 +2532,7 @@ textarea {
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -3038,6 +3057,7 @@ table.cal {
       background: #232E82;
       color: #FFFFFF;
       padding: 3px 10px;
+      margin-top: 3px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
@@ -3091,7 +3111,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   display: inline-block;
   padding: 0 10px; }
 
-.gantt_hdr {
+.controller-gantts .gantt_hdr {
   position: absolute;
   top: 0;
   border: 0;
@@ -3099,41 +3119,57 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   text-align: center;
   overflow: hidden; }
 
-.gantt_hdr {
+.controller-gantts .gantt_hdr {
   border-left: 0 !important; }
 
-#gantt_area .gantt_hdr {
+.controller-gantts #gantt_area .gantt_hdr {
   background-color: transparent;
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD; }
-  #gantt_area .gantt_hdr.nwday {
+  .controller-gantts #gantt_area .gantt_hdr.nwday {
     background-color: #FFFFFF;
     color: #333333; }
 
-.controller-gantts.action-show td {
+.controller-gantts .controller-gantts.action-show td {
   padding: 0; }
 
-.controller-gantts.action-show #query_form table {
+.controller-gantts .controller-gantts.action-show #query_form table {
   width: 100%; }
-  .controller-gantts.action-show #query_form table label {
+  .controller-gantts .controller-gantts.action-show #query_form table label {
     width: auto; }
 
-.controller-gantts.action-show #content > table {
+.controller-gantts .controller-gantts.action-show #content > table {
   border: 1px solid #DDDDDD !important;
   background-color: #FFFFFF; }
-  .controller-gantts.action-show #content > table > tbody > tr > td:last-child {
+  .controller-gantts .controller-gantts.action-show #content > table > tbody > tr > td:last-child {
     background-color: #F2F2F2; }
 
-.gantt_subjects {
+.controller-gantts .gantt_subjects {
   font-size: 0.8rem; }
+  .controller-gantts .gantt_subjects div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .controller-gantts .gantt_subjects .child::before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 1rem FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    position: relative;
+    top: 0; }
+  .controller-gantts .gantt_subjects .child::before {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg); }
 
-.gantt_subjects div {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-.task {
+.controller-gantts .task {
   position: absolute;
   height: 12px;
   font-size: 0.8rem;
@@ -3142,22 +3178,22 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   line-height: 12px;
   white-space: nowrap; }
 
-.task.label {
+.controller-gantts .task.label {
   width: 100%; }
 
-.task.label.project, .task.label.version {
+.controller-gantts .task.label.project, .controller-gantts .task.label.version {
   font-weight: bold; }
 
-.task_late {
+.controller-gantts .task_late {
   background: #FF6858; }
 
-.task_done {
+.controller-gantts .task_done {
   background: #49D368; }
 
-.task_todo {
+.controller-gantts .task_todo {
   background: #333333; }
 
-.task.parent.marker.starting {
+.controller-gantts .task.parent.marker.starting {
   position: absolute;
   width: 8px;
   height: 6px;
@@ -3165,7 +3201,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   left: 0px;
   top: 5px; }
 
-.task.parent.marker.ending {
+.controller-gantts .task.parent.marker.ending {
   position: absolute;
   width: 8px;
   height: 6px;
@@ -3173,22 +3209,22 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   right: 0px;
   top: 5px; }
 
-.version {
+.controller-gantts .version {
   height: 6px; }
-  .version.task_late {
+  .controller-gantts .version.task_late {
     background: #FF6858; }
-  .version.task_done {
+  .controller-gantts .version.task_done {
     background: #49D368; }
-  .version.task_todo {
+  .controller-gantts .version.task_todo {
     background: #FFFFFF; }
-  .version.marker {
+  .controller-gantts .version.marker {
     border: 0;
     margin-left: -4px;
     margin-top: 1px; }
 
-.project {
+.controller-gantts .project {
   height: 6px; }
-  .project.task_late, .project.task_done, .project.task_todo {
+  .controller-gantts .project.task_late, .controller-gantts .project.task_done, .controller-gantts .project.task_todo {
     background-color: #232E82; }
 
 .version-behind-schedule a, .issue-behind-schedule a {
@@ -3257,6 +3293,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   background: #232E82;
   color: #FFFFFF;
   padding: 3px 10px;
+  margin-top: 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;

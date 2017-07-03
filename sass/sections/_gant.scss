@@ -1,98 +1,111 @@
-.gantt_hdr {
-  position:absolute;
-  top:0;
-  border: 0;
-  background-color: $color-neutral-lightest;
-  text-align: center;
-  overflow: hidden;
-}
+.controller-gantts {
 
-.gantt_hdr {
-  border-left: 0 !important;
-}
 
-#gantt_area .gantt_hdr {
-  background-color: transparent;
-  border-top: 1px solid $color-neutral-mid;
-  border-bottom: 1px solid $color-neutral-mid;
-  border-right: 1px solid $color-neutral-mid;
-  &.nwday {
+  .gantt_hdr {
+    position:absolute;
+    top:0;
+    border: 0;
     background-color: $color-neutral-lightest;
-    color: $color-neutral-dark;
+    text-align: center;
+    overflow: hidden;
   }
-}
 
-.controller-gantts.action-show {
-  td {
-    padding: 0;
+  .gantt_hdr {
+    border-left: 0 !important;
   }
-  #query_form {
-    table {
-      width: 100%;
 
-      label {
-        width: auto;
-      }
-    }
-  }
-  #content {
-    & > table {
-      border: 1px solid $color-neutral-mid !important;
+  #gantt_area .gantt_hdr {
+    background-color: transparent;
+    border-top: 1px solid $color-neutral-mid;
+    border-bottom: 1px solid $color-neutral-mid;
+    border-right: 1px solid $color-neutral-mid;
+    &.nwday {
       background-color: $color-neutral-lightest;
-      & > tbody > tr > td:last-child {
-        background-color: $color-neutral-light;
+      color: $color-neutral-dark;
+    }
+  }
+
+  .controller-gantts.action-show {
+    td {
+      padding: 0;
+    }
+    #query_form {
+      table {
+        width: 100%;
+
+        label {
+          width: auto;
+        }
+      }
+    }
+    #content {
+      & > table {
+        border: 1px solid $color-neutral-mid !important;
+        background-color: $color-neutral-lightest;
+        & > tbody > tr > td:last-child {
+          background-color: $color-neutral-light;
+        }
       }
     }
   }
-}
 
 
-.gantt_subjects { font-size: $font-size-small; }
-.gantt_subjects div {
-  overflow: hidden;
-  white-space:nowrap;
-  text-overflow: ellipsis;
-}
-
-.task {
-  position: absolute;
-  height: $base-v-spacer;
-  font-size:$font-size-small;
-  padding:0;
-  margin:0;
-  line-height:$base-v-spacer;
-  white-space:nowrap;
-}
-
-.task.label {width:100%;}
-.task.label.project, .task.label.version { font-weight: bold; }
-
-.task_late { background:$color-cancel-light;}
-.task_done { background:$color-validate-light;}
-.task_todo { background:$color-neutral-dark;}
-
-.task_todo.parent {}
-.task_late.parent, .task_done.parent {}
-.task.parent.marker.starting  { position: absolute; width: 8px; height: 6px; margin-left: -4px; left: 0px; top: 5px;}
-.task.parent.marker.ending { position: absolute; width: 8px; height: 6px; margin-left: -4px; right: 0px; top: 5px;}
-
-.version {
-  height: $base-v-spacer/2;
-  &.task_late { background:$color-cancel-light;}
-  &.task_done { background:$color-validate-light;}
-  &.task_todo { background:$color-neutral-lightest;}
-  &.marker {border: 0; margin-left: -4px; margin-top: 1px; }
-}
-
-.project {
-  height: $base-v-spacer/2;
-  &.task_late,
-  &.task_done,
-  &.task_todo {
-    background-color: $color-primary-mid;
+  .gantt_subjects { 
+    font-size: $font-size-small; 
+    div {
+      overflow: hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+    }
+    .child {
+      @include fa-icon($icon-parent);
+      &::before {
+        @include rotate(90deg);
+      }
+    }
   }
-  .marker {
+
+  .task {
+    position: absolute;
+    height: $base-v-spacer;
+    font-size:$font-size-small;
+    padding:0;
+    margin:0;
+    line-height:$base-v-spacer;
+    white-space:nowrap;
   }
+
+  .task.label {width:100%;}
+  .task.label.project, .task.label.version { font-weight: bold; }
+
+  .task_late { background:$color-cancel-light;}
+  .task_done { background:$color-validate-light;}
+  .task_todo { background:$color-neutral-dark;}
+
+  .task_todo.parent {}
+  .task_late.parent, .task_done.parent {}
+  .task.parent.marker.starting  { position: absolute; width: 8px; height: 6px; margin-left: -4px; left: 0px; top: 5px;}
+  .task.parent.marker.ending { position: absolute; width: 8px; height: 6px; margin-left: -4px; right: 0px; top: 5px;}
+
+  .version {
+    height: $base-v-spacer/2;
+    &.task_late { background:$color-cancel-light;}
+    &.task_done { background:$color-validate-light;}
+    &.task_todo { background:$color-neutral-lightest;}
+    &.marker {border: 0; margin-left: -4px; margin-top: 1px; }
+  }
+
+  .project {
+    height: $base-v-spacer/2;
+    &.task_late,
+    &.task_done,
+    &.task_todo {
+      background-color: $color-primary-mid;
+    }
+    .marker {
+    }
+  }
+
 }
 
 .version-behind-schedule a, .issue-behind-schedule a {color: $color-cancel-light;}
