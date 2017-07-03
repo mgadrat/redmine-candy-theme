@@ -27,3 +27,14 @@
 
 }
 
+#new_membership {
+  legend {
+    font-weight: bold;
+  } 
+  #principals,
+  .roles-selection {
+   label {
+      display: block;
+    }
+  }
+}

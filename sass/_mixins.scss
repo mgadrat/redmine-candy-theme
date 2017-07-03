@@ -28,6 +28,12 @@
           box-shadow: $shadow;
 }
 
+@mixin rotate($deg) {
+        -ms-transform: rotate($deg); /* IE 9 */
+    -webkit-transform: rotate($deg); /* Chrome, Safari, Opera */
+            transform: rotate($deg);
+}
+
 // Font awesome
 
 // usage fa-icon($fa-var-address-book, 5px)

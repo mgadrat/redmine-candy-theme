@@ -548,17 +548,21 @@ code {
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
   padding: 12px 10px;
   margin-bottom: 12px; }
+  #errorExplanation p:last-child, div.flash p:last-child, .nodata p:last-child, .warning p:last-child, .conflict p:last-child {
+    margin-bottom: 0; }
 
 div.flash {
   margin-top: 12px; }
 
 div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
-  background-color: #F06355;
-  color: #64261F; }
+  border-left: 5px solid #F06355;
+  background-color: #FFFFFF;
+  color: #F06355; }
 
 div.flash.notice {
-  background-color: #40B55A;
-  color: #184C23; }
+  border-left: 5px solid #40B55A;
+  background-color: #FFFFFF;
+  color: #40B55A; }
 
 /***** Ajax indicator ******/
 #ajax-indicator {
@@ -1898,7 +1902,7 @@ textarea {
 
 #content .tabs li {
   display: inline-block;
-  margin: 0 10px 0 0; }
+  margin: 0 5px 3px 0; }
   #content .tabs li a {
     background: #232E82;
     color: #FFFFFF;
@@ -2543,7 +2547,7 @@ textarea {
 
 #issue_tree, #relations, .attachments {
   border: 1px dotted #F2F2F2;
-  padding: 12px 10px 12px 0;
+  padding: 12px 10px;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
@@ -2698,6 +2702,40 @@ textarea {
   border-left: 5px solid #DB1D70; }
   #preview > fieldset legend {
     display: none; }
+
+.idnt .subject::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+.idnt .subject::before {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg); }
+
+.idnt-1 .subject {
+  padding-left: 20px; }
+
+.idnt-2 .subject {
+  padding-left: 40px; }
+
+.idnt-3 .subject {
+  padding-left: 60px; }
+
+.idnt-4 .subject {
+  padding-left: 80px; }
+
+.idnt-5 .subject {
+  padding-left: 100px; }
 
 .controller-activities h3 {
   margin: 24px 0 12px; }
@@ -3286,6 +3324,13 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
       width: 30%; }
     #tab-content-boards .table-list-cell.buttons {
       width: 15%; }
+
+#new_membership legend {
+  font-weight: bold; }
+
+#new_membership #principals label,
+#new_membership .roles-selection label {
+  display: block; }
 
 #roadmap article {
   background-color: #FFFFFF;

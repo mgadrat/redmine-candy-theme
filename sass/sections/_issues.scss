@@ -90,7 +90,7 @@
 
 #issue_tree, #relations, .attachments {
   border: 1px dotted $color-neutral-light;
-  padding: $base-v-spacer $base-h-spacer $base-v-spacer 0;
+  padding: $base-v-spacer $base-h-spacer;
   @include transition(border-color 0.2s ease);
   @include clearfix();
 
@@ -230,4 +230,27 @@
   legend {
     display: none;
   }
+}
+
+.idnt .subject {
+  @include fa-icon($icon-parent);
+  &::before {
+    @include rotate(90deg);
+  }
+}
+
+.idnt-1 .subject {
+  padding-left: $base-h-spacer*2;
+}
+.idnt-2 .subject {
+  padding-left: $base-h-spacer*4;
+}
+.idnt-3 .subject {
+  padding-left: $base-h-spacer*6;
+}
+.idnt-4 .subject {
+  padding-left: $base-h-spacer*8;
+}
+.idnt-5 .subject {
+  padding-left: $base-h-spacer*10;
 }

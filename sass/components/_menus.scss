@@ -127,7 +127,7 @@
   }
   li {
     display: inline-block;
-    margin: 0 $base-h-spacer 0 0;
+    margin: 0 $base-h-spacer/2 $base-v-spacer/4 0;
     a {
       @include btn();
 

@@ -362,18 +362,24 @@ code {
 #errorExplanation, div.flash, .nodata, .warning, .conflict {
   padding: $base-v-spacer $base-h-spacer;
   margin-bottom: $base-v-spacer;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 div.flash {margin-top: $base-v-spacer}
 
 div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
-  background-color: $color-cancel-lightest;
-  color: $color-cancel-dark;
+  border-left: $base-highlight-border-width solid $color-cancel-lightest;
+  background-color: $color-neutral-lightest;
+  color: $color-cancel-lightest;
 }
 
 div.flash.notice {
-  background-color: $color-validate-lightest;
-  color: $color-validate-dark;
+  border-left: $base-highlight-border-width solid $color-validate-lightest;
+  background-color: $color-neutral-lightest;
+  color: $color-validate-lightest;
 }
 
 /***** Ajax indicator ******/
