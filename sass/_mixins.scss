@@ -90,11 +90,11 @@
 
   @include btn();
 
-  background: $color-validate-lightest !important;
-  color: $color-neutral-lightest !important;
+  background: $color-validate-light !important;
+  color: $color-neutral-light !important;
 
   &:hover {
-    background: $color-validate-light !important;
+    background: $color-validate-mid !important;
   }
 }
 
@@ -102,9 +102,9 @@
 
   @include btn();
 
-  background: $color-cancel-lightest !important;
-  color: $color-neutral-lightest !important;
+  background: $color-cancel-light !important;
+  color: $color-neutral-light !important;
   &:hover {
-    background: $color-cancel-light !important;
+    background: $color-cancel-mid !important;
   }
 }

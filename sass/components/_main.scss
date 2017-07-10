@@ -157,9 +157,9 @@ table {
       }
     }
     &.context-menu-selection {
-      background-color: $color-secondary-1-mid !important; // Cuz redmine core
+      background-color: $color-validate-mid !important; // Cuz redmine core
       &:hover {
-        background-color: $color-secondary-1-mid !important; // cuz redmine core
+        background-color: $color-validate-mid !important; // cuz redmine core
       }
       .checkbox {
         text-align: center;
@@ -171,9 +171,9 @@ table {
     }
   }
   thead th {
-    background-color: $color-primary-mid;
+    background-color: $color-neutral-dark;
     color: $color-neutral-lightest;
-    padding: $base-v-spacer/2 $base-h-spacer;
+    padding: $base-v-spacer/4 $base-h-spacer;
     text-align: left;
     border-right: 1px solid $color-neutral-light;
     font-size: $font-size-small;
@@ -298,6 +298,7 @@ code {
 
   & > h2,
   & > .contextual {
+    clear: both;
     margin-top: $base-v-spacer*3;
   }
 }
@@ -328,8 +329,8 @@ code {
   display: none;
   width: 200px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: $base-v-spacer*1.5;
+  left: $base-h-spacer*10;
   border: 1px solid $color-neutral-mid;
   border-left: $base-highlight-border-width solid $color-complement-light;
   font-size: $font-size-small;
@@ -371,15 +372,21 @@ code {
 div.flash {margin-top: $base-v-spacer}
 
 div.flash.error, #errorExplanation, div.flash.warning, .conflict, .nodata, .warning {
-  border-left: $base-highlight-border-width solid $color-cancel-lightest;
-  background-color: $color-neutral-lightest;
-  color: $color-cancel-lightest;
+  background-color: $color-cancel-light;
+  color: $color-neutral-lightest;
+  a {
+    color: $color-neutral-lightest;
+    text-decoration: underline;
+  }
 }
 
 div.flash.notice {
-  border-left: $base-highlight-border-width solid $color-validate-lightest;
-  background-color: $color-neutral-lightest;
-  color: $color-validate-lightest;
+  background-color: $color-validate-light;
+  color: $color-neutral-lightest;
+  a {
+    color: $color-neutral-lightest;
+    text-decoration: underline;
+  }
 }
 
 /***** Ajax indicator ******/

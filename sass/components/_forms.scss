@@ -20,6 +20,7 @@
 #custom_field_form,
 #new_enumeration,
 #auth_source_form,
+#bulk_edit_form,
 form.edit_board,
 #edit_wiki,
 #tab-content-general form,
@@ -53,7 +54,7 @@ form.edit_board,
     display: inline-block;
     width: 200px;
     border-bottom: 1px dotted $color-neutral-mid;
-    line-height: $font-size-normal*2;
+    line-height: $font-size-normal;
 
     &.block {
       width: auto;
@@ -135,7 +136,7 @@ input {
   @include transition(border-color 0.5s ease);
 
   &:focus {
-    border: 1px solid $color-secondary-1-dark;
+    border: 1px solid $color-validate-mid;
   }
 
   &.select2-search__field,
@@ -165,7 +166,7 @@ input[type=checkbox] {
   input[type=button]{
     @include btn();
     margin-bottom: $base-v-spacer/2;
-  }  
+  }
 }
 
 

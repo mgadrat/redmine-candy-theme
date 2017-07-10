@@ -43,6 +43,11 @@
 
     a {
       font-size: $font-size-big;
+      color: $color-neutral-dark;
+
+      &:hover {
+        color: $color-complement-light;
+      }
     }
 
     &.root {
@@ -50,7 +55,6 @@
       margin-right: 0;
       background-color: #fff;
       padding: $base-v-spacer $base-h-spacer;
-      border-left: $base-highlight-border-width solid $color-complement-light;
     }
 
     ul {

@@ -50,8 +50,8 @@
   }
 
 
-  .gantt_subjects { 
-    font-size: $font-size-small; 
+  .gantt_subjects {
+    font-size: $font-size-small;
     div {
       overflow: hidden;
       white-space:nowrap;
@@ -104,6 +104,12 @@
     }
     .marker {
     }
+  }
+
+
+  .tip {
+    top: 0;
+    left: $base-h-spacer*3;
   }
 
 }

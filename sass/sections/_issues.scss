@@ -1,13 +1,16 @@
 
-.controller-issues.action-show #content > h2 {
-  margin-bottom: $base-v-spacer;
+.controller-issues.action-show {
+  #content > h2 {
+    margin-bottom: $base-v-spacer;
+    margin-top: $base-v-spacer*4;
+    clear: none;
+  }
+  .issue {
+    padding-top: $base-v-spacer*3;
+  }
 }
 
 .issue {
-
-  .next-prev-links {
-    margin-top: $base-v-spacer;
-  }
 
   .splitcontent {
     background-color: $color-neutral-lightest;
@@ -134,10 +137,9 @@
 
   .journal {
     background-color: $color-neutral-lightest;
-    border-left: $base-highlight-border-width solid $color-complement-light;
     margin: $base-v-spacer 0;
     padding: $base-v-spacer $base-h-spacer;
-    
+
     .journal-link {
       float: right;
     }
@@ -145,6 +147,7 @@
     .details {
       font-size: $font-size-small;
       line-height: $font-size-small;
+      margin: $base-v-spacer*3 $base-h-spacer*3 $base-v-spacer*2;
 
       i{
         color: $color-cancel-light;
@@ -163,6 +166,7 @@
       margin-bottom: $base-v-spacer;
       padding: $base-v-spacer/2 $base-h-spacer;
       background-color: $color-neutral-mid;
+      font-weight: normal;
     }
   }
 }
@@ -203,6 +207,14 @@
 .list.issues {
   td {
     font-size: $font-size-small;
+
+    a {
+      color: $color-neutral-dark;
+
+      &:hover {
+        color: $color-complement-light;
+      }
+    }
   }
   .id {
     text-align: center;
@@ -210,11 +222,6 @@
   .description {
     padding-left: 30px + $base-h-spacer;
     border-top: 1px solid $color-neutral-light;
-  }
-  .description,
-  .id,
-  .subject {
-    font-size: $font-size-normal;
   }
 }
 
