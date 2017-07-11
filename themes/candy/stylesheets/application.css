@@ -3243,7 +3243,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   border: 0;
   background-color: #FFFFFF;
   text-align: center;
-  overflow: hidden; }
+  overflow: visible !important; }
 
 .controller-gantts .gantt_hdr {
   border-left: 0 !important; }
@@ -3272,11 +3272,13 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     background-color: #F2F2F2; }
 
 .controller-gantts .gantt_subjects {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  padding-left: 6px; }
   .controller-gantts .gantt_subjects div {
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    padding: 2px; }
   .controller-gantts .gantt_subjects .child::before {
     display: inline-block;
     margin-right: 5px;
@@ -3294,6 +3296,12 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     -webkit-transform: rotate(90deg);
     /* Chrome, Safari, Opera */
     transform: rotate(90deg); }
+  .controller-gantts .gantt_subjects:hover div {
+    background-color: #FFFFFF;
+    width: auto !important;
+    padding-right: 10px;
+    z-index: 20;
+    overflow: visible; }
 
 .controller-gantts .task {
   position: absolute;

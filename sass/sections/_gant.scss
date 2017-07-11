@@ -7,7 +7,7 @@
     border: 0;
     background-color: $color-neutral-lightest;
     text-align: center;
-    overflow: hidden;
+    overflow: visible !important;
   }
 
   .gantt_hdr {
@@ -52,15 +52,30 @@
 
   .gantt_subjects {
     font-size: $font-size-small;
+    padding-left: $base-v-spacer/2;
+
     div {
       overflow: hidden;
       white-space:nowrap;
       text-overflow: ellipsis;
+      padding: 2px;
     }
+
     .child {
       @include fa-icon($icon-parent);
       &::before {
         @include rotate(90deg);
+      }
+    }
+
+    &:hover {
+
+      div {
+        background-color: $color-neutral-lightest;
+        width: auto !important;
+        padding-right: $base-h-spacer;
+        z-index: 20;
+        overflow: visible;
       }
     }
   }
