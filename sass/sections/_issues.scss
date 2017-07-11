@@ -56,9 +56,6 @@
     }
   }
 
-  .attributes {
-    margin-bottom: -$base-v-spacer;
-  }
   & > .gravatar {
     float: left;
   }
@@ -88,7 +85,18 @@
 }
 
 .controller-issues .icon-edit {
-  @include btn-validate();
+   @include btn-validate();
+}
+
+#issue_tree > p {
+  @include fa-icon($icon-parent);
+  &::before {
+    @include rotate(90deg);
+  }
+}
+
+#relations > p {
+  @include fa-icon($icon-link);
 }
 
 #issue_tree, #relations, .attachments {
@@ -100,7 +108,7 @@
   &:hover {
     border-color: $color-neutral-dark;
   }
-
+  
   form, p {
     padding: 0;
     margin: 0;
@@ -133,7 +141,7 @@
 
 #history {
 
-  padding-top: $base-v-spacer*5;
+  padding-top: $base-v-spacer*3;
 
   .journal {
     background-color: $color-neutral-lightest;
@@ -261,3 +269,30 @@
 .idnt-5 .subject {
   padding-left: $base-h-spacer*10;
 }
+.idnt-6 .subject {
+  padding-left: $base-h-spacer*12;
+}
+.idnt-7 .subject {
+  padding-left: $base-h-spacer*14;
+}
+
+.list.issues .priority-1 { 
+  .priority, .id a { color: $color-validate-light; }
+}
+.list.issues .priority-2 { 
+  .priority, .id a { }
+}
+.list.issues .priority-3 { 
+  .priority, .id a { font-weight: bold; }
+}
+.list.issues .priority-4 { 
+  .priority, .id a { color: $color-cancel-light; }
+}
+.list.issues .priority-5 { 
+  .priority, .id a { color: $color-cancel-light; font-weight: bold; }
+}
+.list.issues .priority-6 { 
+  .priority, .id a { color: $color-cancel-light; font-size: $font-size-big }
+}
+.list.issues .priority-7 { 
+  .priority, .id a { color: $color-cancel-light; font-size: $font-size-big; font-weight: bold; }}

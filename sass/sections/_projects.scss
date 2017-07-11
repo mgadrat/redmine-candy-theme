@@ -43,11 +43,6 @@
 
     a {
       font-size: $font-size-big;
-      color: $color-neutral-dark;
-
-      &:hover {
-        color: $color-complement-light;
-      }
     }
 
     &.root {

@@ -1034,6 +1034,7 @@ a.icon-checked {
 #news-form,
 #login-form,
 #new_user,
+#search-form,
 #my_account_form,
 #new_page,
 #new_document,
@@ -1042,6 +1043,7 @@ a.icon-checked {
 #new_board,
 #message-form,
 #new_tracker,
+#query-form,
 #new_issue_status,
 #custom_field_form,
 #new_enumeration,
@@ -1087,6 +1089,8 @@ form.edit_board,
   #login-form::after,
   #new_user::before,
   #new_user::after,
+  #search-form::before,
+  #search-form::after,
   #my_account_form::before,
   #my_account_form::after,
   #new_page::before,
@@ -1103,6 +1107,8 @@ form.edit_board,
   #message-form::after,
   #new_tracker::before,
   #new_tracker::after,
+  #query-form::before,
+  #query-form::after,
   #new_issue_status::before,
   #new_issue_status::after,
   #custom_field_form::before,
@@ -1160,6 +1166,7 @@ form.edit_board,
   #news-form::after,
   #login-form::after,
   #new_user::after,
+  #search-form::after,
   #my_account_form::after,
   #new_page::after,
   #new_document::after,
@@ -1168,6 +1175,7 @@ form.edit_board,
   #new_board::after,
   #message-form::after,
   #new_tracker::after,
+  #query-form::after,
   #new_issue_status::after,
   #custom_field_form::after,
   #new_enumeration::after,
@@ -1201,6 +1209,7 @@ form.edit_board,
   #news-form legend,
   #login-form legend,
   #new_user legend,
+  #search-form legend,
   #my_account_form legend,
   #new_page legend,
   #new_document legend,
@@ -1209,6 +1218,7 @@ form.edit_board,
   #new_board legend,
   #message-form legend,
   #new_tracker legend,
+  #query-form legend,
   #new_issue_status legend,
   #custom_field_form legend,
   #new_enumeration legend,
@@ -1242,6 +1252,7 @@ form.edit_board,
   #news-form label,
   #login-form label,
   #new_user label,
+  #search-form label,
   #my_account_form label,
   #new_page label,
   #new_document label,
@@ -1250,6 +1261,7 @@ form.edit_board,
   #new_board label,
   #message-form label,
   #new_tracker label,
+  #query-form label,
   #new_issue_status label,
   #custom_field_form label,
   #new_enumeration label,
@@ -1286,6 +1298,7 @@ form.edit_board,
     #news-form label.block,
     #login-form label.block,
     #new_user label.block,
+    #search-form label.block,
     #my_account_form label.block,
     #new_page label.block,
     #new_document label.block,
@@ -1294,6 +1307,7 @@ form.edit_board,
     #new_board label.block,
     #message-form label.block,
     #new_tracker label.block,
+    #query-form label.block,
     #new_issue_status label.block,
     #custom_field_form label.block,
     #new_enumeration label.block,
@@ -1330,6 +1344,7 @@ form.edit_board,
   #news-form .projects label,
   #login-form .projects label,
   #new_user .projects label,
+  #search-form .projects label,
   #my_account_form .projects label,
   #new_page .projects label,
   #new_document .projects label,
@@ -1338,6 +1353,7 @@ form.edit_board,
   #new_board .projects label,
   #message-form .projects label,
   #new_tracker .projects label,
+  #query-form .projects label,
   #new_issue_status .projects label,
   #custom_field_form .projects label,
   #new_enumeration .projects label,
@@ -1374,6 +1390,7 @@ form.edit_board,
   #news-form .add-filter label,
   #login-form .add-filter label,
   #new_user .add-filter label,
+  #search-form .add-filter label,
   #my_account_form .add-filter label,
   #new_page .add-filter label,
   #new_document .add-filter label,
@@ -1382,6 +1399,7 @@ form.edit_board,
   #new_board .add-filter label,
   #message-form .add-filter label,
   #new_tracker .add-filter label,
+  #query-form .add-filter label,
   #new_issue_status .add-filter label,
   #custom_field_form .add-filter label,
   #new_enumeration .add-filter label,
@@ -1416,6 +1434,7 @@ form.edit_board,
   #news-form .icon-edit,
   #login-form .icon-edit,
   #new_user .icon-edit,
+  #search-form .icon-edit,
   #my_account_form .icon-edit,
   #new_page .icon-edit,
   #new_document .icon-edit,
@@ -1424,6 +1443,7 @@ form.edit_board,
   #new_board .icon-edit,
   #message-form .icon-edit,
   #new_tracker .icon-edit,
+  #query-form .icon-edit,
   #new_issue_status .icon-edit,
   #custom_field_form .icon-edit,
   #new_enumeration .icon-edit,
@@ -1457,6 +1477,7 @@ form.edit_board,
   #news-form .info,
   #login-form .info,
   #new_user .info,
+  #search-form .info,
   #my_account_form .info,
   #new_page .info,
   #new_document .info,
@@ -1465,6 +1486,7 @@ form.edit_board,
   #new_board .info,
   #message-form .info,
   #new_tracker .info,
+  #query-form .info,
   #new_issue_status .info,
   #custom_field_form .info,
   #new_enumeration .info,
@@ -1669,7 +1691,7 @@ input {
 
 .select2-container,
 .select2-container .select2-selection--single {
-  height: 2rem; }
+  min-height: 2rem; }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
@@ -1679,8 +1701,7 @@ input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  border-radius: 0;
-  min-height: 0; }
+  border-radius: 0; }
 
 .select2-container--default .select2-selection--multiple {
   line-height: 0rem; }
@@ -1760,6 +1781,14 @@ textarea {
     content: "";
     position: relative;
     top: 0; }
+
+#search-input {
+  margin: 12px 0; }
+
+#options-content label {
+  display: block;
+  width: auto;
+  line-height: 2rem; }
 
 #main-menu li, #main-menu a, #top-menu li, #top-menu a {
   display: inline-block; }
@@ -2441,10 +2470,7 @@ textarea {
   margin: 12px 10px;
   list-style: none; }
   #projects-index li a {
-    font-size: 1.2rem;
-    color: #333333; }
-    #projects-index li a:hover {
-      color: #E14181; }
+    font-size: 1.2rem; }
   #projects-index li.root {
     margin-left: 0;
     margin-right: 0;
@@ -2506,9 +2532,6 @@ textarea {
 
 .issue .progress .label {
   margin-bottom: 0; }
-
-.issue .attributes {
-  margin-bottom: -12px; }
 
 .issue > .gravatar {
   float: left; }
@@ -2586,6 +2609,37 @@ textarea {
   .controller-issues .icon-edit:hover {
     background: #15692E !important; }
 
+#issue_tree > p::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
+#issue_tree > p::before {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg); }
+
+#relations > p::before {
+  display: inline-block;
+  margin-right: 5px;
+  font: normal normal normal 1rem FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: relative;
+  top: 0; }
+
 #issue_tree, #relations, .attachments {
   border: 1px dotted #F2F2F2;
   padding: 12px 10px;
@@ -2646,7 +2700,7 @@ textarea {
   opacity: 1; }
 
 #history {
-  padding-top: 60px; }
+  padding-top: 36px; }
   #history .journal {
     background-color: #FFFFFF;
     margin: 12px 0;
@@ -2777,6 +2831,34 @@ textarea {
 
 .idnt-5 .subject {
   padding-left: 100px; }
+
+.idnt-6 .subject {
+  padding-left: 120px; }
+
+.idnt-7 .subject {
+  padding-left: 140px; }
+
+.list.issues .priority-1 .priority, .list.issues .priority-1 .id a {
+  color: #2EB156; }
+
+.list.issues .priority-3 .priority, .list.issues .priority-3 .id a {
+  font-weight: bold; }
+
+.list.issues .priority-4 .priority, .list.issues .priority-4 .id a {
+  color: #E93D49; }
+
+.list.issues .priority-5 .priority, .list.issues .priority-5 .id a {
+  color: #E93D49;
+  font-weight: bold; }
+
+.list.issues .priority-6 .priority, .list.issues .priority-6 .id a {
+  color: #E93D49;
+  font-size: 1.2rem; }
+
+.list.issues .priority-7 .priority, .list.issues .priority-7 .id a {
+  color: #E93D49;
+  font-size: 1.2rem;
+  font-weight: bold; }
 
 .controller-activities h3 {
   margin: 24px 0 12px; }
@@ -2956,7 +3038,7 @@ table.cal {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "";
+    content: "";
     position: relative;
     top: 0; }
   table.cal .ending::before {
@@ -2967,7 +3049,7 @@ table.cal {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "";
+    content: "";
     position: relative;
     top: 0; }
 
