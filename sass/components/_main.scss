@@ -9,7 +9,7 @@ a {
 body, html {
   font-size: $font-size-base;
   font-family: $font-primary;
-  color: $color-neutral-darkest;
+  color: $color-neutral-dark;
   line-height: 1.4rem;
   background-color: $color-neutral-dark;
 }
@@ -48,10 +48,10 @@ h6 {
 
 p {
   margin-bottom: $base-v-spacer;
+}
 
-  &:last-child {
-    // margin-bottom: 0;
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: $color-neutral-darkest;
 }
 
 h3, h4, h5, h6 {

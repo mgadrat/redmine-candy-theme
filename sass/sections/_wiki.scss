@@ -20,6 +20,16 @@
   }
 }
 
+.wiki-page .contextual {
+  position: relative;
+  top: $base-v-spacer;
+  right: $base-h-spacer;
+  opacity: .4;
+  &:hover {
+    opacity: 1;
+  }
+}
+
 #wiki_add_attachment {
 
   padding: $base-v-spacer $base-h-spacer;
@@ -47,11 +57,15 @@
   display: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  &:hover {
-    .wiki-anchor {
-      display: inline-block;
-      padding: 0 $base-h-spacer;
+.wiki-page {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: inherit;
+    margin-top: $base-v-spacer*3;
+    &:hover {
+      .wiki-anchor {
+        display: inline-block;
+        padding: 0 $base-h-spacer;
+      }
     }
   }
 }

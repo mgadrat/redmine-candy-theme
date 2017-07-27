@@ -163,7 +163,7 @@ a {
 body, html {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #111111;
+  color: #333333;
   line-height: 1.4rem;
   background-color: #333333; }
 
@@ -199,6 +199,9 @@ h6 {
 
 p {
   margin-bottom: 12px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111111; }
 
 h3, h4, h5, h6 {
   font-weight: bold; }
@@ -443,9 +446,6 @@ code {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -456,10 +456,7 @@ code {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   #sidebar-handle:hover {
     background: #8A1B23 !important; }
   #sidebar-handle::before {
@@ -490,9 +487,6 @@ code {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -503,10 +497,7 @@ code {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .sidebar_closed #sidebar-handle:hover {
     background: #15692E !important; }
   .sidebar_closed #sidebar-handle::before {
@@ -624,9 +615,6 @@ html > body #ajax-indicator {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -637,10 +625,7 @@ html > body #ajax-indicator {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .icon-add:hover {
     background: #15692E !important; }
   .icon-add::before {
@@ -683,9 +668,6 @@ html > body #ajax-indicator {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -696,10 +678,7 @@ html > body #ajax-indicator {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .icon-save:hover {
     background: #15692E !important; }
   .icon-save::before {
@@ -730,9 +709,6 @@ html > body #ajax-indicator {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -741,10 +717,7 @@ html > body #ajax-indicator {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .icon-edit::before {
     display: inline-block;
     margin-right: 5px;
@@ -809,9 +782,6 @@ html > body #ajax-indicator {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -820,10 +790,7 @@ html > body #ajax-indicator {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .icon-copy::before {
     display: inline-block;
     margin-right: 5px;
@@ -852,9 +819,6 @@ html > body #ajax-indicator {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -863,10 +827,7 @@ html > body #ajax-indicator {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .icon-lock::before {
     display: inline-block;
     margin-right: 5px;
@@ -909,9 +870,6 @@ a.icon-checked {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -922,10 +880,7 @@ a.icon-checked {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   a.icon-checked:hover {
     background: #15692E !important; }
   a.icon-checked::before {
@@ -956,9 +911,6 @@ a.icon-checked {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -969,10 +921,7 @@ a.icon-checked {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .icon-reload:hover {
     background: #8A1B23 !important; }
   .icon-reload::before {
@@ -1593,9 +1542,6 @@ input {
     -moz-transition: box-shadow 0.2s linear;
     -o-transition: box-shadow 0.2s linear;
     transition: box-shadow 0.2s linear;
-    -webkit-box-shadow: 0px 0px 5px 0px transparent;
-    -moz-box-shadow: 0px 0px 5px 0px transparent;
-    box-shadow: 0px 0px 5px 0px transparent;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -1606,10 +1552,7 @@ input {
       background: #3F75B6;
       color: #FFFFFF;
       text-decoration: none;
-      border-width: 0;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      border-width: 0; }
     input[type=submit]:hover {
       background: #15692E !important; }
   input[type=button] {
@@ -1628,9 +1571,6 @@ input {
     -moz-transition: box-shadow 0.2s linear;
     -o-transition: box-shadow 0.2s linear;
     transition: box-shadow 0.2s linear;
-    -webkit-box-shadow: 0px 0px 5px 0px transparent;
-    -moz-box-shadow: 0px 0px 5px 0px transparent;
-    box-shadow: 0px 0px 5px 0px transparent;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -1639,10 +1579,7 @@ input {
       background: #3F75B6;
       color: #FFFFFF;
       text-decoration: none;
-      border-width: 0;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      border-width: 0; }
 
 input[type=checkbox] {
   display: inline-block;
@@ -1665,9 +1602,6 @@ input[type=checkbox] {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1677,10 +1611,7 @@ input[type=checkbox] {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
 
 .select2-container--default,
 .select2-selection--multiple,
@@ -1878,9 +1809,6 @@ textarea {
     -moz-transition: box-shadow 0.2s linear;
     -o-transition: box-shadow 0.2s linear;
     transition: box-shadow 0.2s linear;
-    -webkit-box-shadow: 0px 0px 5px 0px transparent;
-    -moz-box-shadow: 0px 0px 5px 0px transparent;
-    box-shadow: 0px 0px 5px 0px transparent;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -1890,10 +1818,7 @@ textarea {
       background: #3F75B6;
       color: #FFFFFF;
       text-decoration: none;
-      border-width: 0;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      border-width: 0; }
     .contextual a.icon-del {
       color: #E93D49;
       background-color: transparent !important; }
@@ -1934,9 +1859,6 @@ textarea {
       -moz-transition: box-shadow 0.2s linear;
       -o-transition: box-shadow 0.2s linear;
       transition: box-shadow 0.2s linear;
-      -webkit-box-shadow: 0px 0px 5px 0px transparent;
-      -moz-box-shadow: 0px 0px 5px 0px transparent;
-      box-shadow: 0px 0px 5px 0px transparent;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
@@ -1946,10 +1868,7 @@ textarea {
         background: #3F75B6;
         color: #FFFFFF;
         text-decoration: none;
-        border-width: 0;
-        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+        border-width: 0; }
       #context-menu ul li .icon:hover, #context-menu ul li .icon-time-add:hover, #context-menu ul li .icon-copy:hover, #context-menu ul li .icon-del:hover, #context-menu ul li .icon-checked:hover {
         -webkit-box-shadow: 0px 0px 0px 0px transparent;
         -moz-box-shadow: 0px 0px 0px 0px transparent;
@@ -1979,9 +1898,6 @@ textarea {
     -moz-transition: box-shadow 0.2s linear;
     -o-transition: box-shadow 0.2s linear;
     transition: box-shadow 0.2s linear;
-    -webkit-box-shadow: 0px 0px 5px 0px transparent;
-    -moz-box-shadow: 0px 0px 5px 0px transparent;
-    box-shadow: 0px 0px 5px 0px transparent;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -1990,10 +1906,7 @@ textarea {
       background: #3F75B6;
       color: #FFFFFF;
       text-decoration: none;
-      border-width: 0;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      border-width: 0; }
     #content .tabs li a.selected {
       background-color: #E14181; }
 
@@ -2267,9 +2180,6 @@ textarea {
       -moz-transition: box-shadow 0.2s linear;
       -o-transition: box-shadow 0.2s linear;
       transition: box-shadow 0.2s linear;
-      -webkit-box-shadow: 0px 0px 5px 0px transparent;
-      -moz-box-shadow: 0px 0px 5px 0px transparent;
-      box-shadow: 0px 0px 5px 0px transparent;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
@@ -2283,10 +2193,7 @@ textarea {
         background: #3F75B6;
         color: #FFFFFF;
         text-decoration: none;
-        border-width: 0;
-        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+        border-width: 0; }
       .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {
         background: #254D7C;
         color: #FFFFFF;
@@ -2303,9 +2210,6 @@ textarea {
         -moz-transition: box-shadow 0.2s linear;
         -o-transition: box-shadow 0.2s linear;
         transition: box-shadow 0.2s linear;
-        -webkit-box-shadow: 0px 0px 5px 0px transparent;
-        -moz-box-shadow: 0px 0px 5px 0px transparent;
-        box-shadow: 0px 0px 5px 0px transparent;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
@@ -2316,10 +2220,7 @@ textarea {
           background: #3F75B6;
           color: #FFFFFF;
           text-decoration: none;
-          border-width: 0;
-          -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-          -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+          border-width: 0; }
         .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close:hover {
           background: #15692E !important; }
 
@@ -2367,9 +2268,6 @@ textarea {
     -moz-transition: box-shadow 0.2s linear;
     -o-transition: box-shadow 0.2s linear;
     transition: box-shadow 0.2s linear;
-    -webkit-box-shadow: 0px 0px 5px 0px transparent;
-    -moz-box-shadow: 0px 0px 5px 0px transparent;
-    box-shadow: 0px 0px 5px 0px transparent;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -2380,10 +2278,7 @@ textarea {
       background: #3F75B6;
       color: #FFFFFF;
       text-decoration: none;
-      border-width: 0;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+      border-width: 0; }
     .ui-dialog input[type=button]:hover {
       background: #8A1B23 !important; }
   .ui-dialog .ui-dialog-titlebar-close {
@@ -2589,9 +2484,6 @@ textarea {
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2602,10 +2494,7 @@ textarea {
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .controller-issues .icon-edit:hover {
     background: #15692E !important; }
 
@@ -3173,6 +3062,14 @@ table.cal {
   top: 12px;
   right: 10px; }
 
+.wiki-page .contextual {
+  position: relative;
+  top: 12px;
+  right: 10px;
+  opacity: .4; }
+  .wiki-page .contextual:hover {
+    opacity: 1; }
+
 #wiki_add_attachment {
   padding: 12px 10px;
   margin: 12px 0;
@@ -3195,9 +3092,6 @@ table.cal {
       -moz-transition: box-shadow 0.2s linear;
       -o-transition: box-shadow 0.2s linear;
       transition: box-shadow 0.2s linear;
-      -webkit-box-shadow: 0px 0px 5px 0px transparent;
-      -moz-box-shadow: 0px 0px 5px 0px transparent;
-      box-shadow: 0px 0px 5px 0px transparent;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
@@ -3208,10 +3102,7 @@ table.cal {
         background: #3F75B6;
         color: #FFFFFF;
         text-decoration: none;
-        border-width: 0;
-        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+        border-width: 0; }
       #wiki_add_attachment > p a:hover {
         background: #15692E !important; }
       #wiki_add_attachment > p a::before {
@@ -3233,9 +3124,12 @@ table.cal {
 .wiki-anchor {
   display: none; }
 
-h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .wiki-anchor, h5:hover .wiki-anchor, h6:hover .wiki-anchor {
-  display: inline-block;
-  padding: 0 10px; }
+.wiki-page h1, .wiki-page h2, .wiki-page h3, .wiki-page h4, .wiki-page h5, .wiki-page h6 {
+  line-height: inherit;
+  margin-top: 36px; }
+  .wiki-page h1:hover .wiki-anchor, .wiki-page h2:hover .wiki-anchor, .wiki-page h3:hover .wiki-anchor, .wiki-page h4:hover .wiki-anchor, .wiki-page h5:hover .wiki-anchor, .wiki-page h6:hover .wiki-anchor {
+    display: inline-block;
+    padding: 0 10px; }
 
 .controller-gantts .gantt_hdr {
   position: absolute;
@@ -3443,9 +3337,6 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  -webkit-box-shadow: 0px 0px 5px 0px transparent;
-  -moz-box-shadow: 0px 0px 5px 0px transparent;
-  box-shadow: 0px 0px 5px 0px transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -3456,10 +3347,7 @@ h1:hover .wiki-anchor, h2:hover .wiki-anchor, h3:hover .wiki-anchor, h4:hover .w
     background: #3F75B6;
     color: #FFFFFF;
     text-decoration: none;
-    border-width: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6); }
+    border-width: 0; }
   .action-page_layout .icon-cancel:hover {
     background: #8A1B23 !important; }
   .action-page_layout .icon-cancel::before {
